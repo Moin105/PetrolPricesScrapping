@@ -1,0 +1,80 @@
+import React,{useEffect, useState} from 'react'
+import Image from 'next/image'
+import styles from '../styles/Home.module.css'
+import increase from '../public/increase.png'
+import decrease from '../public/decrease.png'
+import nochange from '../public/unchanged.png'
+import spc from '../public/spc.png'
+import sa from '../public/sa.png'
+
+function C2() {
+const BASE_URL = "http://128.199.227.15/api/compare_prices_api"
+const [data,setData] = useState([])
+    useEffect(() => {
+console.log("base url",BASE_URL)
+      // fetch("http://128.199.227.15/api/compare_prices_api")
+      fetch("http://128.199.227.15/api/compare_prices_api")
+      .then(response => {
+        console.log("res",response);
+        if(response.status == 200) {            
+            console.log("res",response);
+            return response.json();
+      }
+    }).then(response =>
+      {
+        setData(response.data)
+        console.log("dasta",data)
+      }
+    )
+    }, [])
+    
+  return (
+    <>
+    <div className={styles.fuel}>
+        <div className={styles.wrapper}>
+            <div className={styles.tables}>
+                 <h2 className={styles.h2}>Compare Petrol Prices</h2>  
+                 <div className={styles.pcontainer}>
+                   <div className={styles.pbox}>
+                   {data.map((dat,index) =>{if(dat.motorist_fuel_prices[0]?.change_in_price == 0 ){
+                    return  < div  key={index}className={styles.nochange}>
+                    <h3 className={styles.h3}>{dat.grade}</h3>
+                    <figure className={styles.figure}>
+                    <Image src={nochange} alt="logo" layout="fill" objectFit="contain"/>
+                    <div key={index} className={styles.asb}><p className={styles.ps}>unchanged</p></div>
+                    </figure>
+                    <h3 className={styles.h3}>{ dat.motorist_fuel_prices[0]?.currency + dat.motorist_fuel_prices[0]?.price}</h3>
+                   </div>
+                   }else if(dat.motorist_fuel_prices[0]?.change_in_price > 0){   
+                    return       <div key={index} className={styles.increase}>
+                        <h3 className={styles.h3}>{dat.grade}</h3>
+                        <figure className={styles.figure}>
+                        <Image src={increase} alt="logo" layout="fill" objectFit="contain"/>
+                        <div className={styles.asb}><p className={styles.ps}>unchanged</p></div>
+                        </figure>
+                        <h3 className={styles.h3}>{ dat.motorist_fuel_prices[0]?.currency +  dat.motorist_fuel_prices[0]?.price}</h3>
+                       </div>
+                       }
+                       else{   
+                        return       <div key={index} className={styles.decrease}>
+                            <h3 className={styles.h3}>{dat.grade}</h3>
+                            <figure className={styles.figure}>
+                            <Image src={decrease} alt="logo" layout="fill" objectFit="contain"/>
+                            <div className={styles.asb}><p className={styles.ps}>{ dat.motorist_fuel_prices[0]?.change_in_price.toFixed(2)}</p><p className={styles.ps}>decreased</p></div>
+                            </figure>
+                            <h3 className={styles.h3}>{dat.motorist_fuel_prices[0]?.price}</h3>
+                           </div>
+                           }
+                   })  }
+                 </div>
+                 </div>   
+               
+            </div>  
+        </div>
+   
+    </div>
+    </>
+  )
+}
+
+export default C2

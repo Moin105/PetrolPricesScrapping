@@ -1,9 +1,9 @@
 html,
 body {
   padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  box-sizing: border-box;
+  margin: 0 ;
+  font-family: 'Poppins';
 }
 
 a {
@@ -12,15 +12,52 @@ a {
 }
 
 * {
+  
+  padding: 0;
+  margin: 0 ;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Light.woff2') format('woff2'),
+      url('./fonts/Poppins-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Medium.woff2') format('woff2'),
+      url('./fonts/Poppins-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Bold.woff2') format('woff2'),
+      url('./fonts/Poppins-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-SemiBold.woff2') format('woff2'),
+      url('./fonts/Poppins-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Regular.woff2') format('woff2'),
+      url('./fonts/Poppins-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
