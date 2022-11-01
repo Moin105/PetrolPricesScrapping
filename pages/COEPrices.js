@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import React,{useEffect} from 'react'
 import Image from 'next/image'
 import Banners from '../Components/Banners'
 import Footer from '../Components/Footer'
@@ -9,6 +10,10 @@ import styles from '../styles/Home.module.css'
 import Table from '../Components/COE/Table'
 
 export default function COEPrices() {
+  useEffect(() => {
+    
+  }, [])
+  
   return (
   <>
   <div>

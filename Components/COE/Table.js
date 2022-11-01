@@ -1,17 +1,18 @@
 import React,{useEffect, useState} from 'react'
 import Image from 'next/image'
 import styles from '../../styles/Home.module.css'
-import shell from '../../public/shell.png'
-import esso from '../../public/esso.png'
-import caltex from '../../public/caltex.png'
-import spc from '../../public/spc.png'
-import sa from '../../public/sa.png'
+import G1 from '../../public/G1.png'
+import G2 from '../../public/G2.png'
+import G3 from '../../public/G3.png'
+import G4 from '../../public/G4.png'
+import G5 from '../../public/G5.png'
 
 function Table() {
 const BASE_URL = "http://128.199.227.15/api/compare_prices_api"
 const [data,setData] = useState([])
     useEffect(() => {
 console.log("base url",BASE_URL)
+    
       fetch("http://128.199.227.15/api/compare_prices_api")
       .then(response => {
         console.log("res",response);
@@ -39,11 +40,11 @@ console.log("base url",BASE_URL)
   <thead className={styles.thead}>
     <tr>
       <th className={styles.ts}  style={{borderRadius:"6px 0px 0px 0px"}}><span >Grade</span></th>
-      <th className={styles.th}><span className={styles.hspan}><figure className={styles.plogo}><Image src={caltex} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
-      <th className={styles.th}><span className={styles.hspan}><figure className={styles.plogo}><Image src={esso} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
-      <th className={styles.th}><span className={styles.hspan}><figure className={styles.plogo}><Image src={shell} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
-      <th className={styles.th}><span className={styles.hspan}><figure className={styles.plogo}><Image src={spc} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
-      <th className={styles.th}><span className={styles.hspan}><figure className={styles.plogo}><Image src={sa} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
+      <th className={styles.th}><span className={styles.hspan}><figure className={styles.plogo}><Image src={G1} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
+      <th className={styles.th}><span className={styles.hspan}><figure className={styles.plogo}><Image src={G2} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
+      <th className={styles.th}><span className={styles.hspan}><figure className={styles.vlogo}><Image src={G3} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
+      <th className={styles.th}><span className={styles.hspan}><figure className={styles.clogo}><Image src={G4} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
+      <th className={styles.th}><span className={styles.hspan}><figure className={styles.plogo}><Image src={G5} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
     </tr>
   </thead>
   <tbody>

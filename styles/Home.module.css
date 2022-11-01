@@ -340,6 +340,21 @@
   height: 35px;
   position: relative;
 }
+.controlp .wrapper .tables .table .thead tr .th .vlogo {
+  width: 80px;
+  height: 35px;
+  position: relative;
+}
+.controlp .wrapper .tables .table .thead tr .th .clogo {
+  width: 120px;
+  height: 35px;
+  position: relative;
+}
+.controlp .wrapper .tables .table .thead tr .th .dlogo {
+  width: 40px;
+  height: 35px;
+  position: relative;
+}
 .controlp .wrapper .tables .table .hspan {
   font-family: "Poppins";
   font-style: normal;
@@ -763,6 +778,11 @@
   justify-content: center;
   font-size: 14px;
   line-height: 16px;
+}
+.cprises .wrapper .change .table .hspan .vlogo {
+  width: 80px;
+  height: 35px;
+  position: relative;
 }
 
 .footer {
