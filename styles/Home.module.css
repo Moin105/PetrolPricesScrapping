@@ -29,7 +29,7 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 24px;
-  color: #1D66FF;
+  color: black;
 }
 
 .h2 {
@@ -41,7 +41,7 @@
 
 .wrapper {
   max-width: 1920px;
-  width: calc(100% - 440px);
+  width: calc(100% - 310px);
   display: flex;
   justify-content: center;
 }
@@ -51,6 +51,7 @@
   padding: 43px 0px 32px 0px;
   max-width: 1920px;
   margin: 0 auto;
+  background-color: rgba(0, 171, 65, 0.3);
   width: 100%;
   justify-content: center;
 }
@@ -68,9 +69,9 @@
   position: relative;
 }
 .header .wrap .logo {
-  width: 62px;
+  width: 200px;
   cursor: pointer;
-  height: 62px;
+  height: 70px;
   position: relative;
 }
 .header .wrap .ul {
@@ -83,7 +84,49 @@
   cursor: pointer;
 }
 .header .wrap .ul :hover {
-  color: #1D66FF;
+  color: #28A745;
+  font-weight: 700;
+}
+
+.headers {
+  display: flex;
+  padding: 43px 0px 32px 0px;
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
+  justify-content: center;
+}
+.headers .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1920px;
+  width: calc(100% - 380px);
+}
+.headers .wrap .blogo {
+  width: 202px;
+  cursor: pointer;
+  height: 65px;
+  position: relative;
+}
+.headers .wrap .logo {
+  width: 200px;
+  cursor: pointer;
+  height: 70px;
+  position: relative;
+}
+.headers .wrap .ul {
+  display: flex;
+  gap: 48px;
+  list-style: none;
+}
+.headers .wrap .ul .li {
+  color: black;
+  cursor: pointer;
+}
+.headers .wrap .ul :hover {
+  font-weight: 700;
+  color: #28A745;
 }
 
 .banners .figure {
@@ -122,7 +165,7 @@
   width: 95%;
 }
 .banner .wrapper .content .left {
-  width: 40%;
+  width: 36%;
   display: flex;
   gap: 40px;
   flex-direction: column;
@@ -132,7 +175,7 @@
   font-weight: 600;
   font-size: 40px;
   line-height: 60px;
-  color: #1D66FF;
+  color: black;
 }
 .banner .wrapper .content .left .button {
   border: none;
@@ -151,10 +194,11 @@
   width: fit-content;
 }
 .banner .wrapper .content .right {
-  width: 25%;
+  width: 21%;
   display: flex;
   flex-direction: column;
-  gap: 46px;
+  margin: -125px 0px 0px 0px;
+  gap: 40px;
 }
 .banner .wrapper .content .right .b1 {
   display: flex;
@@ -164,7 +208,7 @@
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 9px;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgb(255, 255, 255);
 }
 .banner .wrapper .content .right .b1 .box {
   width: 46px;
@@ -192,7 +236,7 @@
   width: fit-content;
   align-self: flex-end;
   border-radius: 9px;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgb(255, 255, 255);
 }
 .banner .wrapper .content .right .b2 .box {
   width: 46px;
@@ -321,7 +365,7 @@
   padding: 18px;
 }
 .controlp .wrapper .tables .h2 {
-  color: #1D66FF;
+  color: black;
   margin: 0px 0px 40px 0px;
 }
 .controlp .wrapper .tables .table {
@@ -358,8 +402,11 @@
 .controlp .wrapper .tables .table .hspan {
   font-family: "Poppins";
   font-style: normal;
+  align-items: center;
   font-weight: 500;
   align-self: center;
+  justify-content: center;
+  flex-direction: column;
   display: flex;
   justify-content: center;
   font-size: 14px;
@@ -378,11 +425,53 @@
   align-items: center;
 }
 .fuel .wrapper .tables {
+  justify-content: space-between;
   width: 95%;
 }
-.fuel .wrapper .tables .h2 {
-  color: #1D66FF;
+.fuel .wrapper .tables .row2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
   margin: 0px 0px 40px 0px;
+}
+.fuel .wrapper .tables .lists {
+  display: flex;
+  gap: 10px;
+}
+.fuel .wrapper .tables .lists .name {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  color: #767676;
+  border-radius: 22px;
+  border: 1px solid #767676;
+  cursor: pointer;
+  gap: 5px;
+}
+.fuel .wrapper .tables .lists .name .circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 222px;
+}
+.fuel .wrapper .tables .lists .nam {
+  display: flex;
+  align-items: center;
+  background-color: #FBBC05;
+  padding: 10px;
+  color: black;
+  border-radius: 22px;
+  cursor: pointer;
+  gap: 5px;
+}
+.fuel .wrapper .tables .lists .nam .circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 222px;
+}
+.fuel .wrapper .tables .h2 {
+  color: black;
 }
 .fuel .wrapper .pbox {
   display: flex;
@@ -469,7 +558,7 @@
   justify-content: center;
 }
 .fuel .wrapper .pbox .increase .figure .asb {
-  bottom: 95px;
+  bottom: 155px;
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -671,16 +760,235 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: rgba(0, 173, 238, 0.1);
+  background-color: rgba(0, 171, 65, 0.1);
   align-items: center;
+}
+.cprises .chr {
+  padding: 38px;
+  width: 75%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: white;
 }
 .cprises .wrapper {
   padding: 100px 0px;
   flex-direction: column;
+  align-items: flex-start;
+}
+.cprises .wrapper .hs {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  margin-bottom: 40px;
+}
+.cprises .wrapper .tables .h {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #28A745;
+}
+.cprises .wrapper .changes {
+  background-color: white;
+  padding: 26px 17px;
+  border-radius: 4px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.cprises .wrapper .changes .row2 {
+  display: flex;
+  margin: 0px 0px 16px 0px;
+  justify-content: space-between;
   align-items: center;
 }
+.cprises .wrapper .changes .row2 .h {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #28A745;
+}
+.cprises .wrapper .changes .row2 .lists {
+  display: flex;
+  gap: 10px;
+}
+.cprises .wrapper .changes .row2 .lists .name {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  color: #767676;
+  border-radius: 22px;
+  border: 1px solid #767676;
+  cursor: pointer;
+  gap: 5px;
+}
+.cprises .wrapper .changes .row2 .lists .name .circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 222px;
+}
+.cprises .wrapper .changes .row2 .lists .nam {
+  display: flex;
+  align-items: center;
+  background-color: #FBBC05;
+  padding: 10px;
+  color: black;
+  border-radius: 22px;
+  cursor: pointer;
+  gap: 5px;
+}
+.cprises .wrapper .changes .row2 .lists .nam .circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 222px;
+}
+.cprises .wrapper .changes .petrols {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.cprises .wrapper .changes .petrols .lists {
+  display: flex;
+  gap: 10px;
+}
+.cprises .wrapper .changes .petrols .lists .name {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  color: #767676;
+  border-radius: 22px;
+  border: 1px solid #767676;
+  cursor: pointer;
+  gap: 5px;
+}
+.cprises .wrapper .changes .petrols .lists .name .circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 222px;
+}
+.cprises .wrapper .changes .petrols .lists .nam {
+  display: flex;
+  align-items: center;
+  background-color: #FBBC05;
+  padding: 10px;
+  color: black;
+  border-radius: 22px;
+  cursor: pointer;
+  gap: 5px;
+}
+.cprises .wrapper .changes .petrols .lists .nam .circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 222px;
+}
+.cprises .wrapper .changes .petrols .plogo {
+  width: 50px;
+  height: 35px;
+  position: relative;
+}
+.cprises .wrapper .changes .petrols .vlogo {
+  width: 80px;
+  height: 35px;
+  position: relative;
+}
+.cprises .wrapper .changes .petrols .clogo {
+  width: 120px;
+  height: 35px;
+  position: relative;
+}
+.cprises .wrapper .changes .petrols .dlogo {
+  width: 40px;
+  height: 35px;
+  position: relative;
+}
+.cprises .wrapper .changes .petrols .list {
+  display: flex;
+  gap: 10px;
+}
+.cprises .wrapper .changes .petrols .list .name {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.cprises .wrapper .changes .petrols .list .name .circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 222px;
+}
+.cprises .wrapper .changes .petrols .petro {
+  display: flex;
+  gap: 10px;
+}
+.cprises .wrapper .changes .petrols .btun {
+  outline: none;
+  cursor: pointer;
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 122px;
+  color: black;
+  border: 1px solid #363636;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.cprises .wrapper .changes .petrols .btuna {
+  outline: none;
+  cursor: pointer;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 122px;
+  background-color: #1D1D1B;
+  border: 1px solid #363636;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.cprises .wrapper .changes .ts {
+  padding: 0px 0px 0px 16px;
+  text-align: left;
+}
+.cprises .wrapper .changes .td {
+  text-align: center;
+  padding: 18px;
+}
+.cprises .wrapper .changes .h2 {
+  color: black;
+}
+.cprises .wrapper .changes .table {
+  width: 75%;
+}
+.cprises .wrapper .changes .table .thead {
+  background-color: #FBBC05;
+  border-radius: 6px !important;
+}
+.cprises .wrapper .changes .table .thead tr .th {
+  padding: 25px 0px 26px 0px;
+  text-align: center;
+}
+.cprises .wrapper .changes .table .thead tr .th .plogo {
+  width: 50px;
+  height: 35px;
+  position: relative;
+}
+.cprises .wrapper .changes .table .hspan {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 16px;
+}
+.cprises .wrapper .changes .table .hspan .vlogo {
+  width: 80px;
+  height: 35px;
+  position: relative;
+}
 .cprises .wrapper .change {
-  width: 95%;
+  background-color: white;
+  padding: 26px 17px;
+  border-radius: 4px;
+  width: 75%;
   display: flex;
   flex-direction: column;
 }
@@ -689,6 +997,12 @@
   margin: 0px 0px 40px 0px;
   justify-content: space-between;
   align-items: center;
+}
+.cprises .wrapper .change .row2 .h {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #28A745;
 }
 .cprises .wrapper .change .row2 .lists {
   display: flex;
@@ -699,11 +1013,28 @@
   align-items: center;
   background-color: white;
   padding: 10px;
+  color: #767676;
   border-radius: 22px;
+  border: 1px solid #767676;
   cursor: pointer;
   gap: 5px;
 }
 .cprises .wrapper .change .row2 .lists .name .circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 222px;
+}
+.cprises .wrapper .change .row2 .lists .nam {
+  display: flex;
+  align-items: center;
+  background-color: #FBBC05;
+  padding: 10px;
+  color: black;
+  border-radius: 22px;
+  cursor: pointer;
+  gap: 5px;
+}
+.cprises .wrapper .change .row2 .lists .nam .circle {
   width: 15px;
   height: 15px;
   border-radius: 222px;
@@ -713,6 +1044,61 @@
   justify-content: space-between;
   gap: 10px;
   margin-bottom: 10px;
+}
+.cprises .wrapper .change .petrols .lists {
+  display: flex;
+  gap: 10px;
+}
+.cprises .wrapper .change .petrols .lists .name {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  color: #767676;
+  border-radius: 22px;
+  border: 1px solid #767676;
+  cursor: pointer;
+  gap: 5px;
+}
+.cprises .wrapper .change .petrols .lists .name .circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 222px;
+}
+.cprises .wrapper .change .petrols .lists .nam {
+  display: flex;
+  align-items: center;
+  background-color: #FBBC05;
+  padding: 10px;
+  color: black;
+  border-radius: 22px;
+  cursor: pointer;
+  gap: 5px;
+}
+.cprises .wrapper .change .petrols .lists .nam .circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 222px;
+}
+.cprises .wrapper .change .petrols .plogo {
+  width: 50px;
+  height: 35px;
+  position: relative;
+}
+.cprises .wrapper .change .petrols .vlogo {
+  width: 80px;
+  height: 35px;
+  position: relative;
+}
+.cprises .wrapper .change .petrols .clogo {
+  width: 120px;
+  height: 35px;
+  position: relative;
+}
+.cprises .wrapper .change .petrols .dlogo {
+  width: 40px;
+  height: 35px;
+  position: relative;
 }
 .cprises .wrapper .change .petrols .list {
   display: flex;
@@ -742,6 +1128,16 @@
   border: 1px solid #363636;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+.cprises .wrapper .change .petrols .btuna {
+  outline: none;
+  cursor: pointer;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 122px;
+  background-color: #1D1D1B;
+  border: 1px solid #363636;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 .cprises .wrapper .change .ts {
   padding: 0px 0px 0px 16px;
   text-align: left;
@@ -751,7 +1147,7 @@
   padding: 18px;
 }
 .cprises .wrapper .change .h2 {
-  color: #1D66FF;
+  color: black;
 }
 .cprises .wrapper .change .table {
   width: 75%;
@@ -801,9 +1197,9 @@
 }
 .footer .wrapper .foot1 .figure {
   cursor: pointer;
-  width: 108px;
+  width: 200px;
   margin: 0px 0px 14px 0px;
-  height: 108px;
+  height: 70px;
   position: relative;
 }
 .footer .wrapper .foot1 .inputbox {
@@ -861,7 +1257,7 @@
 
 .footie {
   display: flex;
-  background-color: #1D66FF;
+  background-color: #28A745;
   justify-content: center;
   padding: 22px 0px 22px 0px;
   margin-top: 18px;
@@ -886,8 +1282,9 @@
 .tcard {
   padding-top: 100px;
   display: flex;
-  width: 60%;
+  width: 75%;
   max-width: 1920px;
+  flex-direction: row-reverse;
   margin: 0 auto;
   justify-content: space-between;
 }
@@ -896,7 +1293,7 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 24px;
-  color: #1D66FF;
+  color: black;
   margin-bottom: 36px;
 }
 .tcard .contain {
@@ -972,4 +1369,13 @@
   width: 500px;
   height: 600px;
   position: relative;
+}
+
+.des {
+  color: #767676;
+  padding: 12px 0px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
 }/*# sourceMappingURL=Home.module.css.map */

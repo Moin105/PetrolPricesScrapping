@@ -19,7 +19,8 @@ console.log("base url",BASE_URL)
       }
     }).then(response =>
       {
-        setData(response.data.splice(-3))
+        setData(response.data)
+        // setData(data.slice(0,1))
         console.log("datta",data)
         // data.slice(-3)
       }
@@ -31,15 +32,45 @@ console.log("base url",BASE_URL)
     <div className={styles.fuel}>
         <div className={styles.wrapper}>
             <div className={styles.tables}>
-                 <h2 className={styles.h2}>Compare Petrol Prices</h2>  
+                 <h2 className={styles.h2}>Latest Fuel prices in Malaysia</h2>  
                  <div className={styles.pcontainer}>
-                   <div className={styles.pbox}>
-                   {data.map(dat =>
+                {data.length != 0 ?   <div className={styles.pbox}>
+                
+
+  <div className={styles.increaserm}>
+ <h3 className={styles.h3}>{ `${data[1].currency}  ${data[1]?.price} Per litre`}</h3>
+  <figure className={styles.figures}>
+  <Image src={increase} alt="logo" layout="fill" objectFit="contain"/>
+  {/* <div className={styles.asb}><p className={styles.ps}>{ data[1].change_in_price.toFixed(2)}</p><p className={styles.ps}>decreased</p></div> */}
+  </figure>
+   <h3 className={styles.h3}>{data[1].title}</h3>
+ </div>  
+ <div className={styles.decreaserm}>
+ <h3 className={styles.h3}>{`${data[1].currency}  ${data[1].price} Per litre`}</h3>
+                            <figure className={styles.figures}>
+                            <Image src={decrease} alt="logo" layout="fill" objectFit="contain"/>
+                            {/* <div className={styles.asb}><p className={styles.ps}>{ data[1].change_in_price.toFixed(2)}</p><p className={styles.ps}>decreased</p></div> */}
+
+                            </figure>
+                          <h3 className={styles.h3}>{data[1].title}</h3>    
+                           </div>
+ <div className={styles.nochangerm}>
+    <h3 className={styles.h3}>Diesel</h3>
+    <figure className={styles.figures}>
+    <Image src={nochange} alt="logo" layout="fill" objectFit="contain"/>
+    {/* <div className={styles.asb}><p className={styles.ps}>unchanged</p></div> */}
+
+    </figure>
+    <h3 className={styles.h3}>{ `${data[4].currency}  ${data[4].price} Per litre`}</h3>
+   </div>
+                  
+                   {/* {data.map(dat =>
                    {
                     
-                    if(dat.change_in_price == 0 ){
+                 
 
-                    return  <div className={styles.nochangerm}>
+                    return <> 
+                    <div className={styles.nochangerm}>
                     <h3 className={styles.h3}>{dat.title}</h3>
                     <figure className={styles.figures}>
                     <Image src={nochange} alt="logo" layout="fill" objectFit="contain"/>
@@ -48,9 +79,8 @@ console.log("base url",BASE_URL)
                     </figure>
                     <h3 className={styles.h3}>{ `${dat.currency}  ${dat.price}`}</h3>
                    </div>
-                   }
-                   else if(dat.change_in_price > 0){   
-                    return       <div className={styles.increaserm}>
+                   
+                      <div className={styles.increaserm}>
                         <h3 className={styles.h3}>{dat.title}</h3>
                         <figure className={styles.figures}>
                         <Image src={increase} alt="logo" layout="fill" objectFit="contain"/>
@@ -60,9 +90,8 @@ console.log("base url",BASE_URL)
                         <h3 className={styles.h3}>{ `${dat.currency}  ${dat.price}`}</h3>
 
                        </div>
-                       }
-                       else if(dat.change_in_price < 0){   
-                        return       <div className={styles.decreaserm}>
+                
+                            <div className={styles.decreaserm}>
                             <h3 className={styles.h3}>{dat.title}</h3>
                             <figure className={styles.figures}>
                             <Image src={decrease} alt="logo" layout="fill" objectFit="contain"/>
@@ -71,11 +100,11 @@ console.log("base url",BASE_URL)
                             </figure>
                             <h3 className={styles.h3}>{`${dat.currency}  ${dat.price}`}</h3>
                            </div>
-                           }
+                           </>
                    }
                    
-                   )  }
-                 </div>
+                   )  } */}
+                 </div>:<div></div>}
                  </div>   
                
             </div>  

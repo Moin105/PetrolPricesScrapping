@@ -124,47 +124,13 @@ function Graph() {
      <div className={styles.cprises} onLoad={() =>{
         fetchGraph()
      }}>
-        <div className={styles.wrapper}>
+        <div className={styles.wrapper} styles={{alignItem:"flex-start"}}>
+          <h2 className={styles.hs}>Petrol Prices in Malaysia</h2> 
             <div className={styles.change}>
+            
               <div className={styles.row2}>
-                 <h2 className={styles.h2}>Fuel Price Trend</h2> 
-                 <div className={styles.lists}>
-  {/* <div className={styles.name}onClick={()=>{  
-    setInputs({
-    //   ...inputs,
-      days : '30'
-    })
-    fetchGraph()
-    }}>
-    <p className={styles.p}>1 month</p>
-  </div>
-  <div className={styles.name}onClick={()=>{  
-                
-    setInputs({
-    //   ...inputs,
-      days : '180'
-    })
-    fetchGraph()
-   console.log("sal",inputs) 
-    }}>
-    <p className={styles.p}>6 months</p>
-  </div>
-  <div className={styles.name}onClick={()=>{                
-    setInputs({
-    //   ...inputs,
-     days : '360'
-    })
-    fetchGraph()
-    console.log("sal",inputs) 
-    }}>
-    <p className={styles.p}>12 months</p>
-  </div> */}
-  </div> 
-              </div>
-                  
-
-               {labels.length != 0   ?  <div>
-<div className={styles.petrols}>
+                 <h2 className={styles.h}>Average Fuel Prices in Malaysia</h2> 
+                 <div className={styles.petrols}>
             {petrol.length != 0 ?    
                 <div className={styles.petro}>
                   {petrol?.map((petro,index) =>{
@@ -192,6 +158,9 @@ function Graph() {
   </div>
   </div>                
 </div>
+              </div>
+               {labels.length != 0   ?  <div>
+
                   <Line
                     datasetIdKey='id'
                     

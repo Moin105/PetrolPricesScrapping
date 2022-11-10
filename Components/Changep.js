@@ -39,22 +39,24 @@ console.log("base url",BASE_URL)
   <thead className={styles.thead}>
     <tr>
       <th className={styles.ts}  style={{borderRadius:"6px 0px 0px 0px"}}><span >Grade</span></th>
-      <th className={styles.th}><span className={styles.hspan}><figure className={styles.plogo}><Image src={caltex} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
       <th className={styles.th}><span className={styles.hspan}><figure className={styles.plogo}><Image src={esso} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
       <th className={styles.th}><span className={styles.hspan}><figure className={styles.plogo}><Image src={shell} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
       <th className={styles.th}><span className={styles.hspan}><figure className={styles.plogo}><Image src={spc} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
+      <th className={styles.th}><span className={styles.hspan}><figure className={styles.plogo}><Image src={caltex} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
       <th className={styles.th}><span className={styles.hspan}><figure className={styles.plogo}><Image src={sa} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-     <td className={styles.ts}><span style={{fontWeight:"600"}}>92</span>
-      </td> {data.map((dat =>{
-        return  <td className={styles.td}>{dat ? dat.motorist_fuel_prices[0].currency + dat.motorist_fuel_prices[0].price.toFixed(2) : "="}
-      </td>
-      }))}  
-     </tr>
-     <tr>
+   
+     {data.map((dat =>{
+        return <tr>  <td className={styles.ts}><span style={{fontWeight:"600"}}>{dat.grade}</span>
+      </td> <td className={styles.td}>{ dat ? dat.motorist_fuel_prices[0].currency + dat.motorist_fuel_prices[0].price.toFixed(2) : "="}</td>
+        <td className={styles.td}>{ dat ? dat.motorist_fuel_prices[0].currency + dat.motorist_fuel_prices[1].price.toFixed(2) : "="}</td>     
+        <td className={styles.td}>{ dat ? dat.motorist_fuel_prices[0].currency + dat.motorist_fuel_prices[2].price.toFixed(2) : "="}</td>
+        <td className={styles.td}>{ dat ? dat.motorist_fuel_prices[0].currency + dat.motorist_fuel_prices[3].price.toFixed(2) : "="}</td>
+        <td className={styles.td}>{ dat ? dat.motorist_fuel_prices[0].currency + dat.motorist_fuel_prices[4].price.toFixed(2) : "="}</td>
+     </tr> }))}  
+     {/* <tr>
      <td className={styles.ts}><span style={{fontWeight:"600"}}>95</span>
       </td> {data.map((dat =>{
         return  <td className={styles.td}>{dat.motorist_fuel_prices[1].currency + dat.motorist_fuel_prices[1].price.toFixed(2)}
@@ -81,7 +83,7 @@ console.log("base url",BASE_URL)
         return  <td className={styles.td}>{dat.motorist_fuel_prices[4].currency + dat.motorist_fuel_prices[4].price.toFixed(2)}
       </td>
       }))}  
-     </tr>
+     </tr> */}
    
   </tbody>
 </table> : <h2>NO DATA FOUND</h2>}

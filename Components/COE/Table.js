@@ -7,82 +7,97 @@ import G3 from '../../public/G3.png'
 import G4 from '../../public/G4.png'
 import G5 from '../../public/G5.png'
 
-function Table() {
-const BASE_URL = "http://128.199.227.15/api/compare_prices_api"
+function Table(props) {
+const BASE_URL = "http://128.199.227.15/api/open_bidding_data_api"
 const [data,setData] = useState([])
+const [inputs ,setInputs] = useState({
+  bidding_number:props.data[0].bidding_number,
+  year:props.data[0].year ,
+  month:props.data[0].month
+})
+const requestOptions = {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify(inputs),
+}; 
     useEffect(() => {
+      console.log("log",props.data)
 console.log("base url",BASE_URL)
-    
-      fetch("http://128.199.227.15/api/compare_prices_api")
+      fetch("http://128.199.227.15/api/open_bidding-api",requestOptions)
       .then(response => {
-        console.log("res",response);
+        console.log("rest",response);
         if(response.status == 200) {            
-            console.log("res",response);
+            console.log("rest",response);
             return response.json();
       }
-    }).then(response =>
-      {
-        setData(response.data)
-        console.log("dasa",data)
-      }
-    )
-    }, [])
+    }).then(response =>{return setData(response.data)})
+    
+    console.log("sad",props)
+    }, [inputs])
     
   return (
     <>
     <div className={styles.controlp}>
         <div className={styles.wrapper}>
             <div className={styles.tables}>
-                 <h2 className={styles.h2}>Compare Petrol Prices</h2>     
+                 <h2 className={styles.h2}>COE Results</h2>     
                  <div className={styles.table}>
 
 {data.length != 0 ? <table className={styles.table} style={{width:"100%", borderCollapse: "collapse;" ,borderRadius:"6px 6px 0px 0px"}}>
   <thead className={styles.thead}>
     <tr>
-      <th className={styles.ts}  style={{borderRadius:"6px 0px 0px 0px"}}><span >Grade</span></th>
-      <th className={styles.th}><span className={styles.hspan}><figure className={styles.plogo}><Image src={G1} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
-      <th className={styles.th}><span className={styles.hspan}><figure className={styles.plogo}><Image src={G2} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
-      <th className={styles.th}><span className={styles.hspan}><figure className={styles.vlogo}><Image src={G3} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
-      <th className={styles.th}><span className={styles.hspan}><figure className={styles.clogo}><Image src={G4} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
-      <th className={styles.th}><span className={styles.hspan}><figure className={styles.plogo}><Image src={G5} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
+      <th className={styles.ts}  style={{borderRadius:"6px 0px 0px 0px"}}><span >COE Category</span></th>
+      <th className={styles.th}><span className={styles.hspan}> <figure className={styles.plogo}><Image src={G1} alt="logo" layout="fill" objectFit="contain"/></figure><p className={styles.p}>Category A</p></span></th>
+      <th className={styles.th}><span className={styles.hspan}> <figure className={styles.plogo}><Image src={G2} alt="logo" layout="fill" objectFit="contain"/></figure><p className={styles.p}>Category B</p></span></th>
+      <th className={styles.th}><span className={styles.hspan}> <figure className={styles.vlogo}><Image src={G3} alt="logo" layout="fill" objectFit="contain"/></figure><p className={styles.p}>Category C</p></span></th>
+      <th className={styles.th}><span className={styles.hspan}> <figure className={styles.dlogo}><Image src={G5} alt="logo" layout="fill" objectFit="contain"/></figure><p className={styles.p}>Category D</p></span></th>
+      <th className={styles.th}><span className={styles.hspan}> <figure className={styles.clogo}><Image src={G4} alt="logo" layout="fill" objectFit="contain"/></figure><p className={styles.p}>Category E</p></span></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-     <td className={styles.ts}><span style={{fontWeight:"600"}}>92</span>
-      </td> {data.map((dat =>{
-        return  <td className={styles.td}>{dat ? dat.motorist_fuel_prices[0].currency + dat.motorist_fuel_prices[0].price.toFixed(2) : "="}
+      <td><p className={styles.des}></p></td>
+      <td><p className={styles.des}>{"Cars < 1600cc &" }<br></br> {"130bhp or 110 kw"}</p></td>
+      <td><p className={styles.des}>{"Cars < 1600cc & "}<br></br>{"130bhp or 110 kw"}</p></td>
+      <td><p className={styles.des}>{"Good vehicle and"}<br></br>{"Bus"}</p></td>
+      <td><p className={styles.des}>{"Motortcycle"}</p></td>
+      <td><p className={styles.des}>{"Open-All except"}<br></br>{"motorcycle"} </p></td>
+    </tr>
+     <tr style={{background:"#F9F9FA"}}>
+     <td className={styles.ts}><span style={{fontWeight:"600" }}>Quota Premium</span>
+      </td> {data?.map((dat =>{
+        return  <td className={styles.td}>{ "$" + dat.QP}
       </td>
       }))}  
      </tr>
-     <tr>
-     <td className={styles.ts}><span style={{fontWeight:"600"}}>95</span>
+    <tr>
+     <td className={styles.ts}><span style={{fontWeight:"600"}}>Change</span>
       </td> {data.map((dat =>{
-        return  <td className={styles.td}>{dat.motorist_fuel_prices[1].currency + dat.motorist_fuel_prices[1].price.toFixed(2)}
+        return  <td className={styles.td}>{dat.change_in_price}
       </td>
       }))}  
      </tr>
-     <tr>
-     <td className={styles.ts}><span style={{fontWeight:"600"}}>98</span>
+      <tr style={{background:"#F9F9FA"}}>
+     <td className={styles.ts}><span style={{fontWeight:"600"}}>Quota</span>
       </td> {data.map((dat =>{
-        return  <td className={styles.td}>{dat.motorist_fuel_prices[2].currency + dat.motorist_fuel_prices[2].price.toFixed(2)}
+        return  <td className={styles.td}>{dat.qouta}
       </td>
       }))}  
      </tr>
-     <tr>
-     <td className={styles.ts}><span style={{fontWeight:"600"}}>Diesel</span>
+   <tr>
+     <td className={styles.ts}><span style={{fontWeight:"600"}}>Bids Recieved</span>
       </td> {data.map((dat =>{
-        return  <td className={styles.td}>{dat.motorist_fuel_prices[3].currency + dat.motorist_fuel_prices[3].price.toFixed(2)}
+        return  <td className={styles.td}>{dat.recieved}
       </td>
       }))}  
      </tr>
-     <tr>
-     <td className={styles.ts}><span style={{fontWeight:"600"}}>Premium</span>
+     <tr style={{background:"#F9F9FA"}}>
+     <td className={styles.ts}><span style={{fontWeight:"600"}}>PQP</span>
       </td> {data.map((dat =>{
-        return  <td className={styles.td}>{dat.motorist_fuel_prices[4].currency + dat.motorist_fuel_prices[4].price.toFixed(2)}
+        return  <td className={styles.td}>{dat.PQP}
       </td>
       }))}  
-     </tr>
+     </tr> 
    
   </tbody>
 </table> : <h2>NO DATA FOUND</h2>}

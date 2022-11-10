@@ -7,14 +7,14 @@ import Cprices from '../Components/Cprices'
 import Footer from '../Components/Footer'
 import Footie from '../Components/Footie'
 
-import Header from '../Components/SHeader'
+import Headers from '../Components/Headers'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
   <>
   <div>
-  <Header/>
+  <Headers/>
   <Banner/>
   </div>
   <ChangeP/>  

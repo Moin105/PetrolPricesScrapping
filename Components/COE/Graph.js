@@ -2,9 +2,29 @@ import React,{useEffect, useState} from 'react'
 import Image from 'next/image'
 import { Chart as ChartJS } from 'chart.js/auto'
 import { Chart }            from 'react-chartjs-2'
-import styles from '../styles/Home.module.css'
+import styles from '../../styles/Home.module.css'
 import { Line, } from 'react-chartjs-2'
-
+import G1 from '../../public/G1.png'
+import G2 from '../../public/G2.png'
+import G3 from '../../public/G3.png'
+import G4 from '../../public/G4.png'
+import G5 from '../../public/G5.png'
+export const options = {
+  responsive: true,
+  
+  plugins: {
+    legend: {
+       display: false
+    }
+ },
+  scales: {
+    x: {
+      grid: {
+        display: false
+      }
+    }
+  },
+};
 
 function Cprices() {
 
@@ -14,7 +34,6 @@ function Cprices() {
     const [p3,setP3] = useState({})
     const [p4,setP4] = useState({})
     const [p5,setP5] = useState({})
-    
   const [active , setActive] = useState(false)
     const [labels , setLabels] = useState({})
     const [petrol ,setPetrol] = useState("")
@@ -25,7 +44,7 @@ function Cprices() {
           data: [65, 59, 80, 81, 56, 55, 40],
           fill: false,
           // borderColor: 'rgb(75, 12, 192)',
-          tension: 0.3
+          tension: 0.1
         },
         {
             label: '98',
@@ -43,37 +62,9 @@ function Cprices() {
           }
     ]
       })
-      var min = chartData[0]?.prices[0]; 
-      var max = 0 ;
-      const options = {
-        responsive: true,
-        
-        plugins: {
-          legend: {
-             display: false
-          }
-       },
-        scales: {
-          x: {
-            ticks: {
-              autoSkip: false,
-              maxRotation: 90,
-              minRotation: 90
-          },
-            grid: {
-              display: false
-            }
-          }
-          ,
-          y: {
-            suggestedMin:2.5 || min,
-            suggestedMax: 3 ||max
-        }
-        },
-      };
+   
      //"https://globaltechnologia.org/petrolium_scraping/api/"
     const [inputs , setInputs] = useState({
-        grade: '92',
         days: '30'
     }) 
       const requestOptions = {
@@ -99,7 +90,8 @@ function Cprices() {
     }
       )
       if(chartData.length != 0) {   
-       
+            var min = chartData[0].prices[0]; 
+            var max = 0 ;
         for (var i = 0 ; i < chartData.length ; i++){
             // console.log("hero",chartData[i].prices) 
           
@@ -108,11 +100,11 @@ function Cprices() {
               
              
               if (max < cur  ){
-        max = cur;
-                console.log("hero max", Math.round(max))
+                max = cur;
+                console.log("hero max", max)
               } if (cur < min){
-              min = cur
-                 console.log("hero min", Math.round(min))
+                 min = cur
+                 console.log("hero min", min)
 
               }
 
@@ -122,10 +114,8 @@ function Cprices() {
             }
           }
         
-          console.log("hero min ====>", Math.ceil(min))
-          console.log("hero max ====>", Math.round(max))
-          console.log("hero max ====>", Math.round(1.2))
-
+          console.log("hero min ====>", min)
+          console.log("hero max ====>", max)
         }
 
     }
@@ -139,7 +129,7 @@ function Cprices() {
      
      
     
-      fetch("http://128.199.227.15/api/motorist_price_graph",requestOptions)
+      fetch("http://128.199.227.15/api/open_bidding_price_graph",requestOptions)
       .then(res => {return res.json();} )
       .then(res=>{
       // console.log("saas",res)
@@ -152,38 +142,7 @@ function Cprices() {
       setP5(res?.data[4]?.prices)
       console.log("saas",res.data)
       // console.log("heroo",chartData)
-      if(chartData.length != 0) {   
-       
-        for (var i = 0 ; i < chartData.length ; i++){
-            // console.log("hero",chartData[i].prices) 
-          
-            for(var j = 0 ; j < chartData[i].prices.length ; j++){
-              var cur = chartData[i].prices[j];
-              
-             
-              if (max < cur  ){
-        max = cur;
-                console.log("hero max", Math.round(max))
-              } if (cur < min){
-              min = cur
-                 console.log("hero min", Math.round(min))
-
-              }
-
-              // console.log("hero min ====>", min)
-              // console.log("hero max ====>", max)
-              console.log("hero",chartData[i].prices[j])
-            }
-          }
-        
-          console.log("hero min ====>", Math.ceil(min))
-          console.log("hero max ====>", Math.round(max))
-          console.log("hero max ====>", Math.round(1.2))
-
-        }
-
     }
-
       )
 
 
@@ -193,13 +152,22 @@ function Cprices() {
   return (
     <>
      <div className={styles.cprises}>
-        <div className={styles.wrapper} style={{flexDirection:"column",alignItems:"flex-start"}}>
-        <h2 className={styles.hs}>Fuel Price Trend</h2>
-            <div className={styles.change}>
+        <div className={styles.wrapper}> 
+        <div className={styles.h2} style={{marginBottom:"40px"}}>COE Price Trend</div>
+           <div className={styles.chr}>
+            <div className={styles.changes}>   
+
               <div className={styles.row2}>
-                 <h2 className={styles.h}>Updated Trend</h2> 
-                 <div className={styles.lists}>
-  {inputs.days == '30'?  <div className={styles.nam}onClick={()=>{                
+                 <h2 className={styles.h}>Latest Trend</h2> 
+           
+              </div>
+                  
+
+               {labels.length != 0 ?  <div>
+
+<div className={styles.petrols}>
+<div className={styles.lists}>
+{inputs.days == '30'?  <div className={styles.nam}onClick={()=>{                
     setInputs({
      days : '30'
     })
@@ -209,7 +177,7 @@ function Cprices() {
    <p className={styles.p}>1 month</p>
   </div> : <div className={styles.name}onClick={()=>{                
     setInputs({
-     ...inputs, 
+ 
      days : '30'
     })
     fetchGraph()
@@ -229,7 +197,6 @@ function Cprices() {
   </div> */}
   {inputs.days == '180'?  <div className={styles.nam}onClick={()=>{                
     setInputs({
-      ...inputs, 
      days : '180'
     })
     fetchGraph()
@@ -238,7 +205,6 @@ function Cprices() {
    <p className={styles.p}>6 months</p>
   </div> : <div className={styles.name}onClick={()=>{                
     setInputs({
-      ...inputs, 
      days : '180'
     })
     fetchGraph()
@@ -248,7 +214,6 @@ function Cprices() {
   </div> }
   {inputs.days == '360'?  <div className={styles.nam}onClick={()=>{                
     setInputs({
-      ...inputs, 
      days : '360'
     })
     fetchGraph()
@@ -257,7 +222,6 @@ function Cprices() {
    <p className={styles.p}>12 months</p>
   </div> : <div className={styles.name}onClick={()=>{                
     setInputs({
-      ...inputs, 
      days : '360'
     })
     fetchGraph()
@@ -265,49 +229,35 @@ function Cprices() {
     }}>
    <p className={styles.p}>12 months</p>
   </div> }
-  </div> 
-              </div>
-                  
-
-               {labels.length != 0 ?  <div>
-<div className={styles.petrols}>
+                 </div>  
             {petrol.length != 0 ?    
                 <div className={styles.petro}>
-                  {petrol?.map((petro,index) =>{
-                  return <>
-                  <div className={styles.petro} onClick={()=>{                 
-    setInputs({
-      ...inputs,
-      grade: petro.grade
-    
-    })
-    fetchGraph()
-    }}>
-                  {inputs.grade == petro.grade ?  <button className={styles.btuna} key={index}><p>{petro.grade}</p></button> : <button className={styles.btun} key={index}><p>{petro.grade}</p></button> }
-                  </div>
-                  </>
-                } )}</div> : <div></div>}
+                </div> : <div></div>}
+                
 
 <div className={styles.list}>
   <div className={styles.name}>
     <div className={styles.circle} style={{backgroundColor:"rgb(40,167,69)"}}></div>
-    <p className={styles.p}>Sinopec</p>
+    <p className={styles.p}><figure className={styles.plogo}><Image src={G1} alt="logo" layout="fill" objectFit="contain"/></figure></p>
   </div>
   <div className={styles.name}>
     <div className={styles.circle} style={{backgroundColor:"rgb(251,188,5)"}}></div>
-    <p className={styles.p}>Shell</p>
+    <p className={styles.p}><figure className={styles.plogo}><Image src={G2} alt="logo" layout="fill" objectFit="contain"/></figure>
+</p>
   </div>
   <div className={styles.name}>
     <div className={styles.circle} style={{backgroundColor:"rgb(0,173,238)"}}></div>
-    <p className={styles.p}>Caltex</p>
+    <p className={styles.p}><figure className={styles.vlogo}><Image src={G3} alt="logo" layout="fill" objectFit="contain"/></figure></p>
   </div>
   <div className={styles.name}>
     <div className={styles.circle} style={{backgroundColor:"rgb(29,102,255)"}}></div>
-    <p className={styles.p}>Esso</p>
+    <p className={styles.p}><figure className={styles.dlogo}><Image src={G5} alt="logo" layout="fill" objectFit="contain"/></figure>
+</p>
   </div>
   <div className={styles.name}>
     <div className={styles.circle} style={{backgroundColor:"rgb(231,45,69)"}}></div>
-    <p className={styles.p}>Spc</p>
+    <p className={styles.p}><figure className={styles.clogo}><Image src={G4} alt="logo" layout="fill" objectFit="contain"/></figure>
+</p>
   </div>
   </div>                
 </div>
@@ -355,6 +305,7 @@ function Cprices() {
                   }} options={options}/>
                  </div> : <></> }
             </div>  
+            </div> 
         </div>
      </div>
     </>
