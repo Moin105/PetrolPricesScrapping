@@ -65,10 +65,10 @@ function Cprices(base) {
             }
           }
           ,
-          y: {
-            suggestedMin:2.5 ,
-            suggestedMax: 3 
-        }
+        //   y: {
+        //     suggestedMin:2.5 ,
+        //     suggestedMax: 3 
+        // }
         },
       };
      //"https://globaltechnologia.org/petrolium_scraping/api/"
