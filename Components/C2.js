@@ -7,14 +7,14 @@ import nochange from '../public/unchanged.png'
 import spc from '../public/spc.png'
 import sa from '../public/sa.png'
 
-function C2() {
+function C2(base) {
 const BASE_URL = "http://128.199.227.15/api/compare_prices_api"
 const [data,setData] = useState([])
 const [state ,setState] = useState(0)
     useEffect(() => {
 console.log("base url",BASE_URL)
       // fetch("http://128.199.227.15/api/compare_prices_api")
-      fetch("http://128.199.227.15/api/compare_prices_api")
+      fetch(base +"api/compare_prices_api")
       .then(response => {
         console.log("res",response);
         if(response.status == 200) {            

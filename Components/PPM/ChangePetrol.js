@@ -5,12 +5,12 @@ import increase from '../../public/rmi.png'
 import decrease from '../../public/rmd.png'
 import nochange from '../../public/rm.png'
 //  const data = {"status":"200","data":[{"id":151,"type":"PETROL","title":"RON 95","price":2.05,"currency":"RM","change_in_price":0,"created_at":"2022-10-25T11:15:46.000000Z","updated_at":"2022-10-25T11:15:46.000000Z"},{"id":152,"type":"PETROL","title":"RON 97","price":3.95,"currency":"RM","change_in_price":0,"created_at":"2022-10-25T11:15:46.000000Z","updated_at":"2022-10-25T11:15:46.000000Z"},{"id":153,"type":"PETROL","title":"RON 100","price":4.7,"currency":"RM","change_in_price":0,"created_at":"2022-10-25T11:15:46.000000Z","updated_at":"2022-10-25T11:15:46.000000Z"},{"id":154,"type":"PETROL","title":"VPR","price":5.7,"currency":"RM","change_in_price":0,"created_at":"2022-10-25T11:15:46.000000Z","updated_at":"2022-10-25T11:15:46.000000Z"},{"id":155,"type":"DIESEL","title":"EURO 5 B10","price":2.15,"currency":"RM","change_in_price":0,"created_at":"2022-10-25T11:15:46.000000Z","updated_at":"2022-10-25T11:15:46.000000Z"},{"id":156,"type":"DIESEL","title":"EURO 5 B7","price":2.35,"currency":"RM","change_in_price":0,"created_at":"2022-10-25T11:15:46.000000Z","updated_at":"2022-10-25T11:15:46.000000Z"}]}
-function ChangePetrol() {
+function ChangePetrol(base) {
 const BASE_URL = "http://128.199.227.15/api/malaysian_fuel_api"
 const [data,setData] = useState([])
     useEffect(() => {
 console.log("base url",BASE_URL)
-      fetch("http://128.199.227.15/api/malaysian_fuel_api")
+      fetch( base+ "api/malaysian_fuel_api")
       .then(response => {
         console.log("res",response);
         if(response.status == 200) {            

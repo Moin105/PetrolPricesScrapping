@@ -9,7 +9,7 @@ import Header from '../Components/Header'
 import styles from '../styles/Home.module.css'
 import Graph from '../Components/COE/Graph'
 import Table from '../Components/COE/Table'
-
+ const base ='https://admin.extramiless.com/'
 export default function COEPrices() {
   const [data,setData] = useState({})
   const [month ,setMonth] = useState("")
@@ -32,8 +32,8 @@ export default function COEPrices() {
   <Header/>
   <Banners img={ban5}/>
   </div>
-  {data.length  > 0 ?<Table data={data} month={month} year={year} bidding={bidding} /> : null}
-  <Graph/>
+  {data.length  > 0 ?<Table data={data} month={month} year={year} bidding={bidding} base={base}/> : null}
+  <Graph  base={base}/>
   <Footer/>
   <Footie/>
   </>

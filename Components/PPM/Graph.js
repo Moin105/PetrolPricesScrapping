@@ -22,7 +22,7 @@ export const options = {
   },
 };
 
-function Graph() {
+function Graph(base) {
 
     const BASE_URL = "http://128.199.227.15/api/malaysian_price_graph"
     const [p1,setP1] = useState({})
@@ -71,7 +71,7 @@ function Graph() {
         body: JSON.stringify(inputs),
       }; 
      const fetchGraph = useCallback(() =>{
-      fetch("http://128.199.227.15/api/malaysian_price_graph")
+      fetch(base + "api/malaysian_price_graph")
       .then(res => {return res.json();} )
       .then(res=>{
       // console.log("saas",res)
@@ -85,7 +85,7 @@ function Graph() {
     },[inputs.grade_id])
     useEffect(()=>{   
      
-    fetch("http://128.199.227.15/api/grades").then(res => {return res.json()}).then(
+    fetch( base+"api/grades").then(res => {return res.json()}).then(
     res =>  {
     setPetrol(res.grades)
     setInputs({

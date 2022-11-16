@@ -6,7 +6,7 @@ import styles from '../styles/Home.module.css'
 import { Line, } from 'react-chartjs-2'
 
 
-function Cprices() {
+function Cprices(base) {
 
     const BASE_URL = "http://128.199.227.15/api/price_graph"
     const [p1,setP1] = useState({})
@@ -82,7 +82,7 @@ function Cprices() {
         body: JSON.stringify(inputs),
       }; 
      const fetchGraph = () =>{
-      fetch("http://128.199.227.15/api/motorist_price_graph",requestOptions)
+      fetch( base+"api/motorist_price_graph",requestOptions)
       .then(res => {return res.json();} )
       .then(res=>{
       // console.log("saas",res)
@@ -130,7 +130,7 @@ function Cprices() {
 
     }
     useEffect(()=>{   
-    fetch("http://128.199.227.15/api/grades").then(res => {return res.json()}).then(
+    fetch( base+"api/grades").then(res => {return res.json()}).then(
     res =>  {console.log("sab bhula kayy", res.grades)
     setPetrol(res.grades)
     console.log("cpmsad", inputs.grade_id)
@@ -139,7 +139,7 @@ function Cprices() {
      
      
     
-      fetch("http://128.199.227.15/api/motorist_price_graph",requestOptions)
+      fetch(base+"api/motorist_price_graph",requestOptions)
       .then(res => {return res.json();} )
       .then(res=>{
       // console.log("saas",res)

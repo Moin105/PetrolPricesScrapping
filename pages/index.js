@@ -10,6 +10,7 @@ import Footie from '../Components/Footie'
 import Headers from '../Components/Headers'
 import styles from '../styles/Home.module.css'
 
+ const base ='https://admin.extramiless.com/'
 export default function Home() {
   return (
   <>
@@ -17,9 +18,9 @@ export default function Home() {
   <Headers/>
   <Banner/>
   </div>
-  <ChangeP/>  
-  <C2/>
-  <Cprices/>
+  <ChangeP base={base}/>  
+  <C2  base={base}/>
+  <Cprices  base={base}/>
 
   <Footer/>
   <Footie/>

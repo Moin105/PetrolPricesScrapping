@@ -7,12 +7,12 @@ import caltex from '../public/caltex.png'
 import spc from '../public/spc.png'
 import sa from '../public/sa.png'
 
-function ChangeP() {
+function ChangeP(base) {
 const BASE_URL = "http://128.199.227.15/api/compare_prices_api"
 const [data,setData] = useState([])
     useEffect(() => {
 console.log("base url",BASE_URL)
-      fetch("http://128.199.227.15/api/compare_prices_api")
+      fetch( base +"api/compare_prices_api")
       .then(response => {
         console.log("res",response);
         if(response.status == 200) {            

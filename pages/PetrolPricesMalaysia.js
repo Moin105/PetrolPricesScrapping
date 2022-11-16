@@ -9,6 +9,7 @@ import Header from '../Components/Header'
 import styles from '../styles/Home.module.css'
 import ChangePetrol from '../Components/PPM/ChangePetrol'
 import Graph from '../Components/PPM/Graph'
+const base ='https://admin.extramiless.com/'
 
 export default function PetrolPricesMalaysia() {
   return (
@@ -17,8 +18,8 @@ export default function PetrolPricesMalaysia() {
   <Header/>
   <SBanner img={ban2} text="Compare petrol prices from all the leading petrol pumps in Malaysia. "/>
   </div>
-  <ChangePetrol/>
-  <Graph/>
+  <ChangePetrol base={base}/>
+  <Graph base={base}/>
   <Footer/>
   <Footie/>
   </>

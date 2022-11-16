@@ -3,10 +3,10 @@ import styles from '../../styles/Home.module.css'
 import Image from 'next/image'
 
 
-function Traffic() {
+function Traffic(base) {
     const [images,setImages]=useState([])
     useEffect(() => {
-    fetch("http://128.199.227.15/api/traffic_images_api")
+    fetch( base+"api/traffic_images_api")
     .then(res => {return res.json();} )
     .then(res => setImages(res.data))
     console.log("traffice",images )

@@ -8,14 +8,14 @@ import spc from '../../public/spc.png'
 import sa from '../../public/sa.png'
 import Modal from './Modal'
 
-function CarParking() {
+function CarParking(base) {
   const [show ,setShow] = useState(false)
   const [mdata,setMdata] = useState([])
 const BASE_URL = "http://128.199.227.15/api/car_parking_singapur_api"
 const [data,setData] = useState([])
     useEffect(() => {
 console.log("base url",BASE_URL)
-      fetch("http://192.168.18.101/api/car_parking_singapur_api")
+      fetch( base + "api/car_parking_singapur_api")
       .then(response => {
         console.log("res",response);
         if(response.status == 200) {            

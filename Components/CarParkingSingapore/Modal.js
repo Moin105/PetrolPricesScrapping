@@ -26,7 +26,7 @@ if(point.car_parking_days_prices.length != 0){
          if (days != point?.car_parking_days_prices[i].days ){
             
             days = point?.car_parking_days_prices[i]?.days;
-            setHead(prevValue =>[...prevValue,days])
+            setHead(prevValue =>[...prevValue,{days}])
             timing = point?.car_parking_days_prices[i]?.timing;
             price = point?.car_parking_days_prices[i]?.price;
             console.log("monday ==>" ,head)
@@ -142,7 +142,7 @@ if(point.car_parking_days_prices.length != 0){
     //             }else if(table.days.includes("Mondays to Thursday")){
     //                 return     <div className={styles.timetable}>
     //                 <div className={styles.days}><h3 className={styles.h3}>{table.days}</h3></div>
-    //                 </div>
+    //                 </div
     //             }else if(table.days.includes("Season Parking For Cars")){
     //                 return     <div className={styles.timetable}>
     //                 <div className={styles.days}><h3 className={styles.h3}>{table.days}</h3></div>
