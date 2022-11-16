@@ -6,7 +6,7 @@ import Image from 'next/image'
 function Traffic(base) {
     const [images,setImages]=useState([])
     useEffect(() => {
-    fetch( base+"api/traffic_images_api")
+    fetch('https://admin.extramiless.com/api/traffic_images_api')
     .then(res => {return res.json();} )
     .then(res => setImages(res.data))
     console.log("traffice",images )

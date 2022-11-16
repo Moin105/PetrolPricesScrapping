@@ -7,7 +7,7 @@ import ban4 from '../public/ban4.png'
 import Header from '../Components/Header'
 import styles from '../styles/Home.module.css'
 import CarParking from '../Components/CarParkingSingapore/CarParking'
-const base=''
+const base='https://admin.extramiless.com/'
 export default function CarParkingSG() {
   return (
   <>

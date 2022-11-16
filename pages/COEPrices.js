@@ -16,7 +16,7 @@ export default function COEPrices() {
   const [year ,setYear ] = useState("")
   const [bidding,setBidding] = useState("")
   useEffect(() => {
-    fetch("http://128.199.227.15/api/open_bidding_data_api").then(res =>{if(res.status == 200) return res.json()}).then(res =>{
+    fetch("https://admin.extramiless.com/api/open_bidding_data_api").then(res =>{if(res.status == 200) return res.json()}).then(res =>{
      setData( res.data);
      console.log("das",data)
      setMonth(data[0]?.month)

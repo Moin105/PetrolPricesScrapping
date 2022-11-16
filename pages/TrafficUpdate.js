@@ -7,10 +7,11 @@ import ban3 from '../public/ban3.png'
 import Header from '../Components/Header'
 import styles from '../styles/Home.module.css'
 import Traffic from '../Components/TrafficUpdate/Traffic'
-base='https://admin.extramiless.com/'
+
 
 
 export default function TrafficUpdate() {
+  const base = `https://admin.extramiless.com/`
   return (
   <>
   <div>

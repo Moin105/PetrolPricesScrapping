@@ -130,7 +130,7 @@ function Cprices(base) {
 
     }
     useEffect(()=>{   
-    fetch( base+"api/grades").then(res => {return res.json()}).then(
+    fetch("https://admin.extramiless.com/api/grades").then(res => {return res.json()}).then(
     res =>  {console.log("sab bhula kayy", res.grades)
     setPetrol(res.grades)
     console.log("cpmsad", inputs.grade_id)
@@ -139,7 +139,7 @@ function Cprices(base) {
      
      
     
-      fetch(base+"api/motorist_price_graph",requestOptions)
+      fetch("https://admin.extramiless.com/api/motorist_price_graph",requestOptions)
       .then(res => {return res.json();} )
       .then(res=>{
       // console.log("saas",res)

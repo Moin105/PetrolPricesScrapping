@@ -73,7 +73,7 @@ function Cprices(base) {
         body: JSON.stringify(inputs),
       }; 
      const fetchGraph = () =>{
-      fetch(base + "api/motorist_price_graph",requestOptions)
+      fetch("https://admin.extramiless.com/api/motorist_price_graph",requestOptions)
       .then(res => {return res.json();} )
       .then(res=>{
       // console.log("saas",res)
