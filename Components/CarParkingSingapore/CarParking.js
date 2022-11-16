@@ -6,8 +6,11 @@ import esso from '../../public/esso.png'
 import caltex from '../../public/caltex.png'
 import spc from '../../public/spc.png'
 import sa from '../../public/sa.png'
+import Modal from './Modal'
 
 function CarParking() {
+  const [show ,setShow] = useState(false)
+  const [mdata,setMdata] = useState([])
 const BASE_URL = "http://128.199.227.15/api/car_parking_singapur_api"
 const [data,setData] = useState([])
     useEffect(() => {
@@ -22,7 +25,7 @@ console.log("base url",BASE_URL)
     }).then(response =>
       {
         setData(response.data)
-        console.log("car parkin",data)
+        console.log("monday",data)
       }
     )
     }, [])
@@ -38,7 +41,13 @@ console.log("base url",BASE_URL)
                       <div className={styles.container}>
                         {
                             data.map(point =>{
-                                return  <div className={styles.cell} onClick={()=>{console.log("bhains",point.name)}}>{point.name}</div>
+                                return  <div className={styles.cell} onClick={()=>{
+                                  setShow(true)
+                                  setMdata(point)
+                                  ;console.log("bhains",point)}}>
+                                  <p className={styles.p}>{point.name}</p>
+                             
+                                </div>
                             })
                         }
                       </div>
@@ -46,7 +55,7 @@ console.log("base url",BASE_URL)
                
             </div>  
         </div>
-   
+        {show == true && <Modal point={mdata} setShow={setShow} />}
     </div>
     </>
   )

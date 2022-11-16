@@ -153,7 +153,8 @@ function Cprices() {
     <>
      <div className={styles.cprises}>
         <div className={styles.wrapper}> 
-        <div className={styles.h2} style={{marginBottom:"40px"}}>COE Price Trend</div>
+       <div className={styles.coe}>
+       <div className={styles.h2} style={{marginBottom:"40px"}}>COE Price Trend</div>
            <div className={styles.chr}>
             <div className={styles.changes}>   
 
@@ -306,6 +307,7 @@ function Cprices() {
                  </div> : <></> }
             </div>  
             </div> 
+       </div>
         </div>
      </div>
     </>

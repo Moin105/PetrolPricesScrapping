@@ -7,7 +7,7 @@ function Banners({img}) {
   return (
     <div className={styles.banners}>
         <figure className={styles.figure}>
-        <Image src={img} alt="banner" layout="fill" width={100} objectFit="contain"/>
+        <Image src={img} alt="banner" layout="fill" width={100} objectFit="cover"/>
         </figure>
     </div>
   )

@@ -234,6 +234,7 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  align-items: center;
   align-self: flex-end;
   border-radius: 9px;
   background: rgb(255, 255, 255);
@@ -253,6 +254,7 @@
   position: relative;
 }
 .banner .wrapper .content .right .b2 .p {
+  line-height: 16px;
   color: black;
 }
 
@@ -755,6 +757,288 @@
   line-height: 18px;
   text-align: center;
 }
+.fuel .wrapper .pboxs {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+.fuel .wrapper .pboxs .nochange {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.fuel .wrapper .pboxs .nochange .figures {
+  width: 248px;
+  height: 390px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.fuel .wrapper .pboxs .nochange .figures .asb {
+  bottom: 95px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+.fuel .wrapper .pboxs .nochange .figures .asb .ps {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+}
+.fuel .wrapper .pboxs .nochange .figure {
+  width: 183.86px;
+  height: 287.72px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.fuel .wrapper .pboxs .nochange .figure .asb {
+  bottom: 95px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+.fuel .wrapper .pboxs .nochange .figure .asb .ps {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+}
+.fuel .wrapper .pboxs .increase {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 10px;
+}
+.fuel .wrapper .pboxs .increase .figures {
+  width: 248px;
+  height: 390px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.fuel .wrapper .pboxs .increase .figures .asb {
+  bottom: 95px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+.fuel .wrapper .pboxs .increase .figures .asb .ps {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+}
+.fuel .wrapper .pboxs .increase .figure {
+  width: 183.86px;
+  height: 287.72px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.fuel .wrapper .pboxs .increase .figure .asb {
+  bottom: 155px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+.fuel .wrapper .pboxs .increase .figure .asb .ps {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+}
+.fuel .wrapper .pboxs .decrease {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 35px 0px 0px 0px;
+  gap: 10px;
+}
+.fuel .wrapper .pboxs .decrease .figures {
+  width: 248px;
+  height: 390px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.fuel .wrapper .pboxs .decrease .figures .asb {
+  bottom: 115px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+.fuel .wrapper .pboxs .decrease .figures .asb .ps {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+}
+.fuel .wrapper .pboxs .decrease .figure {
+  width: 183.86px;
+  height: 287.72px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.fuel .wrapper .pboxs .decrease .figure .asb {
+  bottom: 108px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+.fuel .wrapper .pboxs .decrease .figure .asb .ps {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+}
+.fuel .wrapper .pboxs .nochangerm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.fuel .wrapper .pboxs .nochangerm .figures {
+  width: 248px;
+  height: 390px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.fuel .wrapper .pboxs .nochangerm .figures .asb {
+  bottom: 125px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+.fuel .wrapper .pboxs .nochangerm .figures .asb .ps {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+}
+.fuel .wrapper .pboxs .nochangerm .figure {
+  width: 183.86px;
+  height: 287.72px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.fuel .wrapper .pboxs .nochangerm .figure .asb {
+  bottom: 95px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+.fuel .wrapper .pboxs .nochangerm .figure .asb .ps {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+}
+.fuel .wrapper .pboxs .increaserm {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 10px;
+}
+.fuel .wrapper .pboxs .increaserm .figures {
+  width: 248px;
+  height: 390px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.fuel .wrapper .pboxs .increaserm .figures .asb {
+  bottom: 225px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+.fuel .wrapper .pboxs .increaserm .figures .asb .ps {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+}
+.fuel .wrapper .pboxs .increaserm .figure {
+  width: 183.86px;
+  height: 287.72px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.fuel .wrapper .pboxs .increaserm .figure .asb {
+  bottom: 95px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+.fuel .wrapper .pboxs .increaserm .figure .asb .ps {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+}
+.fuel .wrapper .pboxs .decreaserm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.fuel .wrapper .pboxs .decreaserm .figures {
+  width: 248px;
+  height: 390px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.fuel .wrapper .pboxs .decreaserm .figures .asb {
+  bottom: 140px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+.fuel .wrapper .pboxs .decreaserm .figures .asb .ps {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+}
+.fuel .wrapper .pboxs .decreaserm .figure {
+  width: 183.86px;
+  height: 287.72px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.fuel .wrapper .pboxs .decreaserm .figure .asb {
+  bottom: 95px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+.fuel .wrapper .pboxs .decreaserm .figure .asb .ps {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+}
 
 .cprises {
   width: 100%;
@@ -762,6 +1046,24 @@
   justify-content: center;
   background-color: rgba(0, 171, 65, 0.1);
   align-items: center;
+}
+.cprises .extramile {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+}
+.cprises .mfp {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+}
+.cprises .wrapper {
+  align-items: center;
+}
+.cprises .coe {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
 }
 .cprises .chr {
   padding: 38px;
@@ -772,7 +1074,7 @@
 .cprises .wrapper {
   padding: 100px 0px;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 .cprises .wrapper .hs {
   font-style: normal;
@@ -1187,7 +1489,13 @@
   padding: 100px 0px 40px 0px;
 }
 .footer .wrapper {
+  align-items: center;
+  justify-content: center;
+}
+.footer .wrapper .foots {
   justify-content: space-between;
+  display: flex;
+  width: 95%;
   align-items: center;
 }
 .footer .wrapper .foot1 {
@@ -1378,4 +1686,4739 @@
   font-size: 14px;
   line-height: 16px;
   text-align: center;
+}
+
+.modals {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 65%;
+  max-width: 1316px;
+  max-height: 904px;
+  padding: 2em;
+  font-size: 28px;
+  min-width: 20em;
+  max-width: 70%;
+  z-index: 111111111111111100000000000000;
+  color: black;
+  background-color: #fff;
+  border-radius: 1em;
+  transform: translate(-50%, -50%);
+  outline: transparent;
+}
+
+.overlays {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 111111111111111120;
+}
+
+.map {
+  width: 100%;
+  height: 50%;
+}
+
+.timetable {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.timetable .days {
+  background: #FBBC05;
+  display: flex;
+  justify-content: center;
+}
+.timetable .days .h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 16px;
+  margin: 19px 0px;
+}
+.timetable .timecontainer {
+  display: flex;
+}
+.timetable .timecontainer .ron {
+  width: 50%;
+  border-left: 1px solid #C2C9D1;
+  border-bottom: 1px solid #C2C9D1;
+  border-right: 1px solid #C2C9D1;
+}
+.timetable .timecontainer .ron .p {
+  font-size: 16px;
+  line-height: 16px;
+  padding: 19px 16px;
+}
+
+@media only screen and (max-width: 1550px) {
+  .hp {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18x;
+  }
+  .p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 5px;
+  }
+  .h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: black;
+  }
+  .h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .wrapper {
+    max-width: 1550px;
+    width: calc(100% - 120px);
+    display: flex;
+    justify-content: center;
+  }
+  .header {
+    display: flex;
+    padding: 25px 0px 23px 0px;
+    max-width: 1550px;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+  }
+  .header .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1550px;
+    width: calc(100% - 180px);
+  }
+  .header .wrap .blogo {
+    width: 202px;
+    cursor: pointer;
+    height: 65px;
+    position: relative;
+  }
+  .header .wrap .logo {
+    width: 155px;
+    cursor: pointer;
+    height: 60px;
+    position: relative;
+  }
+  .header .wrap .ul {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+  }
+  .header .wrap .ul .li {
+    color: black;
+    cursor: pointer;
+  }
+  .header .wrap .ul :hover {
+    font-weight: 700;
+    color: #28A745;
+  }
+  .headers {
+    display: flex;
+    padding: 25px 0px 23px 0px;
+    max-width: 1550px;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+  }
+  .headers .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1550px;
+    width: calc(100% - 180px);
+  }
+  .headers .wrap .blogo {
+    width: 202px;
+    cursor: pointer;
+    height: 65px;
+    position: relative;
+  }
+  .headers .wrap .logo {
+    width: 155px;
+    cursor: pointer;
+    height: 60px;
+    position: relative;
+  }
+  .headers .wrap .ul {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+  }
+  .headers .wrap .ul .li {
+    color: black;
+    cursor: pointer;
+  }
+  .headers .wrap .ul :hover {
+    font-weight: 700;
+    color: #28A745;
+  }
+  .banners .figure {
+    width: 100%;
+    height: 374px;
+    position: relative;
+  }
+  .banner {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    max-height: 585px;
+    z-index: -11111111111111;
+  }
+  .banner .figure {
+    width: 100%;
+    height: 585px;
+    position: absolute;
+    top: 0;
+    z-index: -1111;
+  }
+  .banner .wrapper {
+    position: relative;
+    align-items: center;
+  }
+  .banner .wrapper .content {
+    gap: 25px;
+    justify-content: flex-start;
+    height: 475px;
+    align-items: center;
+    display: flex;
+    width: 95%;
+  }
+  .banner .wrapper .content .left {
+    width: 36%;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+  }
+  .banner .wrapper .content .left .h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 50px;
+    color: black;
+  }
+  .banner .wrapper .content .left .button {
+    border: none;
+    outline: none;
+    background-color: #FBBC05;
+    color: black;
+    font-style: normal;
+    font-weight: 400;
+    padding: 14px 73px;
+    font-size: 20px;
+    cursor: pointer;
+    line-height: 30px;
+    border-radius: 100px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .banner .wrapper .content .right {
+    width: 21%;
+    display: flex;
+    flex-direction: column;
+    margin: -125px 0px 0px 0px;
+    gap: 30px;
+  }
+  .banner .wrapper .content .right .b1 {
+    display: flex;
+    padding: 8px 14px 8px 12px;
+    gap: 10px;
+    align-items: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 9px;
+    background: rgb(255, 255, 255);
+  }
+  .banner .wrapper .content .right .b1 .box {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner .wrapper .content .right .b1 .box .box1 {
+    width: 28px;
+    height: 31px;
+    position: relative;
+  }
+  .banner .wrapper .content .right .b1 .p {
+    line-height: 12px;
+    color: black;
+  }
+  .banner .wrapper .content .right .b2 {
+    display: flex;
+    padding: 8px 14px 8px 12px;
+    gap: 10px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    align-self: flex-end;
+    border-radius: 9px;
+    background: rgb(255, 255, 255);
+  }
+  .banner .wrapper .content .right .b2 .box {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner .wrapper .content .right .b2 .box .box1 {
+    width: 28px;
+    height: 31px;
+    position: relative;
+  }
+  .banner .wrapper .content .right .b2 .p {
+    line-height: 12px;
+    color: black;
+  }
+  .sbanner {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    position: relative;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    max-height: 410px;
+    z-index: -11111111111111;
+  }
+  .sbanner .figure {
+    width: 100%;
+    height: 410px;
+    position: relative;
+    top: 0;
+    z-index: -1111;
+    position: absolute;
+  }
+  .sbanner .wrapper {
+    position: relative;
+    align-items: center;
+  }
+  .sbanner .wrapper .content {
+    gap: 25px;
+    justify-content: flex-start;
+    height: 410px;
+    align-items: center;
+    display: flex;
+    width: 95%;
+  }
+  .sbanner .wrapper .content .left {
+    width: 40%;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+  }
+  .sbanner .wrapper .content .left .h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    color: white;
+  }
+  .controlp {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .controlp .wrapper {
+    padding: 60px 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .controlp .wrapper .citi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+  }
+  .controlp .wrapper .citi .tabs {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+  }
+  .controlp .wrapper .citi .tabs .tableheading {
+    padding: 20px 0px 19px 18px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    background-color: #FBBC05;
+    border-radius: 6px 6px 0px 0px;
+    color: black;
+  }
+  .controlp .wrapper .citi .tabs .container {
+    -moz-columns: 4 auto;
+         columns: 4 auto;
+  }
+  .controlp .wrapper .citi .tabs .container .cell {
+    margin-bottom: 10px;
+    padding: 12px 16px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 1px solid rgba(149, 157, 165, 0.2);
+  }
+  .controlp .wrapper .tables {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+  }
+  .controlp .wrapper .tables .table {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 6px 6px 0px 0px;
+    border-collapse: collapse !important;
+    border: none !important;
+    border-spacing: 0px !important;
+  }
+  .controlp .wrapper .tables .ts {
+    padding: 0px 0px 0px 16px;
+    text-align: left;
+  }
+  .controlp .wrapper .tables .td {
+    text-align: center;
+    padding: 12px;
+  }
+  .controlp .wrapper .tables .h2 {
+    color: black;
+    margin: 0px 0px 30px 0px;
+  }
+  .controlp .wrapper .tables .table {
+    width: 75%;
+  }
+  .controlp .wrapper .tables .table .thead {
+    background-color: #FBBC05;
+    border-radius: 6px !important;
+  }
+  .controlp .wrapper .tables .table .thead tr .th {
+    padding: 14px 0px 16px 0px;
+    text-align: center;
+  }
+  .controlp .wrapper .tables .table .thead tr .th .plogo {
+    width: 35px;
+    height: 35px;
+    position: relative;
+  }
+  .controlp .wrapper .tables .table .thead tr .th .vlogo {
+    width: 55px;
+    height: 35px;
+    position: relative;
+  }
+  .controlp .wrapper .tables .table .thead tr .th .clogo {
+    width: 95px;
+    height: 35px;
+    position: relative;
+  }
+  .controlp .wrapper .tables .table .thead tr .th .dlogo {
+    width: 30px;
+    height: 35px;
+    position: relative;
+  }
+  .controlp .wrapper .tables .table .hspan {
+    font-family: "Poppins";
+    font-style: normal;
+    align-items: center;
+    font-weight: 500;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .fuel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fuel .wrapper {
+    padding: 30px 0px 60px 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fuel .wrapper .tables {
+    justify-content: space-between;
+    width: 95%;
+  }
+  .fuel .wrapper .tables .row2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin: 0px 0px 40px 0px;
+  }
+  .fuel .wrapper .tables .lists {
+    display: flex;
+    gap: 10px;
+  }
+  .fuel .wrapper .tables .lists .name {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    color: #767676;
+    border-radius: 22px;
+    border: 1px solid #767676;
+    cursor: pointer;
+    gap: 5px;
+  }
+  .fuel .wrapper .tables .lists .name .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .fuel .wrapper .tables .lists .nam {
+    display: flex;
+    align-items: center;
+    background-color: #FBBC05;
+    padding: 10px;
+    color: black;
+    border-radius: 22px;
+    cursor: pointer;
+    gap: 5px;
+  }
+  .fuel .wrapper .tables .lists .nam .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .fuel .wrapper .tables .h2 {
+    margin-bottom: 40px;
+    color: black;
+  }
+  .fuel .wrapper .pbox {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+  }
+  .fuel .wrapper .pbox .nochange {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .fuel .wrapper .pbox .nochange .figures {
+    width: 248px;
+    height: 390px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .nochange .figures .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .nochange .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .nochange .figure {
+    width: 183.86px;
+    height: 287.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .nochange .figure .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .nochange .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .increase {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
+  }
+  .fuel .wrapper .pbox .increase .figures {
+    width: 248px;
+    height: 390px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .increase .figures .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .increase .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .increase .figure {
+    width: 183.86px;
+    height: 287.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .increase .figure .asb {
+    bottom: 155px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .increase .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .decrease {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px 0px 0px 0px;
+    gap: 10px;
+  }
+  .fuel .wrapper .pbox .decrease .figures {
+    width: 248px;
+    height: 390px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .decrease .figures .asb {
+    bottom: 115px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .decrease .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .decrease .figure {
+    width: 183.86px;
+    height: 287.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .decrease .figure .asb {
+    bottom: 108px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .decrease .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .nochangerm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .fuel .wrapper .pbox .nochangerm .figures {
+    width: 210px;
+    height: 330px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .nochangerm .figures .asb {
+    bottom: 125px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .nochangerm .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .nochangerm .figure {
+    width: 183.86px;
+    height: 287.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .nochangerm .figure .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .nochangerm .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .increaserm {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
+  }
+  .fuel .wrapper .pbox .increaserm .figures {
+    width: 210px;
+    height: 330px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .increaserm .figures .asb {
+    bottom: 225px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .increaserm .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .increaserm .figure {
+    width: 183.86px;
+    height: 287.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .increaserm .figure .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .increaserm .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .decreaserm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .fuel .wrapper .pbox .decreaserm .figures {
+    width: 210px;
+    height: 330px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .decreaserm .figures .asb {
+    bottom: 140px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .decreaserm .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .decreaserm .figure {
+    width: 183.86px;
+    height: 287.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .decreaserm .figure .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .decreaserm .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+  }
+  .fuel .wrapper .pboxs .nochange {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .fuel .wrapper .pboxs .nochange .figures {
+    width: 248px;
+    height: 390px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .nochange .figures .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .nochange .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .nochange .figure {
+    width: 154.86px;
+    height: 239.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .nochange .figure .asb {
+    bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .nochange .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .increase {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
+  }
+  .fuel .wrapper .pboxs .increase .figures {
+    width: 248px;
+    height: 390px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .increase .figures .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .increase .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .increase .figure {
+    width: 154.86px;
+    height: 239.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .increase .figure .asb {
+    bottom: 135px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .increase .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .decrease {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px 0px 0px 0px;
+    gap: 10px;
+  }
+  .fuel .wrapper .pboxs .decrease .figures {
+    width: 248px;
+    height: 390px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .decrease .figures .asb {
+    bottom: 115px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .decrease .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .decrease .figure {
+    width: 154.86px;
+    height: 239.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .decrease .figure .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .decrease .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .nochangerm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .fuel .wrapper .pboxs .nochangerm .figures {
+    width: 210px;
+    height: 330px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .nochangerm .figures .asb {
+    bottom: 125px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .nochangerm .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .nochangerm .figure {
+    width: 183.86px;
+    height: 287.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .nochangerm .figure .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .nochangerm .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .increaserm {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
+  }
+  .fuel .wrapper .pboxs .increaserm .figures {
+    width: 210px;
+    height: 330px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .increaserm .figures .asb {
+    bottom: 225px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .increaserm .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .increaserm .figure {
+    width: 183.86px;
+    height: 287.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .increaserm .figure .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .increaserm .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .decreaserm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .fuel .wrapper .pboxs .decreaserm .figures {
+    width: 210px;
+    height: 330px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .decreaserm .figures .asb {
+    bottom: 140px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .decreaserm .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .decreaserm .figure {
+    width: 183.86px;
+    height: 287.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .decreaserm .figure .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .decreaserm .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .cprises {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 171, 65, 0.1);
+    align-items: center;
+  }
+  .cprises .chr {
+    padding: 38px;
+    width: 75%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+  }
+  .cprises .wrapper {
+    padding: 45px 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cprises .wrapper .hs {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 38px;
+    margin-bottom: 40px;
+  }
+  .cprises .wrapper .tables .h {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #28A745;
+  }
+  .cprises .wrapper .changes {
+    background-color: white;
+    padding: 26px 17px;
+    border-radius: 4px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .cprises .wrapper .changes .row2 {
+    display: flex;
+    margin: 0px 0px 16px 0px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cprises .wrapper .changes .row2 .h {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #28A745;
+  }
+  .cprises .wrapper .changes .row2 .lists {
+    display: flex;
+    gap: 10px;
+  }
+  .cprises .wrapper .changes .row2 .lists .name {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    color: #767676;
+    border-radius: 22px;
+    border: 1px solid #767676;
+    cursor: pointer;
+    gap: 5px;
+  }
+  .cprises .wrapper .changes .row2 .lists .name .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .changes .row2 .lists .nam {
+    display: flex;
+    align-items: center;
+    background-color: #FBBC05;
+    padding: 10px;
+    color: black;
+    border-radius: 22px;
+    cursor: pointer;
+    gap: 5px;
+  }
+  .cprises .wrapper .changes .row2 .lists .nam .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .changes .petrols {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .cprises .wrapper .changes .petrols .lists {
+    display: flex;
+    gap: 10px;
+  }
+  .cprises .wrapper .changes .petrols .lists .name {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    color: #767676;
+    border-radius: 22px;
+    border: 1px solid #767676;
+    cursor: pointer;
+    gap: 5px;
+  }
+  .cprises .wrapper .changes .petrols .lists .name .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .changes .petrols .lists .nam {
+    display: flex;
+    align-items: center;
+    background-color: #FBBC05;
+    padding: 0px 11px;
+    color: black;
+    border-radius: 28px;
+    cursor: pointer;
+    gap: 5px;
+  }
+  .cprises .wrapper .changes .petrols .lists .nam .circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .changes .petrols .plogo {
+    width: 35px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .changes .petrols .vlogo {
+    width: 55px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .changes .petrols .clogo {
+    width: 95px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .changes .petrols .dlogo {
+    width: 30px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .changes .petrols .list {
+    display: flex;
+    gap: 10px;
+  }
+  .cprises .wrapper .changes .petrols .list .name {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .cprises .wrapper .changes .petrols .list .name .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .changes .petrols .petro {
+    display: flex;
+    gap: 10px;
+  }
+  .cprises .wrapper .changes .petrols .btun {
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 122px;
+    color: black;
+    border: 1px solid #363636;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .cprises .wrapper .changes .petrols .btuna {
+    outline: none;
+    cursor: pointer;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 122px;
+    background-color: #1D1D1B;
+    border: 1px solid #363636;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .cprises .wrapper .changes .ts {
+    padding: 0px 0px 0px 16px;
+    text-align: left;
+  }
+  .cprises .wrapper .changes .td {
+    text-align: center;
+    padding: 18px;
+  }
+  .cprises .wrapper .changes .h2 {
+    color: black;
+  }
+  .cprises .wrapper .changes .table {
+    width: 75%;
+  }
+  .cprises .wrapper .changes .table .thead {
+    background-color: #FBBC05;
+    border-radius: 6px !important;
+  }
+  .cprises .wrapper .changes .table .thead tr .th {
+    padding: 25px 0px 26px 0px;
+    text-align: center;
+  }
+  .cprises .wrapper .changes .table .thead tr .th .plogo {
+    width: 50px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .changes .table .hspan {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .cprises .wrapper .changes .table .hspan .vlogo {
+    width: 80px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .change {
+    background-color: white;
+    padding: 26px 17px;
+    border-radius: 4px;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+  }
+  .cprises .wrapper .change .row2 {
+    display: flex;
+    margin: 0px 0px 20px 0px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cprises .wrapper .change .row2 .h {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #28A745;
+  }
+  .cprises .wrapper .change .row2 .lists {
+    display: flex;
+    gap: 10px;
+  }
+  .cprises .wrapper .change .row2 .lists .name {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    color: #767676;
+    border-radius: 22px;
+    border: 1px solid #767676;
+    cursor: pointer;
+  }
+  .cprises .wrapper .change .row2 .lists .name .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .change .row2 .lists .nam {
+    display: flex;
+    align-items: center;
+    background-color: #FBBC05;
+    padding: 10px;
+    color: black;
+    border-radius: 22px;
+    cursor: pointer;
+    gap: 5px;
+  }
+  .cprises .wrapper .change .row2 .lists .nam .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .change .petrols {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .cprises .wrapper .change .petrols .lists {
+    display: flex;
+    gap: 10px;
+  }
+  .cprises .wrapper .change .petrols .lists .name {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    color: #767676;
+    border-radius: 22px;
+    border: 1px solid #767676;
+    cursor: pointer;
+    gap: 5px;
+  }
+  .cprises .wrapper .change .petrols .lists .name .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .change .petrols .lists .nam {
+    display: flex;
+    align-items: center;
+    background-color: #FBBC05;
+    padding: 10px;
+    color: black;
+    border-radius: 22px;
+    cursor: pointer;
+    gap: 5px;
+  }
+  .cprises .wrapper .change .petrols .lists .nam .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .change .petrols .plogo {
+    width: 50px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .change .petrols .vlogo {
+    width: 80px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .change .petrols .clogo {
+    width: 120px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .change .petrols .dlogo {
+    width: 40px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .change .petrols .list {
+    display: flex;
+    gap: 10px;
+  }
+  .cprises .wrapper .change .petrols .list .name {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .cprises .wrapper .change .petrols .list .name .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .change .petrols .petro {
+    display: flex;
+    gap: 10px;
+  }
+  .cprises .wrapper .change .petrols .btun {
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 122px;
+    color: black;
+    border: 1px solid #363636;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .cprises .wrapper .change .petrols .btuna {
+    outline: none;
+    cursor: pointer;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 122px;
+    background-color: #1D1D1B;
+    border: 1px solid #363636;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .cprises .wrapper .change .ts {
+    padding: 0px 0px 0px 16px;
+    text-align: left;
+  }
+  .cprises .wrapper .change .td {
+    text-align: center;
+    padding: 18px;
+  }
+  .cprises .wrapper .change .h2 {
+    color: black;
+  }
+  .cprises .wrapper .change .table {
+    width: 75%;
+  }
+  .cprises .wrapper .change .table .thead {
+    background-color: #FBBC05;
+    border-radius: 6px !important;
+  }
+  .cprises .wrapper .change .table .thead tr .th {
+    padding: 25px 0px 26px 0px;
+    text-align: center;
+  }
+  .cprises .wrapper .change .table .thead tr .th .plogo {
+    width: 50px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .change .table .hspan {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .cprises .wrapper .change .table .hspan .vlogo {
+    width: 80px;
+    height: 35px;
+    position: relative;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px 40px 0px;
+  }
+  .footer .wrapper {
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .wrapper .foots {
+    justify-content: space-between;
+    display: flex;
+    width: 95%;
+    align-items: center;
+  }
+  .footer .wrapper .foot1 {
+    display: flex;
+    flex-direction: column;
+    width: 246px;
+  }
+  .footer .wrapper .foot1 .figure {
+    cursor: pointer;
+    width: 155px;
+    margin: 0px 0px 14px 0px;
+    height: 60px;
+    position: relative;
+  }
+  .footer .wrapper .foot1 .inputbox {
+    position: relative;
+    margin: 0px 0px 14px 0px;
+  }
+  .footer .wrapper .foot1 .inputbox .arrow {
+    width: 16px;
+    height: 8px;
+    position: absolute;
+    right: 22px;
+    top: 16px;
+  }
+  .footer .wrapper .foot1 .input {
+    width: 225px;
+    outline: none;
+    border: 0px solid black;
+    border-bottom: 1px solid black;
+    font-style: normal;
+    font-weight: 400;
+    padding: 11px 40px 11px 2px;
+    font-size: 14px;
+    line-height: 12px;
+  }
+  .footer .wrapper .foot1 .p {
+    color: black;
+    line-height: 12px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  .footer .wrapper .foote {
+    display: flex;
+    gap: 36px;
+  }
+  .footer .wrapper .foot2 {
+    width: 115px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .wrapper .foot2 .ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .footer .wrapper .foot2 .ul .li .h3 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0px 0px 8px 0px;
+  }
+  .footer .wrapper .foot2 .ul .li .p {
+    cursor: pointer;
+  }
+  .footie {
+    display: flex;
+    background-color: #28A745;
+    justify-content: center;
+    padding: 22px 0px 22px 0px;
+    margin-top: 5px;
+  }
+  .footie .wrapper {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footie .wrapper .p {
+    cursor: pointer;
+  }
+  .footie .wrapper .foote {
+    display: flex;
+    color: white;
+    gap: 16px;
+  }
+  .footie .wrapper .foote .p {
+    cursor: pointer;
+    color: white;
+  }
+  .tcard {
+    padding-top: 100px;
+    display: flex;
+    width: 85%;
+    max-width: 1550px;
+    flex-direction: row-reverse;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  .tcard .h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    color: black;
+    margin-bottom: 36px;
+  }
+  .tcard .contain {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px 30px 22px 30px;
+    display: flex;
+    border-radius: 12px;
+    width: 48%;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .tcard .contain .image {
+    display: flex;
+    flex-direction: column;
+    max-width: 610px;
+    gap: 15px;
+  }
+  .tcard .contain .image2 {
+    display: flex;
+    max-width: 760px;
+    gap: 20px;
+  }
+  .tcard .contain .image3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .tcard .contain .figure {
+    border-radius: 12px;
+    width: 100%;
+    height: 439px;
+    position: relative;
+  }
+  .tcard .contain .figure img {
+    border-radius: 12px;
+  }
+  .tcard .contain .figure2 {
+    width: 60%;
+    height: 320px;
+    max-width: 376px;
+    position: relative;
+  }
+  .tcard .contain .figure2 img {
+    border-radius: 12px;
+  }
+  .tcard .contain .figure3 {
+    width: 226.61px;
+    position: relative;
+    height: 155px;
+  }
+  .tcard .contain .figure3 img {
+    border-radius: 12px;
+  }
+  .tcard .contain .figure4 {
+    position: relative;
+    width: 226.61px;
+    height: 155px;
+  }
+  .tcard .contain .figure4 img {
+    border-radius: 12px;
+  }
+  .tcard .fig {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .tcard .figu {
+    width: 300px;
+    height: 200px;
+    position: relative;
+  }
+  .tcard .figur {
+    width: 500px;
+    height: 600px;
+    position: relative;
+  }
+  .des {
+    color: #767676;
+    padding: 12px 0px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .hp {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 14px;
+  }
+  .p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 5px;
+  }
+  .h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: black;
+  }
+  .h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 0px;
+  }
+  .wrapper {
+    max-width: 1250px;
+    width: calc(100% - 120px);
+    display: flex;
+    justify-content: center;
+  }
+  .header {
+    display: flex;
+    padding: 15px 0px 13px 0px;
+    max-width: 1250px;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+  }
+  .header .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1250px;
+    width: calc(100% - 180px);
+  }
+  .header .wrap .blogo {
+    width: 202px;
+    cursor: pointer;
+    height: 65px;
+    position: relative;
+  }
+  .header .wrap .logo {
+    width: 120px;
+    cursor: pointer;
+    height: 45px;
+    position: relative;
+  }
+  .header .wrap .ul {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+  }
+  .header .wrap .ul .li {
+    color: black;
+    cursor: pointer;
+  }
+  .header .wrap .ul :hover {
+    font-weight: 700;
+    color: #28A745;
+  }
+  .headers {
+    display: flex;
+    padding: 15px 0px 13px 0px;
+    max-width: 1250px;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+  }
+  .headers .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1250px;
+    width: calc(100% - 180px);
+  }
+  .headers .wrap .blogo {
+    width: 202px;
+    cursor: pointer;
+    height: 65px;
+    position: relative;
+  }
+  .headers .wrap .logo {
+    width: 120px;
+    cursor: pointer;
+    height: 45px;
+    position: relative;
+  }
+  .headers .wrap .ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+  }
+  .headers .wrap .ul .li {
+    color: black;
+    cursor: pointer;
+  }
+  .headers .wrap .ul :hover {
+    font-weight: 700;
+    color: #28A745;
+  }
+  .banners .figure {
+    width: 100%;
+    height: 374px;
+    position: relative;
+  }
+  .banner {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    max-height: 585px;
+    z-index: -11111111111111;
+  }
+  .banner .figure {
+    width: 100%;
+    height: 445px;
+    position: absolute;
+    top: 0;
+    z-index: -1111;
+  }
+  .banner .wrapper {
+    position: relative;
+    align-items: center;
+  }
+  .banner .wrapper .content {
+    gap: 25px;
+    justify-content: flex-start;
+    height: 372px;
+    align-items: center;
+    display: flex;
+    width: 95%;
+  }
+  .banner .wrapper .content .left {
+    width: 31%;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
+  .banner .wrapper .content .left .h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: black;
+  }
+  .banner .wrapper .content .left .button {
+    border: none;
+    outline: none;
+    background-color: #FBBC05;
+    color: black;
+    font-style: normal;
+    font-weight: 400;
+    padding: 6px 21px;
+    font-size: 12px;
+    cursor: pointer;
+    line-height: 30px;
+    border-radius: 100px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .banner .wrapper .content .right {
+    width: 21%;
+    display: flex;
+    flex-direction: column;
+    margin: -100px 0px 0px 0px;
+    gap: 20px;
+  }
+  .banner .wrapper .content .right .b1 {
+    display: flex;
+    padding: 3px 10px 4px 2px;
+    gap: 0px;
+    align-items: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 9px;
+    background: rgb(255, 255, 255);
+  }
+  .banner .wrapper .content .right .b1 .box {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner .wrapper .content .right .b1 .box .box1 {
+    width: 18px;
+    height: 20px;
+    position: relative;
+  }
+  .banner .wrapper .content .right .b1 .p {
+    line-height: 12px;
+    color: black;
+  }
+  .banner .wrapper .content .right .b2 {
+    display: flex;
+    padding: 3px 10px 4px 2px;
+    gap: 0px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    align-self: flex-end;
+    border-radius: 9px;
+    background: rgb(255, 255, 255);
+  }
+  .banner .wrapper .content .right .b2 .box {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner .wrapper .content .right .b2 .box .box1 {
+    width: 20px;
+    height: 25px;
+    position: relative;
+  }
+  .banner .wrapper .content .right .b2 .p {
+    line-height: 12px;
+    color: black;
+  }
+  .sbanner {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    position: relative;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    max-height: 410px;
+    z-index: -11111111111111;
+  }
+  .sbanner .figure {
+    width: 100%;
+    height: 410px;
+    position: relative;
+    top: 0;
+    z-index: -1111;
+    position: absolute;
+  }
+  .sbanner .wrapper {
+    position: relative;
+    align-items: center;
+  }
+  .sbanner .wrapper .content {
+    gap: 25px;
+    justify-content: flex-start;
+    height: 410px;
+    align-items: center;
+    display: flex;
+    width: 95%;
+  }
+  .sbanner .wrapper .content .left {
+    width: 40%;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+  }
+  .sbanner .wrapper .content .left .h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    color: white;
+  }
+  .controlp {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .controlp .wrapper {
+    padding: 30px 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .controlp .wrapper .citi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+  }
+  .controlp .wrapper .citi .tabs {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+  }
+  .controlp .wrapper .citi .tabs .tableheading {
+    padding: 20px 0px 19px 18px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    background-color: #FBBC05;
+    border-radius: 6px 6px 0px 0px;
+    color: black;
+  }
+  .controlp .wrapper .citi .tabs .container {
+    -moz-columns: 4 auto;
+         columns: 4 auto;
+  }
+  .controlp .wrapper .citi .tabs .container .cell {
+    margin-bottom: 10px;
+    padding: 12px 16px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 1px solid rgba(149, 157, 165, 0.2);
+  }
+  .controlp .wrapper .tables {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+  }
+  .controlp .wrapper .tables .table {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 6px 6px 0px 0px;
+    border-collapse: collapse !important;
+    border: none !important;
+    border-spacing: 0px !important;
+  }
+  .controlp .wrapper .tables .ts {
+    padding: 0px 0px 0px 16px;
+    text-align: left;
+    font-size: 10px;
+  }
+  .controlp .wrapper .tables .td {
+    text-align: center;
+    padding: 8px;
+    font-size: 10px;
+  }
+  .controlp .wrapper .tables .h2 {
+    color: black;
+    margin: 0px 0px 25px 0px;
+  }
+  .controlp .wrapper .tables .table {
+    width: 75%;
+  }
+  .controlp .wrapper .tables .table .thead {
+    background-color: #FBBC05;
+    border-radius: 6px !important;
+  }
+  .controlp .wrapper .tables .table .thead tr .th {
+    padding: 14px 0px 16px 0px;
+    text-align: center;
+  }
+  .controlp .wrapper .tables .table .thead tr .th .plogo {
+    width: 22px;
+    height: 22px;
+    position: relative;
+  }
+  .controlp .wrapper .tables .table .thead tr .th .vlogo {
+    width: 55px;
+    height: 35px;
+    position: relative;
+  }
+  .controlp .wrapper .tables .table .thead tr .th .clogo {
+    width: 95px;
+    height: 35px;
+    position: relative;
+  }
+  .controlp .wrapper .tables .table .thead tr .th .dlogo {
+    width: 30px;
+    height: 35px;
+    position: relative;
+  }
+  .controlp .wrapper .tables .table .hspan {
+    font-family: "Poppins";
+    font-style: normal;
+    align-items: center;
+    font-weight: 500;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .fuel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fuel .wrapper {
+    padding: 30px 0px 60px 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fuel .wrapper .tables {
+    justify-content: space-between;
+    width: 95%;
+  }
+  .fuel .wrapper .tables .row2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin: 0px 0px 40px 0px;
+  }
+  .fuel .wrapper .tables .lists {
+    display: flex;
+    gap: 10px;
+  }
+  .fuel .wrapper .tables .lists .name {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+    color: #767676;
+    border-radius: 22px;
+    border: 1px solid #767676;
+    cursor: pointer;
+    gap: 5px;
+  }
+  .fuel .wrapper .tables .lists .name .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .fuel .wrapper .tables .lists .nam {
+    display: flex;
+    align-items: center;
+    background-color: #FBBC05;
+    padding: 10px;
+    color: black;
+    border-radius: 22px;
+    cursor: pointer;
+    gap: 5px;
+  }
+  .fuel .wrapper .tables .lists .nam .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .fuel .wrapper .tables .h2 {
+    margin-bottom: 0px;
+    color: black;
+  }
+  .fuel .wrapper .pbox {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+  }
+  .fuel .wrapper .pbox .nochange {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .fuel .wrapper .pbox .nochange .figures {
+    width: 248px;
+    height: 390px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .nochange .figures .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .nochange .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .nochange .figure {
+    width: 183.86px;
+    height: 287.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .nochange .figure .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .nochange .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .increase {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
+  }
+  .fuel .wrapper .pbox .increase .figures {
+    width: 248px;
+    height: 390px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .increase .figures .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .increase .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .increase .figure {
+    width: 183.86px;
+    height: 287.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .increase .figure .asb {
+    bottom: 155px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .increase .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .decrease {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px 0px 0px 0px;
+    gap: 10px;
+  }
+  .fuel .wrapper .pbox .decrease .figures {
+    width: 248px;
+    height: 390px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .decrease .figures .asb {
+    bottom: 115px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .decrease .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .decrease .figure {
+    width: 183.86px;
+    height: 287.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .decrease .figure .asb {
+    bottom: 108px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .decrease .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .nochangerm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .fuel .wrapper .pbox .nochangerm .figures {
+    width: 210px;
+    height: 330px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .nochangerm .figures .asb {
+    bottom: 125px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .nochangerm .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .nochangerm .figure {
+    width: 183.86px;
+    height: 287.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .nochangerm .figure .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .nochangerm .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .increaserm {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
+  }
+  .fuel .wrapper .pbox .increaserm .figures {
+    width: 210px;
+    height: 330px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .increaserm .figures .asb {
+    bottom: 225px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .increaserm .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .increaserm .figure {
+    width: 183.86px;
+    height: 287.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .increaserm .figure .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .increaserm .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .decreaserm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .fuel .wrapper .pbox .decreaserm .figures {
+    width: 210px;
+    height: 330px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .decreaserm .figures .asb {
+    bottom: 140px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .decreaserm .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .decreaserm .figure {
+    width: 183.86px;
+    height: 287.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .decreaserm .figure .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .decreaserm .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+  }
+  .fuel .wrapper .pboxs .nochange {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .fuel .wrapper .pboxs .nochange .figures {
+    width: 248px;
+    height: 390px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .nochange .figures .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .nochange .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .nochange .figure {
+    width: 104.86px;
+    height: 168.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .nochange .figure .asb {
+    bottom: 55px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .nochange .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 8px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .increase {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
+  }
+  .fuel .wrapper .pboxs .increase .figures {
+    width: 248px;
+    height: 390px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .increase .figures .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .increase .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .increase .figure {
+    width: 104.86px;
+    height: 168.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .increase .figure .asb {
+    bottom: 97px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .increase .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 8px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .decrease {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px 0px 0px 0px;
+    gap: 10px;
+  }
+  .fuel .wrapper .pboxs .decrease .figures {
+    width: 248px;
+    height: 390px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .decrease .figures .asb {
+    bottom: 115px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .decrease .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .decrease .figure {
+    width: 104.86px;
+    height: 168.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .decrease .figure .asb {
+    bottom: 65px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .decrease .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 8px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .nochangerm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .fuel .wrapper .pboxs .nochangerm .figures {
+    width: 210px;
+    height: 330px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .nochangerm .figures .asb {
+    bottom: 125px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .nochangerm .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .nochangerm .figure {
+    width: 183.86px;
+    height: 287.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .nochangerm .figure .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .nochangerm .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .increaserm {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
+  }
+  .fuel .wrapper .pboxs .increaserm .figures {
+    width: 210px;
+    height: 330px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .increaserm .figures .asb {
+    bottom: 225px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .increaserm .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .increaserm .figure {
+    width: 183.86px;
+    height: 287.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .increaserm .figure .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .increaserm .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .decreaserm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .fuel .wrapper .pboxs .decreaserm .figures {
+    width: 210px;
+    height: 330px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .decreaserm .figures .asb {
+    bottom: 140px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .decreaserm .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .decreaserm .figure {
+    width: 183.86px;
+    height: 287.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .decreaserm .figure .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .decreaserm .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .cprises {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 171, 65, 0.1);
+    align-items: center;
+  }
+  .cprises .chr {
+    padding: 38px;
+    width: 75%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+  }
+  .cprises .wrapper {
+    padding: 45px 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cprises .wrapper .hs {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 26px;
+  }
+  .cprises .wrapper .tables .h {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #28A745;
+  }
+  .cprises .wrapper .changes {
+    background-color: white;
+    padding: 26px 17px;
+    border-radius: 4px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .cprises .wrapper .changes .row2 {
+    display: flex;
+    margin: 0px 0px 16px 0px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cprises .wrapper .changes .row2 .h {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #28A745;
+  }
+  .cprises .wrapper .changes .row2 .lists {
+    display: flex;
+    gap: 10px;
+  }
+  .cprises .wrapper .changes .row2 .lists .name {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    color: #767676;
+    border-radius: 22px;
+    border: 1px solid #767676;
+    cursor: pointer;
+    gap: 5px;
+  }
+  .cprises .wrapper .changes .row2 .lists .name .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .changes .row2 .lists .nam {
+    display: flex;
+    align-items: center;
+    background-color: #FBBC05;
+    padding: 10px;
+    color: black;
+    border-radius: 22px;
+    cursor: pointer;
+    gap: 5px;
+  }
+  .cprises .wrapper .changes .row2 .lists .nam .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .changes .petrols {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .cprises .wrapper .changes .petrols .lists {
+    display: flex;
+    gap: 10px;
+  }
+  .cprises .wrapper .changes .petrols .lists .name {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    color: #767676;
+    border-radius: 22px;
+    border: 1px solid #767676;
+    cursor: pointer;
+    gap: 5px;
+  }
+  .cprises .wrapper .changes .petrols .lists .name .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .changes .petrols .lists .nam {
+    display: flex;
+    align-items: center;
+    background-color: #FBBC05;
+    padding: 0px 11px;
+    color: black;
+    border-radius: 28px;
+    cursor: pointer;
+    gap: 5px;
+  }
+  .cprises .wrapper .changes .petrols .lists .nam .circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .changes .petrols .plogo {
+    width: 35px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .changes .petrols .vlogo {
+    width: 55px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .changes .petrols .clogo {
+    width: 95px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .changes .petrols .dlogo {
+    width: 30px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .changes .petrols .list {
+    display: flex;
+    gap: 10px;
+  }
+  .cprises .wrapper .changes .petrols .list .name {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .cprises .wrapper .changes .petrols .list .name .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .changes .petrols .petro {
+    display: flex;
+    gap: 10px;
+  }
+  .cprises .wrapper .changes .petrols .btun {
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 122px;
+    color: black;
+    border: 1px solid #363636;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .cprises .wrapper .changes .petrols .btuna {
+    outline: none;
+    cursor: pointer;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 122px;
+    background-color: #1D1D1B;
+    border: 1px solid #363636;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .cprises .wrapper .changes .ts {
+    padding: 0px 0px 0px 16px;
+    text-align: left;
+  }
+  .cprises .wrapper .changes .td {
+    text-align: center;
+    padding: 18px;
+  }
+  .cprises .wrapper .changes .h2 {
+    color: black;
+  }
+  .cprises .wrapper .changes .table {
+    width: 75%;
+  }
+  .cprises .wrapper .changes .table .thead {
+    background-color: #FBBC05;
+    border-radius: 6px !important;
+  }
+  .cprises .wrapper .changes .table .thead tr .th {
+    padding: 25px 0px 26px 0px;
+    text-align: center;
+  }
+  .cprises .wrapper .changes .table .thead tr .th .plogo {
+    width: 50px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .changes .table .hspan {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .cprises .wrapper .changes .table .hspan .vlogo {
+    width: 80px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .change {
+    background-color: white;
+    padding: 26px 17px;
+    border-radius: 4px;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+  }
+  .cprises .wrapper .change .row2 {
+    display: flex;
+    margin: 0px 0px 20px 0px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cprises .wrapper .change .row2 .h {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #28A745;
+  }
+  .cprises .wrapper .change .row2 .lists {
+    display: flex;
+    gap: 10px;
+  }
+  .cprises .wrapper .change .row2 .lists .name {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+    color: #767676;
+    border-radius: 22px;
+    border: 1px solid #767676;
+    cursor: pointer;
+  }
+  .cprises .wrapper .change .row2 .lists .name .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .change .row2 .lists .nam {
+    display: flex;
+    align-items: center;
+    background-color: #FBBC05;
+    padding: 5px;
+    color: black;
+    border-radius: 22px;
+    cursor: pointer;
+    gap: 5px;
+  }
+  .cprises .wrapper .change .row2 .lists .nam .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .change .petrols {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .cprises .wrapper .change .petrols .lists {
+    display: flex;
+    gap: 10px;
+  }
+  .cprises .wrapper .change .petrols .lists .name {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    color: #767676;
+    border-radius: 22px;
+    border: 1px solid #767676;
+    cursor: pointer;
+    gap: 5px;
+  }
+  .cprises .wrapper .change .petrols .lists .name .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .change .petrols .lists .nam {
+    display: flex;
+    align-items: center;
+    background-color: #FBBC05;
+    padding: 10px;
+    color: black;
+    border-radius: 22px;
+    cursor: pointer;
+    gap: 5px;
+  }
+  .cprises .wrapper .change .petrols .lists .nam .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .change .petrols .plogo {
+    width: 50px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .change .petrols .vlogo {
+    width: 80px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .change .petrols .clogo {
+    width: 120px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .change .petrols .dlogo {
+    width: 40px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .change .petrols .list {
+    display: flex;
+    gap: 10px;
+  }
+  .cprises .wrapper .change .petrols .list .name {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .cprises .wrapper .change .petrols .list .name .circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .change .petrols .petro {
+    display: flex;
+    gap: 10px;
+  }
+  .cprises .wrapper .change .petrols .btun {
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+    padding: 4px 6px;
+    border-radius: 122px;
+    color: black;
+    border: 1px solid #363636;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .cprises .wrapper .change .petrols .btuna {
+    outline: none;
+    cursor: pointer;
+    color: white;
+    padding: 4px 6px;
+    border-radius: 122px;
+    background-color: #1D1D1B;
+    border: 1px solid #363636;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .cprises .wrapper .change .ts {
+    padding: 0px 0px 0px 16px;
+    text-align: left;
+  }
+  .cprises .wrapper .change .td {
+    text-align: center;
+    padding: 18px;
+  }
+  .cprises .wrapper .change .h2 {
+    color: black;
+  }
+  .cprises .wrapper .change .table {
+    width: 75%;
+  }
+  .cprises .wrapper .change .table .thead {
+    background-color: #FBBC05;
+    border-radius: 6px !important;
+  }
+  .cprises .wrapper .change .table .thead tr .th {
+    padding: 25px 0px 26px 0px;
+    text-align: center;
+  }
+  .cprises .wrapper .change .table .thead tr .th .plogo {
+    width: 50px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .change .table .hspan {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .cprises .wrapper .change .table .hspan .vlogo {
+    width: 80px;
+    height: 35px;
+    position: relative;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px 40px 0px;
+  }
+  .footer .wrapper {
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .wrapper .foots {
+    justify-content: space-between;
+    display: flex;
+    width: 95%;
+    align-items: center;
+  }
+  .footer .wrapper .foot1 {
+    display: flex;
+    flex-direction: column;
+    width: 246px;
+  }
+  .footer .wrapper .foot1 .figure {
+    cursor: pointer;
+    width: 155px;
+    margin: 0px 0px 14px 0px;
+    height: 60px;
+    position: relative;
+  }
+  .footer .wrapper .foot1 .inputbox {
+    position: relative;
+    margin: 0px 0px 14px 0px;
+  }
+  .footer .wrapper .foot1 .inputbox .arrow {
+    width: 16px;
+    height: 8px;
+    position: absolute;
+    right: 22px;
+    top: 16px;
+  }
+  .footer .wrapper .foot1 .input {
+    width: 225px;
+    outline: none;
+    border: 0px solid black;
+    border-bottom: 1px solid black;
+    font-style: normal;
+    font-weight: 400;
+    padding: 11px 40px 11px 2px;
+    font-size: 14px;
+    line-height: 12px;
+  }
+  .footer .wrapper .foot1 .p {
+    color: black;
+    line-height: 12px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  .footer .wrapper .foote {
+    display: flex;
+    gap: 36px;
+  }
+  .footer .wrapper .foot2 {
+    width: 115px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .wrapper .foot2 .ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .footer .wrapper .foot2 .ul .li .h3 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0px 0px 8px 0px;
+  }
+  .footer .wrapper .foot2 .ul .li .p {
+    cursor: pointer;
+  }
+  .footie {
+    display: flex;
+    background-color: #28A745;
+    justify-content: center;
+    padding: 22px 0px 22px 0px;
+    margin-top: 5px;
+  }
+  .footie .wrapper {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footie .wrapper .p {
+    cursor: pointer;
+  }
+  .footie .wrapper .foote {
+    display: flex;
+    color: white;
+    gap: 16px;
+  }
+  .footie .wrapper .foote .p {
+    cursor: pointer;
+    color: white;
+  }
+  .tcard {
+    padding-top: 100px;
+    display: flex;
+    width: 85%;
+    max-width: 1550px;
+    flex-direction: row-reverse;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  .tcard .h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    color: black;
+    margin-bottom: 36px;
+  }
+  .tcard .contain {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px 30px 22px 30px;
+    display: flex;
+    border-radius: 12px;
+    width: 48%;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .tcard .contain .image {
+    display: flex;
+    flex-direction: column;
+    max-width: 610px;
+    gap: 15px;
+  }
+  .tcard .contain .image2 {
+    display: flex;
+    max-width: 760px;
+    gap: 20px;
+  }
+  .tcard .contain .image3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .tcard .contain .figure {
+    border-radius: 12px;
+    width: 100%;
+    height: 439px;
+    position: relative;
+  }
+  .tcard .contain .figure img {
+    border-radius: 12px;
+  }
+  .tcard .contain .figure2 {
+    width: 60%;
+    height: 320px;
+    max-width: 376px;
+    position: relative;
+  }
+  .tcard .contain .figure2 img {
+    border-radius: 12px;
+  }
+  .tcard .contain .figure3 {
+    width: 226.61px;
+    position: relative;
+    height: 155px;
+  }
+  .tcard .contain .figure3 img {
+    border-radius: 12px;
+  }
+  .tcard .contain .figure4 {
+    position: relative;
+    width: 226.61px;
+    height: 155px;
+  }
+  .tcard .contain .figure4 img {
+    border-radius: 12px;
+  }
+  .tcard .fig {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .tcard .figu {
+    width: 300px;
+    height: 200px;
+    position: relative;
+  }
+  .tcard .figur {
+    width: 500px;
+    height: 600px;
+    position: relative;
+  }
+  .des {
+    color: #767676;
+    padding: 12px 0px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .wrapper {
+    max-width: 425px;
+    width: calc(100% - 40px);
+    display: flex;
+    justify-content: center;
+  }
+  .hp {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 21px;
+  }
+  .h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: black;
+  }
+  .h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .header {
+    display: flex;
+    padding: 23px 0px 22px 0px;
+    max-width: 425px;
+    justify-content: center;
+  }
+  .header .wrap {
+    max-width: 425px;
+    width: calc(100% - 20px);
+  }
+  .header .wrap .blogo {
+    width: 202px;
+    cursor: pointer;
+    height: 65px;
+    position: relative;
+  }
+  .header .wrap .logo {
+    width: 200px;
+    cursor: pointer;
+    height: 70px;
+    position: relative;
+  }
+  .header .wrap .ul {
+    display: none;
+  }
+  .headers {
+    display: flex;
+    padding: 43px 0px 32px 0px;
+    max-width: 425px;
+    width: 100%;
+    justify-content: center;
+  }
+  .headers .wrap {
+    max-width: 425px;
+    width: calc(100% - 20px);
+  }
+  .headers .wrap .blogo {
+    width: 202px;
+    cursor: pointer;
+    height: 65px;
+    position: relative;
+  }
+  .headers .wrap .logo {
+    width: 200px;
+    cursor: pointer;
+    height: 70px;
+    position: relative;
+  }
+  .headers .wrap .ul {
+    display: none;
+  }
+  .banner {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    z-index: -11111111111111;
+  }
+  .banner .figure {
+    width: 100%;
+    height: 229px;
+    position: relative;
+    top: 0;
+    z-index: -1111;
+  }
+  .banner .wrapper {
+    position: relative;
+    align-items: center;
+  }
+  .banner .wrapper .content {
+    gap: 60px;
+    justify-content: flex-start;
+    height: 100%;
+    flex-direction: column-reverse;
+    width: 95%;
+  }
+  .banner .wrapper .content .left {
+    width: 295px;
+    display: flex;
+    margin: 0 auto;
+    gap: 24px;
+    flex-direction: column;
+  }
+  .banner .wrapper .content .left .h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: black;
+  }
+  .banner .wrapper .content .left .button {
+    padding: 10.5px 30px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .banner .wrapper .content .right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: -185px 150px 0px 0px;
+    gap: 26px;
+  }
+  .banner .wrapper .content .right .b1 {
+    display: flex;
+    padding: 3px 11px 4px 6px;
+    gap: 10px;
+    align-self: flex-end;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 9px;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  .banner .wrapper .content .right .b1 .box {
+    width: 27px;
+    height: 27px;
+  }
+  .banner .wrapper .content .right .b1 .box .box1 {
+    width: 18px;
+    height: 21px;
+    position: relative;
+  }
+  .banner .wrapper .content .right .b2 {
+    display: flex;
+    padding: 3px 11px 4px 6px;
+    gap: 10px;
+    align-self: flex-start;
+  }
+  .banner .wrapper .content .right .b2 .box {
+    width: 27px;
+    height: 27px;
+  }
+  .banner .wrapper .content .right .b2 .box .box1 {
+    width: 18px;
+    height: 16px;
+  }
+  .controlp {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .controlp .wrapper {
+    padding: 50px 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .controlp .wrapper .citi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+  }
+  .controlp .wrapper .citi .tabs {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+  }
+  .controlp .wrapper .citi .tabs .tableheading {
+    padding: 20px 0px 19px 18px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    background-color: #FBBC05;
+    border-radius: 6px 6px 0px 0px;
+    color: black;
+  }
+  .controlp .wrapper .citi .tabs .container {
+    -moz-columns: 4 auto;
+         columns: 4 auto;
+  }
+  .controlp .wrapper .citi .tabs .container .cell {
+    margin-bottom: 10px;
+    padding: 12px 16px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 1px solid rgba(149, 157, 165, 0.2);
+  }
+  .controlp .wrapper .tables {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+  }
+  .controlp .wrapper .tables .table {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 6px 6px 0px 0px;
+    border-collapse: collapse !important;
+    border: none !important;
+    border-spacing: 0px !important;
+  }
+  .controlp .wrapper .tables .ts {
+    padding: 0px 0px 0px 16px;
+    text-align: left;
+    font-size: 12px;
+  }
+  .controlp .wrapper .tables .td {
+    text-align: center;
+    padding: 8px;
+  }
+  .controlp .wrapper .tables .h2 {
+    color: black;
+    margin: 0px 0px 20px 0px;
+  }
+  .controlp .wrapper .tables .table {
+    width: 100%;
+  }
+  .controlp .wrapper .tables .table .thead {
+    background-color: #FBBC05;
+    border-radius: 6px !important;
+  }
+  .controlp .wrapper .tables .table .thead tr .th {
+    padding: 9px 0px 8px 0px;
+    text-align: center;
+  }
+  .controlp .wrapper .tables .table .thead tr .th .plogo {
+    width: 32px;
+    height: 22px;
+    position: relative;
+  }
+  .controlp .wrapper .tables .table .thead tr .th .vlogo {
+    width: 80px;
+    height: 35px;
+    position: relative;
+  }
+  .controlp .wrapper .tables .table .thead tr .th .clogo {
+    width: 120px;
+    height: 35px;
+    position: relative;
+  }
+  .controlp .wrapper .tables .table .thead tr .th .dlogo {
+    width: 40px;
+    height: 35px;
+    position: relative;
+  }
+  .controlp .wrapper .tables .table .hspan {
+    font-family: "Poppins";
+    font-style: normal;
+    align-items: center;
+    font-weight: 500;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .fuel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fuel .wrapper {
+    padding: 10px 0px 40px 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fuel .wrapper .tables {
+    justify-content: space-between;
+    width: 95%;
+  }
+  .fuel .wrapper .tables .row2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin: 0px 0px 40px 0px;
+  }
+  .fuel .wrapper .tables .lists {
+    display: none;
+  }
+  .fuel .wrapper .tables .h2 {
+    color: black;
+  }
+  .fuel .wrapper .pbox {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+  }
+  .fuel .wrapper .pbox .nochange {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .fuel .wrapper .pbox .nochange .figures {
+    width: 248px;
+    height: 390px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .nochange .figures .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .nochange .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .nochange .figure {
+    width: 85.86px;
+    height: 130.72px;
+  }
+  .fuel .wrapper .pbox .nochange .figure .asb {
+    bottom: 95px;
+  }
+  .fuel .wrapper .pbox .nochange .figure .asb .ps {
+    font-style: normal;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .fuel .wrapper .pbox .increase {
+    gap: 10px;
+  }
+  .fuel .wrapper .pbox .increase .figures {
+    width: 248px;
+    height: 390px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .increase .figures .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .increase .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .increase .figure {
+    width: 85.86px;
+    height: 130.72px;
+  }
+  .fuel .wrapper .pbox .increase .figure .asb {
+    bottom: 155px;
+  }
+  .fuel .wrapper .pbox .increase .figure .asb .ps {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .fuel .wrapper .pbox .decrease {
+    margin: 35px 0px 0px 0px;
+    gap: 10px;
+  }
+  .fuel .wrapper .pbox .decrease .figures {
+    width: 248px;
+    height: 390px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .decrease .figures .asb {
+    bottom: 115px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .decrease .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .decrease .figure {
+    width: 85.86px;
+    height: 130.72px;
+  }
+  .fuel .wrapper .pbox .decrease .figure .asb {
+    bottom: 108px;
+  }
+  .fuel .wrapper .pbox .decrease .figure .asb .ps {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .fuel .wrapper .pbox .nochangerm {
+    gap: 10px;
+  }
+  .fuel .wrapper .pbox .nochangerm .figures {
+    width: 248px;
+    height: 390px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .nochangerm .figures .asb {
+    bottom: 125px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .nochangerm .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .nochangerm .figure {
+    width: 85.86px;
+    height: 130.72px;
+  }
+  .fuel .wrapper .pbox .nochangerm .figure .asb {
+    bottom: 95px;
+  }
+  .fuel .wrapper .pbox .nochangerm .figure .asb .ps {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .fuel .wrapper .pbox .increaserm {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
+  }
+  .fuel .wrapper .pbox .increaserm .figures {
+    width: 248px;
+    height: 390px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .increaserm .figures .asb {
+    bottom: 225px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .increaserm .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .increaserm .figure {
+    width: 183.86px;
+    height: 287.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .increaserm .figure .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .increaserm .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .decreaserm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .fuel .wrapper .pbox .decreaserm .figures {
+    width: 248px;
+    height: 390px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .decreaserm .figures .asb {
+    bottom: 140px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .decreaserm .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .decreaserm .figure {
+    width: 183.86px;
+    height: 287.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .decreaserm .figure .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .decreaserm .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    gap: 9px;
+  }
+  .fuel .wrapper .pboxs .nochange {
+    gap: 5px;
+    align-self: flex-end;
+  }
+  .fuel .wrapper .pboxs .nochange .figures {
+    width: 248px;
+    height: 390px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .nochange .figures .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .nochange .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .nochange .figure {
+    width: 85.86px;
+    height: 130.72px;
+  }
+  .fuel .wrapper .pboxs .nochange .figure .asb {
+    display: none;
+  }
+  .fuel .wrapper .pboxs .increase {
+    gap: 5px;
+  }
+  .fuel .wrapper .pboxs .increase .figures {
+    width: 248px;
+    height: 390px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .increase .figures .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .increase .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .increase .figure {
+    width: 85.86px;
+    height: 130.72px;
+  }
+  .fuel .wrapper .pboxs .increase .figure .asb {
+    display: none;
+  }
+  .fuel .wrapper .pboxs .decrease {
+    margin: 13px 0px 0px 0px;
+    gap: 10px;
+  }
+  .fuel .wrapper .pboxs .decrease .figures {
+    width: 248px;
+    height: 390px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .decrease .figures .asb {
+    bottom: 115px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .decrease .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .decrease .figure {
+    width: 85.86px;
+    height: 130.72px;
+  }
+  .fuel .wrapper .pboxs .decrease .figure .asb {
+    display: none;
+  }
+  .fuel .wrapper .pboxs .nochangerm {
+    gap: 5px;
+  }
+  .fuel .wrapper .pboxs .nochangerm .figures {
+    width: 248px;
+    height: 390px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .nochangerm .figures .asb {
+    bottom: 125px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .nochangerm .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .nochangerm .figure {
+    width: 183.86px;
+    height: 287.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .nochangerm .figure .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .nochangerm .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .increaserm {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
+  }
+  .fuel .wrapper .pboxs .increaserm .figures {
+    width: 248px;
+    height: 390px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .increaserm .figures .asb {
+    bottom: 225px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .increaserm .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .increaserm .figure {
+    width: 183.86px;
+    height: 287.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .increaserm .figure .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .increaserm .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .decreaserm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .fuel .wrapper .pboxs .decreaserm .figures {
+    width: 248px;
+    height: 390px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .decreaserm .figures .asb {
+    bottom: 140px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .decreaserm .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .decreaserm .figure {
+    width: 183.86px;
+    height: 287.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .decreaserm .figure .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .decreaserm .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .cprises {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 171, 65, 0.1);
+    align-items: center;
+  }
+  .cprises .extramile {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+  }
+  .cprises .mfp {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+  }
+  .cprises .wrapper {
+    align-items: center;
+  }
+  .cprises .coe {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+  }
+  .cprises .chr {
+    padding: 38px;
+    width: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+  }
+  .cprises .wrapper {
+    padding: 30px 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cprises .wrapper .hs {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  .cprises .wrapper .tables .h {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #28A745;
+  }
+  .cprises .wrapper .changes {
+    background-color: white;
+    padding: 26px 17px;
+    border-radius: 4px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .cprises .wrapper .changes .row2 {
+    display: flex;
+    margin: 0px 0px 16px 0px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cprises .wrapper .changes .row2 .h {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #28A745;
+  }
+  .cprises .wrapper .changes .row2 .lists {
+    display: flex;
+    gap: 10px;
+  }
+  .cprises .wrapper .changes .row2 .lists .name {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    color: #767676;
+    border-radius: 22px;
+    border: 1px solid #767676;
+    cursor: pointer;
+    gap: 5px;
+  }
+  .cprises .wrapper .changes .row2 .lists .name .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .changes .row2 .lists .nam {
+    display: flex;
+    align-items: center;
+    background-color: #FBBC05;
+    padding: 10px;
+    color: black;
+    border-radius: 22px;
+    cursor: pointer;
+    gap: 5px;
+  }
+  .cprises .wrapper .changes .row2 .lists .nam .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .changes .petrols {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .cprises .wrapper .changes .petrols .lists {
+    display: flex;
+    gap: 10px;
+  }
+  .cprises .wrapper .changes .petrols .lists .name {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    color: #767676;
+    border-radius: 22px;
+    border: 1px solid #767676;
+    cursor: pointer;
+    gap: 5px;
+  }
+  .cprises .wrapper .changes .petrols .lists .name .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .changes .petrols .lists .nam {
+    display: flex;
+    align-items: center;
+    background-color: #FBBC05;
+    padding: 10px;
+    color: black;
+    border-radius: 22px;
+    cursor: pointer;
+    gap: 5px;
+  }
+  .cprises .wrapper .changes .petrols .lists .nam .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .changes .petrols .plogo {
+    width: 50px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .changes .petrols .vlogo {
+    width: 80px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .changes .petrols .clogo {
+    width: 120px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .changes .petrols .dlogo {
+    width: 40px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .changes .petrols .list {
+    display: flex;
+    gap: 10px;
+  }
+  .cprises .wrapper .changes .petrols .list .name {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .cprises .wrapper .changes .petrols .list .name .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .changes .petrols .petro {
+    display: flex;
+    gap: 10px;
+  }
+  .cprises .wrapper .changes .petrols .btun {
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 122px;
+    color: black;
+    border: 1px solid #363636;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .cprises .wrapper .changes .petrols .btuna {
+    outline: none;
+    cursor: pointer;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 122px;
+    background-color: #1D1D1B;
+    border: 1px solid #363636;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .cprises .wrapper .changes .ts {
+    padding: 0px 0px 0px 16px;
+    text-align: left;
+  }
+  .cprises .wrapper .changes .td {
+    text-align: center;
+    padding: 18px;
+  }
+  .cprises .wrapper .changes .h2 {
+    color: black;
+  }
+  .cprises .wrapper .changes .table {
+    width: 75%;
+  }
+  .cprises .wrapper .changes .table .thead {
+    background-color: #FBBC05;
+    border-radius: 6px !important;
+  }
+  .cprises .wrapper .changes .table .thead tr .th {
+    padding: 25px 0px 26px 0px;
+    text-align: center;
+  }
+  .cprises .wrapper .changes .table .thead tr .th .plogo {
+    width: 50px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .changes .table .hspan {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .cprises .wrapper .changes .table .hspan .vlogo {
+    width: 80px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .change {
+    background-color: white;
+    padding: 26px 17px;
+    border-radius: 4px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .cprises .wrapper .change .row2 {
+    display: flex;
+    margin: 0px 0px 15px 0px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cprises .wrapper .change .row2 .h {
+    font-weight: 500;
+    font-size: 20px;
+    display: none;
+    line-height: 28px;
+    color: #28A745;
+  }
+  .cprises .wrapper .change .row2 .lists {
+    display: flex;
+    gap: 10px;
+  }
+  .cprises .wrapper .change .row2 .lists .name {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 6px 16px;
+    color: #767676;
+    border-radius: 22px;
+    border: 1px solid #767676;
+    cursor: pointer;
+  }
+  .cprises .wrapper .change .row2 .lists .name .p {
+    font-size: 10px !important;
+    line-height: 10px !important;
+  }
+  .cprises .wrapper .change .row2 .lists .name .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .change .row2 .lists .nam {
+    display: flex;
+    align-items: center;
+    background-color: #FBBC05;
+    padding: 6px 16px;
+    color: black;
+    border-radius: 22px;
+    cursor: pointer;
+  }
+  .cprises .wrapper .change .row2 .lists .nam .p {
+    font-size: 10px !important;
+    line-height: 10px !important;
+  }
+  .cprises .wrapper .change .row2 .lists .nam .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .change .petrols {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .cprises .wrapper .change .petrols .lists {
+    display: flex;
+    gap: 10px;
+  }
+  .cprises .wrapper .change .petrols .lists .name {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 6px 16px;
+    color: #767676;
+    border-radius: 22px;
+    border: 1px solid #767676;
+    cursor: pointer;
+  }
+  .cprises .wrapper .change .petrols .lists .name .p {
+    font-size: 10px !important;
+    line-height: 10px !important;
+  }
+  .cprises .wrapper .change .petrols .lists .name .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .change .petrols .lists .nam {
+    display: flex;
+    align-items: center;
+    background-color: #FBBC05;
+    padding: 6px 16px;
+    color: black;
+    border-radius: 22px;
+    cursor: pointer;
+  }
+  .cprises .wrapper .change .petrols .lists .nam .p {
+    font-size: 10px !important;
+    line-height: 10px !important;
+  }
+  .cprises .wrapper .change .petrols .lists .nam .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .change .petrols .plogo {
+    width: 50px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .change .petrols .vlogo {
+    width: 80px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .change .petrols .clogo {
+    width: 120px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .change .petrols .dlogo {
+    width: 40px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .change .petrols .list {
+    display: flex;
+    gap: 10px;
+  }
+  .cprises .wrapper .change .petrols .list .name {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .cprises .wrapper .change .petrols .list .name .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .change .petrols .petro {
+    display: flex;
+    gap: 10px;
+  }
+  .cprises .wrapper .change .petrols .btun {
+    padding: 4px 13px;
+    border-radius: 122px;
+  }
+  .cprises .wrapper .change .petrols .btun .p {
+    font-size: 10px !important;
+    line-height: 10px !important;
+  }
+  .cprises .wrapper .change .petrols .btuna {
+    padding: 4px 13px;
+    border-radius: 122px;
+  }
+  .cprises .wrapper .change .petrols .btuna .p {
+    font-size: 10px !important;
+    line-height: 10px !important;
+  }
+  .cprises .wrapper .change .ts {
+    padding: 0px 0px 0px 16px;
+    text-align: left;
+  }
+  .cprises .wrapper .change .td {
+    text-align: center;
+    padding: 18px;
+  }
+  .cprises .wrapper .change .h2 {
+    color: black;
+  }
+  .cprises .wrapper .change .table {
+    width: 75%;
+  }
+  .cprises .wrapper .change .table .thead {
+    background-color: #FBBC05;
+    border-radius: 6px !important;
+  }
+  .cprises .wrapper .change .table .thead tr .th {
+    padding: 25px 0px 26px 0px;
+    text-align: center;
+  }
+  .cprises .wrapper .change .table .thead tr .th .plogo {
+    width: 50px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .change .table .hspan {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .cprises .wrapper .change .table .hspan .vlogo {
+    width: 80px;
+    height: 35px;
+    position: relative;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px 40px 0px;
+  }
+  .footer .wrapper {
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .wrapper .foots {
+    justify-content: space-between;
+    display: flex;
+    width: 95%;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .footer .wrapper .foot1 {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  .footer .wrapper .foot1 .figure {
+    cursor: pointer;
+    width: 96px;
+    height: 40px;
+    margin: 0px;
+    position: relative;
+  }
+  .footer .wrapper .foot1 .inputbox {
+    position: relative;
+    margin: 0px 0px 14px 0px;
+    width: 225px;
+  }
+  .footer .wrapper .foot1 .inputbox .arrow {
+    width: 16px;
+    height: 8px;
+    position: absolute;
+    right: 22px;
+    top: 16px;
+  }
+  .footer .wrapper .foot1 .input {
+    width: 206px;
+    outline: none;
+    border: 0px solid black;
+    border-bottom: 1px solid black;
+    font-style: normal;
+    font-weight: 400;
+    padding: 11px 20px 7px 5px;
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .footer .wrapper .foot1 .p {
+    color: black;
+    width: 205px;
+    cursor: pointer;
+    font-size: 12px !important;
+    line-height: 20px !important;
+  }
+  .footer .wrapper .foote {
+    display: flex;
+    justify-content: space-around;
+    gap: 48px;
+  }
+  .footer .wrapper .foot2 {
+    width: 49%;
+    min-width: 105px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .wrapper .foot2 .ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .footer .wrapper .foot2 .ul .li .h3 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0px 0px 8px 0px;
+  }
+  .footer .wrapper .foot2 .ul .li .p {
+    font-size: 12px !important;
+    line-height: 12px !important;
+    cursor: pointer;
+  }
+  .footie {
+    display: flex;
+    background-color: #28A745;
+    justify-content: center;
+    padding: 22px 0px 22px 0px;
+    margin-top: 18px;
+  }
+  .footie .wrapper {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footie .wrapper .p {
+    cursor: pointer;
+  }
+  .footie .wrapper .foote {
+    display: flex;
+    color: white;
+    gap: 16px;
+  }
+  .footie .wrapper .foote .p {
+    cursor: pointer;
+    color: white;
+  }
 }/*# sourceMappingURL=Home.module.css.map */

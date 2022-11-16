@@ -11,7 +11,8 @@ function Footer() {
     <>
        <div className={styles.footer}>
         <div className={styles.wrapper}>
-            <div className={styles.foot1}>
+ <div className={styles.foots}>
+ <div className={styles.foot1}>
                 <figure className={styles.figure}>
                 <Image src={flogo} alt="banner" layout="fill" width={100} objectFit="contain"/>
                 </figure>
@@ -50,6 +51,7 @@ function Footer() {
                 </ul>
                 </div>
             </div>
+ </div>
         </div>
        </div>
     </>

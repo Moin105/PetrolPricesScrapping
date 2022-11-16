@@ -124,8 +124,9 @@ function Graph() {
      <div className={styles.cprises} onLoad={() =>{
         fetchGraph()
      }}>
-        <div className={styles.wrapper} styles={{alignItem:"flex-start"}}>
-          <h2 className={styles.hs}>Petrol Prices in Malaysia</h2> 
+         <div className={styles.wrapper} styles={{alignItem:"flex-start"}}>
+     <div className={styles.mfp}>
+     <h2 className={styles.hs}>Petrol Prices in Malaysia</h2> 
             <div className={styles.change}>
             
               <div className={styles.row2}>
@@ -192,8 +193,11 @@ function Graph() {
                   }} options={options}/>
                  </div> : <></> }
             </div>  
-        </div>
      </div>
+        </div>
+        </div> 
+       
+
     </>
   )
 }

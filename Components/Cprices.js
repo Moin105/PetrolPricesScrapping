@@ -193,8 +193,9 @@ function Cprices() {
   return (
     <>
      <div className={styles.cprises}>
-        <div className={styles.wrapper} style={{flexDirection:"column",alignItems:"flex-start"}}>
-        <h2 className={styles.hs}>Fuel Price Trend</h2>
+        <div className={styles.wrapper} style={{flexDirection:"column",alignItems:"center"}}>
+         <div className={styles.extramile}>
+         <h2 className={styles.hs}>Fuel Price Trend</h2>
             <div className={styles.change}>
               <div className={styles.row2}>
                  <h2 className={styles.h}>Updated Trend</h2> 
@@ -283,7 +284,7 @@ function Cprices() {
     })
     fetchGraph()
     }}>
-                  {inputs.grade == petro.grade ?  <button className={styles.btuna} key={index}><p>{petro.grade}</p></button> : <button className={styles.btun} key={index}><p>{petro.grade}</p></button> }
+                  {inputs.grade == petro.grade ?  <button className={styles.btuna} key={index}><p className={styles.p}>{petro.grade}</p></button> : <button className={styles.btun} key={index}><p className={styles.p}>{petro.grade}</p></button> }
                   </div>
                   </>
                 } )}</div> : <div></div>}
@@ -355,6 +356,7 @@ function Cprices() {
                   }} options={options}/>
                  </div> : <></> }
             </div>  
+         </div>
         </div>
      </div>
     </>

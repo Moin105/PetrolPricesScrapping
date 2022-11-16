@@ -34,7 +34,7 @@ console.log("base url",BASE_URL)
     <div className={styles.fuel}>
         <div className={styles.wrapper}>
             <div className={styles.tables}>
-              <div className={styles.row2}>                 <h2 className={styles.h2}>Compare Petrol Prices</h2>  
+              <div className={styles.row2}>                 <h2 className={styles.h2}>Change in Petrol Prices</h2>  
                  {/* // */}
                  <div className={styles.petrols}>
             {/* {petrol.length != 0 ?    
@@ -86,7 +86,7 @@ console.log("base url",BASE_URL)
 </div></div>
 
                  <div className={styles.pcontainer}>
-                   <div className={styles.pbox}>
+                   <div className={styles.pboxs}>
                    {data.map((dat,index) =>{if(dat.motorist_fuel_prices[state]?.change_in_price == 0 ){
                     return  < div  key={index}className={styles.nochange}>
                     <h3 className={styles.h3}>{dat.grade}</h3>
