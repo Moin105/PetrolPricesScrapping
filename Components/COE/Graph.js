@@ -129,7 +129,7 @@ function Cprices(base) {
      
      
     
-      fetch("https://admin.extramiless.com/open_bidding_price_graph",requestOptions)
+      fetch("https://admin.extramiless.com/api/open_bidding_price_graph",requestOptions)
       .then(res => {return res.json();} )
       .then(res=>{
       // console.log("saas",res)
