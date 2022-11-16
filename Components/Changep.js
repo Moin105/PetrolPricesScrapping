@@ -48,8 +48,8 @@ console.log("base url",BASE_URL)
   </thead>
   <tbody>
    
-     {data.map((dat =>{
-        return <tr>  <td className={styles.ts}><span style={{fontWeight:"600"}}>{dat.grade}</span>
+     {data.map(((dat,index) =>{
+        return <tr key={index}>  <td className={styles.ts}><span style={{fontWeight:"600"}}>{dat.grade}</span>
       </td> <td className={styles.td}>{ dat ? dat.motorist_fuel_prices[0].currency + dat.motorist_fuel_prices[0].price.toFixed(2) : "="}</td>
         <td className={styles.td}>{ dat ? dat.motorist_fuel_prices[0].currency + dat.motorist_fuel_prices[1].price.toFixed(2) : "="}</td>     
         <td className={styles.td}>{ dat ? dat.motorist_fuel_prices[0].currency + dat.motorist_fuel_prices[2].price.toFixed(2) : "="}</td>

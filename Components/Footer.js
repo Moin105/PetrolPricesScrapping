@@ -44,7 +44,7 @@ function Footer() {
                 <div className={styles.foot2}>
                 <ul className={styles.ul}>
                     <li className={styles.li}><h3 className={styles.h3}>Support</h3></li>
-                    <li className={styles.li}><p className={styles.p}>Help & FAQ's</p></li>
+                    <li className={styles.li}><p className={styles.p}>Help & FAQ &apos;s</p></li>
                     <li className={styles.li}><p className={styles.p}>hello@catperson.com</p></li>
                     <li className={styles.li}><p className={styles.p}>Tell: (855) 918-2287</p></li>
                     <li className={styles.li}><p className={styles.p}></p></li>

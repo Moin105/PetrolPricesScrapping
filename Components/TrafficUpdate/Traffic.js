@@ -17,7 +17,7 @@ function Traffic(base) {
        <div className={styles.tcard}>
           
        {images.map((image,index)=>{
-   return<div className={styles.contain}>
+   return<div key={index} className={styles.contain}>
     <h2 className={styles.h4}>{image.description}</h2>
            <div className={styles.image}>
             <figure className={styles.figure}>

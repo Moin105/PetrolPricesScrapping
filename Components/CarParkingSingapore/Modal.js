@@ -61,7 +61,7 @@ if(point.car_parking_days_prices.length != 0){
          <div className={styles.map}>
              <iframe src={point.location} key={point.id} style={{width:"100%",height:"100%"}}></iframe>
          </div>
-         { head.length != 0 ?  uniqueHead.map(table =>{return<div className={styles.timetable}>
+         { head.length != 0 ?  uniqueHead.map((table,index) =>{return<div key={index} className={styles.timetable}>
              <div className={styles.days}><h3 className={styles.h3}>{table}</h3></div>    
             <div className={styles.timecontainer}>
                {/* <div className={styles.ron}><p className={styles.p}>{table.timing}</p></div>

@@ -65,36 +65,36 @@ console.log("base url",BASE_URL)
     </tr>
      <tr style={{background:"#F9F9FA"}}>
      <td className={styles.ts}><span style={{fontWeight:"600" }}>Quota Premium</span>
-      </td> {data?.map((dat =>{
-        return  <td className={styles.td}>{ "$" + dat.QP}
+      </td> {data?.map(((dat,index) =>{
+        return  <td  key={index}className={styles.td}>{ "$" + dat.QP}
       </td>
       }))}  
      </tr>
     <tr>
      <td className={styles.ts}><span style={{fontWeight:"600"}}>Change</span>
-      </td> {data.map((dat =>{
-        return  <td className={styles.td}>{dat.change_in_price}
+      </td> {data.map(((dat,index) =>{
+        return  <td key={index} className={styles.td}>{dat.change_in_price}
       </td>
       }))}  
      </tr>
       <tr style={{background:"#F9F9FA"}}>
      <td className={styles.ts}><span style={{fontWeight:"600"}}>Quota</span>
-      </td> {data.map((dat =>{
-        return  <td className={styles.td}>{dat.qouta}
+      </td> {data.map(((dat,index) =>{
+        return  <td key={index} className={styles.td}>{dat.qouta}
       </td>
       }))}  
      </tr>
    <tr>
      <td className={styles.ts}><span style={{fontWeight:"600"}}>Bids Recieved</span>
-      </td> {data.map((dat =>{
-        return  <td className={styles.td}>{dat.recieved}
+      </td> {data.map(((dat,index) =>{
+        return  <td key={index} className={styles.td}>{dat.recieved}
       </td>
       }))}  
      </tr>
      <tr style={{background:"#F9F9FA"}}>
      <td className={styles.ts}><span style={{fontWeight:"600"}}>PQP</span>
-      </td> {data.map((dat =>{
-        return  <td className={styles.td}>{dat.PQP}
+      </td> {data.map(((dat,index) =>{
+        return  <td key={index} className={styles.td}>{dat.PQP}
       </td>
       }))}  
      </tr> 

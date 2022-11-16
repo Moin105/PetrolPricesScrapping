@@ -40,8 +40,8 @@ console.log("base url",BASE_URL)
                       <h2 className={styles.tableheading}>List of Shopping Malls and Carpark rates in Singapaore</h2>
                       <div className={styles.container}>
                         {
-                            data.map(point =>{
-                                return  <div className={styles.cell} onClick={()=>{
+                            data.map((point,index) =>{
+                                return  <div key={index} className={styles.cell} onClick={()=>{
                                   setShow(true)
                                   setMdata(point)
                                   ;console.log("bhains",point)}}>
