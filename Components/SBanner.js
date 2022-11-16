@@ -10,7 +10,7 @@ function SBanner({img,text}) {
     <>
     <div className={styles.sbanner}>
        <figure className={styles.figure}>
-        <Image src={img} alt="banner" layout="fill" width={100} objectFit="cover"/>
+        <Image priority src={img} alt="banner" layout="fill" width={100} objectFit="cover"/>
        </figure>
        <div className={styles.wrapper}>
             <div className={styles.content}>

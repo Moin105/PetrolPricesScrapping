@@ -14,12 +14,12 @@ function Footer() {
  <div className={styles.foots}>
  <div className={styles.foot1}>
                 <figure className={styles.figure}>
-                <Image src={flogo} alt="banner" layout="fill" width={100} objectFit="contain"/>
+                <Image priority src={flogo} alt="banner" layout="fill" width={100} objectFit="contain"/>
                 </figure>
                 <div className={styles.inputbox}>
                       <input placeholder='Your Email' className={styles.input}/>
                    <figure className={styles.arrow}>
-                   <Image src={arrow} alt="banner" layout="fill" width={100} objectFit="contain"/>
+                   <Image priority src={arrow} alt="banner" layout="fill" width={100} objectFit="contain"/>
                    </figure>
                 </div>
               

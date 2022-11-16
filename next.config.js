@@ -3,7 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: false, 
    images: {
-    domains: ['datamall.lta.gov.sg'],
-  },
+    domains: ['datamall.lta.gov.sg'], 
+     unoptimized: true,
+  }
 }
 module.exports = nextConfig

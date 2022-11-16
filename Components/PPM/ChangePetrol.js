@@ -40,7 +40,7 @@ console.log("base url",BASE_URL)
   <div className={styles.increaserm}>
  <h3 className={styles.h3}>{ `${data[0].currency}  ${data[0]?.price} Per litre`}</h3>
   <figure className={styles.figures}>
-  <Image src={increase} alt="logo" layout="fill" objectFit="contain"/>
+  <Image priority src={increase} alt="logo" layout="fill" objectFit="contain"/>
   {/* <div className={styles.asb}><p className={styles.ps}>{ data[1].change_in_price.toFixed(2)}</p><p className={styles.ps}>decreased</p></div> */}
   </figure>
    <h3 className={styles.h3}>{data[0].title}</h3>
@@ -48,7 +48,7 @@ console.log("base url",BASE_URL)
  <div className={styles.decreaserm}>
  <h3 className={styles.h3}>{`${data[1].currency}  ${data[1].price} Per litre`}</h3>
                             <figure className={styles.figures}>
-                            <Image src={decrease} alt="logo" layout="fill" objectFit="contain"/>
+                            <Image priority src={decrease} alt="logo" layout="fill" objectFit="contain"/>
                             {/* <div className={styles.asb}><p className={styles.ps}>{ data[1].change_in_price.toFixed(2)}</p><p className={styles.ps}>decreased</p></div> */}
 
                             </figure>
@@ -57,7 +57,7 @@ console.log("base url",BASE_URL)
  <div className={styles.nochangerm}>
     <h3 className={styles.h3}>Diesel</h3>
     <figure className={styles.figures}>
-    <Image src={nochange} alt="logo" layout="fill" objectFit="contain"/>
+    <Image priority src={nochange} alt="logo" layout="fill" objectFit="contain"/>
     {/* <div className={styles.asb}><p className={styles.ps}>unchanged</p></div> */}
 
     </figure>

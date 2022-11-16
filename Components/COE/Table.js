@@ -47,11 +47,11 @@ console.log("base url",BASE_URL)
   <thead className={styles.thead}>
     <tr>
       <th className={styles.ts}  style={{borderRadius:"6px 0px 0px 0px"}}><span >COE Category</span></th>
-      <th className={styles.th}><span className={styles.hspan}> <figure className={styles.plogo}><Image src={G1} alt="logo" layout="fill" objectFit="contain"/></figure><p className={styles.p}>Category A</p></span></th>
-      <th className={styles.th}><span className={styles.hspan}> <figure className={styles.plogo}><Image src={G2} alt="logo" layout="fill" objectFit="contain"/></figure><p className={styles.p}>Category B</p></span></th>
-      <th className={styles.th}><span className={styles.hspan}> <figure className={styles.vlogo}><Image src={G3} alt="logo" layout="fill" objectFit="contain"/></figure><p className={styles.p}>Category C</p></span></th>
-      <th className={styles.th}><span className={styles.hspan}> <figure className={styles.dlogo}><Image src={G5} alt="logo" layout="fill" objectFit="contain"/></figure><p className={styles.p}>Category D</p></span></th>
-      <th className={styles.th}><span className={styles.hspan}> <figure className={styles.clogo}><Image src={G4} alt="logo" layout="fill" objectFit="contain"/></figure><p className={styles.p}>Category E</p></span></th>
+      <th className={styles.th}><span className={styles.hspan}> <figure className={styles.plogo}><Image priority src={G1} alt="logo" layout="fill" objectFit="contain"/></figure><p className={styles.p}>Category A</p></span></th>
+      <th className={styles.th}><span className={styles.hspan}> <figure className={styles.plogo}><Image priority src={G2} alt="logo" layout="fill" objectFit="contain"/></figure><p className={styles.p}>Category B</p></span></th>
+      <th className={styles.th}><span className={styles.hspan}> <figure className={styles.vlogo}><Image priority src={G3} alt="logo" layout="fill" objectFit="contain"/></figure><p className={styles.p}>Category C</p></span></th>
+      <th className={styles.th}><span className={styles.hspan}> <figure className={styles.dlogo}><Image priority src={G5} alt="logo" layout="fill" objectFit="contain"/></figure><p className={styles.p}>Category D</p></span></th>
+      <th className={styles.th}><span className={styles.hspan}> <figure className={styles.clogo}><Image priority src={G4} alt="logo" layout="fill" objectFit="contain"/></figure><p className={styles.p}>Category E</p></span></th>
     </tr>
   </thead>
   <tbody>

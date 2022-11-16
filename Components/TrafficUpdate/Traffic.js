@@ -22,6 +22,7 @@ function Traffic(base) {
            <div className={styles.image}>
             <figure className={styles.figure}>
             <Image
+            priority
             loader={() => {
                 return image.trafic_images[0].image
               }}  
@@ -30,6 +31,7 @@ function Traffic(base) {
           <div className={styles.image2}>
                       <figure className={styles.figure2}>
             <Image  
+            priority
           loader={() => {
             return image.trafic_images[1].image
           }}     
@@ -39,6 +41,7 @@ function Traffic(base) {
             <div className={styles.image3}>
          <figure className={styles.figure3}>
             <Image 
+            priority
              loader={() => {
               return image.trafic_images[2].image
             }}  
@@ -47,6 +50,7 @@ function Traffic(base) {
             </figure>            
             <figure className={styles.figure4}>
             <Image 
+            priority
              loader={() => {
               return image.trafic_images[3].image
             }}  

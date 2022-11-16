@@ -9,7 +9,7 @@ function Headers() {
     <header className={styles.headers}>
         <div className={styles.wrap}>
             <figure className={styles.logo}>
-                <Image src={logo} alt="logo" layout="fill" objectFit="contain"/>
+                <Image priority src={logo} alt="logo" layout="fill" objectFit="contain"/>
             </figure>
             <ul className={styles.ul}>
                 <Link href="/"><li className={styles.li}><p className={styles.hp}>Petrol prices SG</p>      </li></Link>

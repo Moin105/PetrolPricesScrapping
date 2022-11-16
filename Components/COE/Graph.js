@@ -239,25 +239,25 @@ function Cprices(base) {
 <div className={styles.list}>
   <div className={styles.name}>
     <div className={styles.circle} style={{backgroundColor:"rgb(40,167,69)"}}></div>
-    <p className={styles.p}><figure className={styles.plogo}><Image src={G1} alt="logo" layout="fill" objectFit="contain"/></figure></p>
+    <p className={styles.p}><figure className={styles.plogo}><Image priority src={G1} alt="logo" layout="fill" objectFit="contain"/></figure></p>
   </div>
   <div className={styles.name}>
     <div className={styles.circle} style={{backgroundColor:"rgb(251,188,5)"}}></div>
-    <p className={styles.p}><figure className={styles.plogo}><Image src={G2} alt="logo" layout="fill" objectFit="contain"/></figure>
+    <p className={styles.p}><figure className={styles.plogo}><Image priority src={G2} alt="logo" layout="fill" objectFit="contain"/></figure>
 </p>
   </div>
   <div className={styles.name}>
     <div className={styles.circle} style={{backgroundColor:"rgb(0,173,238)"}}></div>
-    <p className={styles.p}><figure className={styles.vlogo}><Image src={G3} alt="logo" layout="fill" objectFit="contain"/></figure></p>
+    <p className={styles.p}><figure className={styles.vlogo}><Image priority src={G3} alt="logo" layout="fill" objectFit="contain"/></figure></p>
   </div>
   <div className={styles.name}>
     <div className={styles.circle} style={{backgroundColor:"rgb(29,102,255)"}}></div>
-    <p className={styles.p}><figure className={styles.dlogo}><Image src={G5} alt="logo" layout="fill" objectFit="contain"/></figure>
+    <p className={styles.p}><figure className={styles.dlogo}><Image priority src={G5} alt="logo" layout="fill" objectFit="contain"/></figure>
 </p>
   </div>
   <div className={styles.name}>
     <div className={styles.circle} style={{backgroundColor:"rgb(231,45,69)"}}></div>
-    <p className={styles.p}><figure className={styles.clogo}><Image src={G4} alt="logo" layout="fill" objectFit="contain"/></figure>
+    <p className={styles.p}><figure className={styles.clogo}><Image priority src={G4} alt="logo" layout="fill" objectFit="contain"/></figure>
 </p>
   </div>
   </div>                
