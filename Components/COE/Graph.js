@@ -25,7 +25,7 @@ export const options = {
     }
   },
 };
-
+ 
 function Cprices(base) {
 
     const BASE_URL = "http://128.199.227.15/api/price_graph"
@@ -120,7 +120,7 @@ function Cprices(base) {
 
     }
     useEffect(()=>{   
-    fetch("http://128.199.227.15/api/grades").then(res => {return res.json()}).then(
+    fetch("https://admin.extramiless.com/api/grades").then(res => {return res.json()}).then(
     res =>  {console.log("sab bhula kayy", res.grades)
     setPetrol(res.grades)
     console.log("cpmsad", inputs.grade_id)
@@ -129,7 +129,7 @@ function Cprices(base) {
      
      
     
-      fetch("http://128.199.227.15/api/open_bidding_price_graph",requestOptions)
+      fetch("https://admin.extramiless.com/open_bidding_price_graph",requestOptions)
       .then(res => {return res.json();} )
       .then(res=>{
       // console.log("saas",res)
