@@ -89,34 +89,34 @@ function Cprices(base) {
 
     }
       )
-      if(chartData.length != 0) {   
-            var min = chartData[0].prices[0]; 
-            var max = 0 ;
-        for (var i = 0 ; i < chartData.length ; i++){
-            // console.log("hero",chartData[i].prices) 
+      // if(chartData.length != 0) {   
+      //       var min = chartData[0].prices[0]; 
+      //       var max = 0 ;
+      //   for (var i = 0 ; i < chartData.length ; i++){
+      //       // console.log("hero",chartData[i].prices) 
           
-            for(var j = 0 ; j < chartData[i].prices.length ; j++){
-              var cur = chartData[i].prices[j];
+      //       for(var j = 0 ; j < chartData[i].prices.length ; j++){
+      //         var cur = chartData[i].prices[j];
               
              
-              if (max < cur  ){
-                max = cur;
-                console.log("hero max", max)
-              } if (cur < min){
-                 min = cur
-                 console.log("hero min", min)
+      //         if (max < cur  ){
+      //           max = cur;
+      //           console.log("hero max", max)
+      //         } if (cur < min){
+      //            min = cur
+      //            console.log("hero min", min)
 
-              }
+      //         }
 
-              // console.log("hero min ====>", min)
-              // console.log("hero max ====>", max)
-              console.log("hero",chartData[i].prices[j])
-            }
-          }
+      //         // console.log("hero min ====>", min)
+      //         // console.log("hero max ====>", max)
+      //         console.log("hero",chartData[i].prices[j])
+      //       }
+      //     }
         
-          console.log("hero min ====>", min)
-          console.log("hero max ====>", max)
-        }
+      //     console.log("hero min ====>", min)
+      //     console.log("hero max ====>", max)
+      //   }
 
     }
     useEffect(()=>{   

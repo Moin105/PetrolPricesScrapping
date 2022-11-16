@@ -43,8 +43,8 @@ function Cprices(base) {
           }
     ]
       })
-      var min = chartData[0]?.prices[0]; 
-      var max = 0 ;
+      // var min = chartData[0]?.prices[0]; 
+      // var max = 0 ;
       const options = {
         responsive: true,
         
@@ -66,8 +66,8 @@ function Cprices(base) {
           }
           ,
           y: {
-            suggestedMin:2.5 || min,
-            suggestedMax: 3 ||max
+            suggestedMin:2.5 ,
+            suggestedMax: 3 
         }
         },
       };
@@ -98,35 +98,35 @@ function Cprices(base) {
 
     }
       )
-      if(chartData.length != 0) {   
+      // if(chartData.length != 0) {   
        
-        for (var i = 0 ; i < chartData.length ; i++){
-            // console.log("hero",chartData[i].prices) 
+      //   for (var i = 0 ; i < chartData.length ; i++){
+      //       // console.log("hero",chartData[i].prices) 
           
-            for(var j = 0 ; j < chartData[i].prices.length ; j++){
-              var cur = chartData[i].prices[j];
+      //       for(var j = 0 ; j < chartData[i].prices.length ; j++){
+      //         var cur = chartData[i].prices[j];
               
              
-              if (max < cur  ){
-        max = cur;
-                console.log("hero max", Math.round(max))
-              } if (cur < min){
-              min = cur
-                 console.log("hero min", Math.round(min))
+      //         if (max < cur  ){
+      //   max = cur;
+      //           console.log("hero max", Math.round(max))
+      //         } if (cur < min){
+      //         min = cur
+      //            console.log("hero min", Math.round(min))
 
-              }
+      //         }
 
-              // console.log("hero min ====>", min)
-              // console.log("hero max ====>", max)
-              console.log("hero",chartData[i].prices[j])
-            }
-          }
+      //         // console.log("hero min ====>", min)
+      //         // console.log("hero max ====>", max)
+      //         console.log("hero",chartData[i].prices[j])
+      //       }
+      //     }
         
-          console.log("hero min ====>", Math.ceil(min))
-          console.log("hero max ====>", Math.round(max))
-          console.log("hero max ====>", Math.round(1.2))
+      //     console.log("hero min ====>", Math.ceil(min))
+      //     console.log("hero max ====>", Math.round(max))
+      //     console.log("hero max ====>", Math.round(1.2))
 
-        }
+      //   }
 
     }
     useEffect(()=>{   
@@ -152,35 +152,35 @@ function Cprices(base) {
       setP5(res?.data[4]?.prices)
       console.log("saas",res.data)
       // console.log("heroo",chartData)
-      if(chartData.length != 0) {   
+      // if(chartData.length != 0) {   
        
-        for (var i = 0 ; i < chartData.length ; i++){
-            // console.log("hero",chartData[i].prices) 
+      //   for (var i = 0 ; i < chartData.length ; i++){
+      //       // console.log("hero",chartData[i].prices) 
           
-            for(var j = 0 ; j < chartData[i].prices.length ; j++){
-              var cur = chartData[i].prices[j];
+      //       for(var j = 0 ; j < chartData[i].prices.length ; j++){
+      //         var cur = chartData[i].prices[j];
               
              
-              if (max < cur  ){
-        max = cur;
-                console.log("hero max", Math.round(max))
-              } if (cur < min){
-              min = cur
-                 console.log("hero min", Math.round(min))
+      //         if (max < cur  ){
+      //   max = cur;
+      //           console.log("hero max", Math.round(max))
+      //         } if (cur < min){
+      //         min = cur
+      //            console.log("hero min", Math.round(min))
 
-              }
+      //         }
 
-              // console.log("hero min ====>", min)
-              // console.log("hero max ====>", max)
-              console.log("hero",chartData[i].prices[j])
-            }
-          }
+      //         // console.log("hero min ====>", min)
+      //         // console.log("hero max ====>", max)
+      //         console.log("hero",chartData[i].prices[j])
+      //       }
+      //     }
         
-          console.log("hero min ====>", Math.ceil(min))
-          console.log("hero max ====>", Math.round(max))
-          console.log("hero max ====>", Math.round(1.2))
+      //     console.log("hero min ====>", Math.ceil(min))
+      //     console.log("hero max ====>", Math.round(max))
+      //     console.log("hero max ====>", Math.round(1.2))
 
-        }
+      //   }
 
     }
 
