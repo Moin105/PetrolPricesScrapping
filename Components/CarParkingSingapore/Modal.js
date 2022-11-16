@@ -10,7 +10,9 @@ function Modal({point,setShow}) {
     const [Daily ,setDaily] = useState([])
     var days = ''
     var timing = ''
+    let uniqueHead = []
     var price = ''
+    var s = ["a","a","a","a","a"]
   useEffect(() => {
 if(point.car_parking_days_prices.length != 0){
   
@@ -22,26 +24,31 @@ if(point.car_parking_days_prices.length != 0){
      
       // console.log("monday=>",days)
          if (days != point?.car_parking_days_prices[i].days ){
+            
             days = point?.car_parking_days_prices[i]?.days;
+            setHead(prevValue =>[...prevValue,days])
             timing = point?.car_parking_days_prices[i]?.timing;
             price = point?.car_parking_days_prices[i]?.price;
-            console.log("monday ==>" ,days)
+            console.log("monday ==>" ,head)
             if(days.includes("Monday")){
-           return     setMonday(prevValue =>[...prevValue,{timing,price}])
+             setMonday(prevValue =>[...prevValue,{timing,price}])
             } 
             if(days.includes("Sunday") || days.includes("ph") || days.includes("Holiday") || days.includes("Public") ){
-        return       setSunday(prevValue =>[...prevValue,{timing,price}])
+               setSunday(prevValue =>[...prevValue,{timing,price}])
             }    if(days.includes("Daily")){
-           return    setDaily(prevValue =>[...prevValue,{timing,price}])
+               setDaily(prevValue =>[...prevValue,{timing,price}])
             } 
          }
      
       }
-   }    console.log("MOONday",Monday)
-         console.log("SOONday",Sunday)
-          console.log("Dayyday",Daily)
+   }   
    //  console.log("days" , Monday,Sunday,Daily )
-    }, [])
+   uniqueHead = head.filter((c, index) => {
+      return head.indexOf(c) === index;
+  });
+     console.log("MOONday",uniqueHead)
+         console.log("SOONday",Sunday)
+          console.log("Dayyday",Daily)}, [])
     var date = [];
  
   
@@ -54,8 +61,14 @@ if(point.car_parking_days_prices.length != 0){
          <div className={styles.map}>
              <iframe src={point.location} key={point.id} style={{width:"100%",height:"100%"}}></iframe>
          </div>
-         {
-
+         { head.length != 0 ?  uniqueHead.map(table =>{return<div className={styles.timetable}>
+             <div className={styles.days}><h3 className={styles.h3}>{table}</h3></div>    
+            <div className={styles.timecontainer}>
+               {/* <div className={styles.ron}><p className={styles.p}>{table.timing}</p></div>
+               <div className={styles.ron}><p className={styles.p}>{table.price}</p></div> */}
+            </div>
+             </div>}) : null
+          
          }
          {/* {point.car_parking_days_prices.map(table =>{
              return(  <div className={styles.timetable}>
@@ -123,7 +136,7 @@ if(point.car_parking_days_prices.length != 0){
     //                 <div className={styles.days}><h3 className={styles.h3}>{table.days}</h3></div>
     //                 </div>
     //             }else if(table.days.includes("Saturday and Sunday")){
-    //                 return     <div className={styles.timetable}>
+    //                 return     <div className={styles.timetable}
     //                 <div className={styles.days}><h3 className={styles.h3}>{table.days}</h3></div>
     //                 </div>
     //             }else if(table.days.includes("Mondays to Thursday")){
