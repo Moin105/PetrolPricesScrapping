@@ -1,5 +1,4 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import React,{useState} from 'react'
 import Banners from '../Components/Banners'
 import Footer from '../Components/Footer'
 import Footie from '../Components/Footie'
@@ -11,16 +10,18 @@ import Traffic from '../Components/TrafficUpdate/Traffic'
 
 
 export default function TrafficUpdate() {
+  const [show , setShow] = useState(true)
+
   const base = `https://admin.extramiless.com/`
   return (
   <>
-  <div>
-  <Header/>
+  <Header  setShow={setShow}/>
+  
+  {show && <>
   <Banners img={ban3}/>
-  </div>
   <Traffic base={base}/>
   <Footer/>
-  <Footie/>
+  <Footie/></>}
   </>
   )
 }

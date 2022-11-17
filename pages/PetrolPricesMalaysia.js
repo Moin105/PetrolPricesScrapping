@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import React,{useState} from 'react'
 import Image from 'next/image'
 import SBanner from '../Components/SBanner'
 import Footer from '../Components/Footer'
@@ -12,16 +12,19 @@ import Graph from '../Components/PPM/Graph'
 const base ='https://admin.extramiless.com/'
 
 export default function PetrolPricesMalaysia() {
+  const [show , setShow] = useState(true)
+
   return (
-  <>
-  <div>
-  <Header/>
+  <>  <Header setShow={setShow}/>
+  {show && <>
+
+
   <SBanner img={ban2} text="Compare petrol prices from all the leading petrol pumps in Malaysia. "/>
-  </div>
+
   <ChangePetrol base={base}/>
   <Graph base={base}/>
   <Footer/>
-  <Footie/>
+  <Footie/> </>}
   </>
   )
 }

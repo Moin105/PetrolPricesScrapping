@@ -11,6 +11,7 @@ import Graph from '../Components/COE/Graph'
 import Table from '../Components/COE/Table'
  const base ='https://admin.extramiless.com/'
 export default function COEPrices() {
+  const [show , setShow] = useState(true)
   const [data,setData] = useState({})
   const [month ,setMonth] = useState("")
   const [year ,setYear ] = useState("")
@@ -28,14 +29,14 @@ export default function COEPrices() {
   
   return (
   <>
-  <div>
-  <Header/>
-  <Banners img={ban5}/>
-  </div>
+
+  <Header setShow={setShow}/>
+ {  show && <>
+ <Banners img={ban5}/>
   {data.length  > 0 ?<Table data={data} month={month} year={year} bidding={bidding} base={base}/> : null}
   <Graph  base={base}/>
   <Footer/>
-  <Footie/>
+  <Footie/></>}
   </>
   )
 }

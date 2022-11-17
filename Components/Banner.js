@@ -10,7 +10,7 @@ function Banner() {
     <>
     <div className={styles.banner}>
        <figure className={styles.figure}>
-        <Image priority src={banner} alt="banner" layout="fill" width={100} objectFit="cover"/>
+        <Image  src={banner} alt="banner" layout="fill" width={100} objectFit="cover" quality={100}/>
        </figure>
        <div className={styles.wrapper}>
             <div className={styles.content}>

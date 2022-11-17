@@ -1,6 +1,7 @@
 import React,{useEffect,useState} from 'react'
 import styles from '../../styles/Home.module.css'
 import Image from 'next/image'
+import logo from '../../public/logo.png'
 
 
 function Traffic(base) {
@@ -10,6 +11,24 @@ function Traffic(base) {
     .then(res => {return res.json();} )
     .then(res => setImages(res.data))
     console.log("traffice",images )
+    for(var i = 0 ; i< images.length ; i++){
+      console.log(images[i].trafic_images)
+       for(var j = 0; j< images[i].trafic_images.length ; j++ ){
+        console.log(images[i].trafic_images[j].image)
+        console.log(images[i].trafic_images[j].image)
+        console.log()
+        fetch(images[i]?.trafic_images[j]?.image)
+        .then(res => {return res.json()})
+        .then(
+          res => {if (res.response == '404'){
+            console.log("jiyo")
+          }else{
+            console.log("j")
+          }
+        }
+        )
+       }
+    }
     }, [])
     
   return (
@@ -24,9 +43,9 @@ function Traffic(base) {
             <Image
             priority
             loader={() => {
-                return image.trafic_images[0].image
+                return image.trafic_images[0].image || logo
               }}  
-            src={image.trafic_images[0].image} alt="logo" layout="fill" objectFit="cover"/>
+            src={image.trafic_images[0].image || logo} alt="logo" layout="fill" objectFit="cover"/>
             </figure>
           <div className={styles.image2}>
                       <figure className={styles.figure2}>
