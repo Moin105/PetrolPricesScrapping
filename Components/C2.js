@@ -1,6 +1,4 @@
 import React,{useEffect, useState} from 'react'
-import * as dotenv from "../.env"
-
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import increase from '../public/increase.png'

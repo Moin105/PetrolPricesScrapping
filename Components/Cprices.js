@@ -1,7 +1,7 @@
 import React,{useEffect, useState} from 'react'
 import Image from 'next/image'
 import { Chart as ChartJS } from 'chart.js/auto'
-import { Chart }            from 'react-chartjs-2'
+import { Bar, Chart }            from 'react-chartjs-2'
 import styles from '../styles/Home.module.css'
 import { Line, } from 'react-chartjs-2'
 
@@ -313,7 +313,7 @@ function Cprices(base) {
   </div>
   </div>                
 </div>
-                  <Line
+                  <Bar
                     datasetIdKey='id'
                     
                   data={{

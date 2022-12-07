@@ -1,11 +1,11 @@
 import React,{useEffect, useState} from 'react'
 import Image from 'next/image'
 import styles from '../../styles/Home.module.css'
-import G1 from '../../public/G1.png'
-import G2 from '../../public/G2.png'
-import G3 from '../../public/G3.png'
-import G4 from '../../public/G4.png'
-import G5 from '../../public/G5.png'
+import g1 from '../../public/G1.png'
+import g2 from '../../public/G2.png'
+import g3 from '../../public/G3.png'
+import g4 from '../../public/G4.png'
+import g5 from '../../public/G5.png'
 
 function Table(props) {
 const BASE_URL = "http://128.199.227.15/api/open_bidding_data_api"
@@ -47,11 +47,11 @@ console.log("base url",BASE_URL)
   <thead className={styles.thead}>
     <tr>
       <th className={styles.ts}  style={{borderRadius:"6px 0px 0px 0px"}}><span >COE Category</span></th>
-      <th className={styles.th}><span className={styles.hspan}> <figure className={styles.plogo}><Image priority src={G1} alt="logo" layout="fill" objectFit="contain"/></figure><p className={styles.p}>Category A</p></span></th>
-      <th className={styles.th}><span className={styles.hspan}> <figure className={styles.plogo}><Image priority src={G2} alt="logo" layout="fill" objectFit="contain"/></figure><p className={styles.p}>Category B</p></span></th>
-      <th className={styles.th}><span className={styles.hspan}> <figure className={styles.vlogo}><Image priority src={G3} alt="logo" layout="fill" objectFit="contain"/></figure><p className={styles.p}>Category C</p></span></th>
-      <th className={styles.th}><span className={styles.hspan}> <figure className={styles.dlogo}><Image priority src={G5} alt="logo" layout="fill" objectFit="contain"/></figure><p className={styles.p}>Category D</p></span></th>
-      <th className={styles.th}><span className={styles.hspan}> <figure className={styles.clogo}><Image priority src={G4} alt="logo" layout="fill" objectFit="contain"/></figure><p className={styles.p}>Category E</p></span></th>
+      <th className={styles.th}><span className={styles.hspan}> <figure className={styles.plogo}><Image priority src={g1} alt="logo" layout="fill" objectFit="contain"/></figure><p className={styles.p}>Category A</p></span></th>
+      <th className={styles.th}><span className={styles.hspan}> <figure className={styles.plogo}><Image priority src={g2} alt="logo" layout="fill" objectFit="contain"/></figure><p className={styles.p}>Category B</p></span></th>
+      <th className={styles.th}><span className={styles.hspan}> <figure className={styles.vlogo}><Image priority src={g3} alt="logo" layout="fill" objectFit="contain"/></figure><p className={styles.p}>Category C</p></span></th>
+      <th className={styles.th}><span className={styles.hspan}> <figure className={styles.dlogo}><Image priority src={g5} alt="logo" layout="fill" objectFit="contain"/></figure><p className={styles.p}>Category D</p></span></th>
+      <th className={styles.th}><span className={styles.hspan}> <figure className={styles.clogo}><Image priority src={g4} alt="logo" layout="fill" objectFit="contain"/></figure><p className={styles.p}>Category E</p></span></th>
     </tr>
   </thead>
   <tbody>
@@ -66,7 +66,7 @@ console.log("base url",BASE_URL)
      <tr style={{background:"#F9F9FA"}}>
      <td className={styles.ts}><span style={{fontWeight:"600" }}>Quota Premium</span>
       </td> {data?.map(((dat,index) =>{
-        return  <td  key={index}className={styles.td}>{ "$" + dat.QP}
+        return  <td  key={index} className={styles.td}>{ "$" + dat.QP}
       </td>
       }))}  
      </tr>

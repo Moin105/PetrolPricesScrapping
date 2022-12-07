@@ -4,7 +4,7 @@ import Image from 'next/image'
 import logo from '../../public/logo.png'
 
 
-function Traffic(base) {
+function Traffic() {
     const [images,setImages]=useState([])
     useEffect(() => {
     fetch(`${process.env.NEXT_PUBLIC_API_URL}/traffic_images_api`)
