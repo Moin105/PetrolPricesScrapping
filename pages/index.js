@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import Banner from '../Components/Banner'
@@ -14,6 +14,10 @@ import styles from '../styles/Home.module.css'
  const base ='https://admin.extramiless.com/'
 export default function Home() {
   const [show , setShow] = useState(true)
+  useEffect(() => {
+    console.log("bharosay walay", process.env.NEXT_PUBLIC_API_URL)
+  }, [])
+  
 
   return (
   <>

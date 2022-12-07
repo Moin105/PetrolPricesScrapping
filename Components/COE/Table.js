@@ -23,7 +23,7 @@ const requestOptions = {
     useEffect(() => {
       console.log("log",props.data)
 console.log("base url",BASE_URL)
-      fetch("https://admin.extramiless.com/api/open_bidding-api",requestOptions)
+      fetch(`${process.env.NEXT_PUBLIC_API_URL}/open_bidding-api"`,requestOptions)
       .then(response => {
         console.log("rest",response);
         if(response.status == 200) {            

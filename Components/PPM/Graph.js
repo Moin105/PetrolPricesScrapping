@@ -71,7 +71,7 @@ function Graph(base) {
         body: JSON.stringify(inputs),
       }; 
      const fetchGraph = useCallback(() =>{
-      fetch("https://admin.extramiless.com/api/malaysian_price_graph")
+      fetch(`${process.env.NEXT_PUBLIC_API_URL}/malaysian_price_graph`)
       .then(res => {return res.json();} )
       .then(res=>{
       // console.log("saas",res)
@@ -85,7 +85,7 @@ function Graph(base) {
     },[inputs.grade_id])
     useEffect(()=>{   
      
-    fetch( "https://admin.extramiless.com/api/grades").then(res => {return res.json()}).then(
+    fetch( `${process.env.NEXT_PUBLIC_API_URL}/grades`).then(res => {return res.json()}).then(
     res =>  {
     setPetrol(res.grades)
     setInputs({

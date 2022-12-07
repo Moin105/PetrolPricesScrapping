@@ -7,7 +7,7 @@ import logo from '../../public/logo.png'
 function Traffic(base) {
     const [images,setImages]=useState([])
     useEffect(() => {
-    fetch('https://admin.extramiless.com/api/traffic_images_api')
+    fetch(`${process.env.NEXT_PUBLIC_API_URL}/traffic_images_api`)
     .then(res => {return res.json();} )
     .then(res => setImages(res.data))
     console.log("traffice",images )

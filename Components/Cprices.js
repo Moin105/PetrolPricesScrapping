@@ -82,7 +82,7 @@ function Cprices(base) {
         body: JSON.stringify(inputs),
       }; 
      const fetchGraph = () =>{
-      fetch( "https://admin.extramiless.com/api/motorist_price_graph",requestOptions)
+      fetch( `${process.env.NEXT_PUBLIC_API_URL}/motorist_price_graph`,requestOptions)
       .then(res => {return res.json();} )
       .then(res=>{
       // console.log("saas",res)
@@ -130,7 +130,7 @@ function Cprices(base) {
 
     }
     useEffect(()=>{   
-    fetch("https://admin.extramiless.com/api/grades").then(res => {return res.json()}).then(
+    fetch(`${process.env.NEXT_PUBLIC_API_URL}/grades`).then(res => {return res.json()}).then(
     res =>  {console.log("why are you so gay?", res.grades)
     setPetrol(res.grades)
     console.log("cpmsad", inputs.grade_id)
@@ -139,7 +139,7 @@ function Cprices(base) {
      
      
     
-      fetch("https://admin.extramiless.com/api/motorist_price_graph",requestOptions)
+      fetch(`${process.env.NEXT_PUBLIC_API_URL}/motorist_price_graph`,requestOptions)
       .then(res => {return res.json();} )
       .then(res=>{
       // console.log("saas",res)

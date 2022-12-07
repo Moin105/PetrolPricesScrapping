@@ -15,7 +15,7 @@ const BASE_URL = "http://128.199.227.15/api/car_parking_singapur_api"
 const [data,setData] = useState([])
     useEffect(() => {
 console.log("base url",BASE_URL)
-      fetch("https://admin.extramiless.com/api/car_parking_singapur_api")
+      fetch(`${process.env.NEXT_PUBLIC_API_URL}/car_parking_singapur_api`)
       .then(response => {
         console.log("res",response);
         if(response.status == 200) {            

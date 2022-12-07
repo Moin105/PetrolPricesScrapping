@@ -8,5 +8,14 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  env: {
+    NEXT_PUBLIC_API_URL: 'http://192.168.18.89/api',
+  },
 }
+
 module.exports = nextConfig
+module.exports = {
+  env: {
+    NEXT_PUBLIC_API_URL: 'http://192.168.18.89/api',
+  },
+}
