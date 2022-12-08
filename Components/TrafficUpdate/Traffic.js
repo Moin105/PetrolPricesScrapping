@@ -2,7 +2,7 @@ import React,{useEffect,useState} from 'react'
 import styles from '../../styles/Home.module.css'
 import Image from 'next/image'
 import logo from '../../public/logo.png'
-
+import { FallbackImage } from '../FallBack'
 
 
 function Traffic() {
@@ -33,7 +33,7 @@ function Traffic() {
     // }
     }, [])
     const  addDefaultSrc = (ev)=>{
-      ev.target.src = logo
+     console.log("emd",ev.target.src)
     }
   return (
     <>
@@ -43,41 +43,38 @@ function Traffic() {
    <div  className={styles.contain}>
           <div className={styles.image}>
             <figure className={styles.figure}>
-            <Image
-            priority
-            loader={() => {
-              return images[0] || logo
-              }}  
-          src={images[0] || logo} alt="logo" layout="fill" objectFit="cover"/>
+            <FallbackImage
+    key={images[0]}
+    layout="fill"
+    src={images[0]}
+    fallbackSrc={images[0]}
+/>
             </figure>
           <div className={styles.image2}>
                       <figure className={styles.figure2}>
-            <Image  
-            priority
-          loader={() => {
-          return images[1]
-          }}     
-          src={images[1]} alt="logo" layout="fill" objectFit="cover"/>
-
+                      <FallbackImage
+    key={images[1]}
+    layout="fill"
+    src={images[1]}
+    fallbackSrc={images[1]}
+/>
             </figure>            
             <div className={styles.image3}>
          <figure className={styles.figure3}>
-            <Image 
-            priority
-             loader={() => {
-            return images[2]
-            }}  
-          src={images[2]} alt="logo" layout="fill" objectFit="cover"/>
-
+         <FallbackImage
+    key={images[2]}
+    layout="fill"
+    src={images[2]}
+    fallbackSrc={images[2]}
+/>
             </figure>            
             <figure className={styles.figure4}>
-            <Image 
-            priority
-             loader={() => {
-            return images[3]
-            }}  
-          src={images[3]} alt="logo" layout="fill" objectFit="cover"/>
-
+            <FallbackImage
+    key={images[3]}
+    layout="fill"
+    src={images[3]}
+    fallbackSrc={images[3]}
+/>
             </figure>
 
             </div>
@@ -89,45 +86,46 @@ function Traffic() {
           <div  className={styles.contain}>
           <div className={styles.image}>
             <figure className={styles.figure}>
-            <Image
+            <FallbackImage
+    key={images[0]}
+    layout="fill"
+    src={images[0]}
+    fallbackSrc={images[0]}
+/>
+            {/* <Image
             onError={addDefaultSrc}
             priority
             loader={() => {
               return images[0] || logo
               }}  
-          src={images[0] || logo} alt="logo" layout="fill" objectFit="cover"/>
+          src={images[0] || logo} alt="logo" layout="fill" objectFit="cover"/> */}
             </figure>
           <div className={styles.image2}>
                       <figure className={styles.figure2}>
-            <Image 
-            onError={addDefaultSrc} 
-            priority
-          loader={() => {
-          return images[1]
-          }}     
-          src={images[1]} alt="logo" layout="fill" objectFit="cover"/>
+                      <FallbackImage
+    key={images[1]}
+    layout="fill"
+    src={images[1]}
+    fallbackSrc={images[1]}
+/>
 
             </figure>            
             <div className={styles.image3}>
          <figure className={styles.figure3}>
-            <Image 
-            onError={addDefaultSrc}
-            priority
-             loader={() => {
-            return images[2]
-            }}  
-          src={images[2]} alt="logo" layout="fill" objectFit="cover"/>
-
+         <FallbackImage
+    key={images[2]}
+    layout="fill"
+    src={images[2]}
+    fallbackSrc={images[2]}
+/>
             </figure>            
             <figure className={styles.figure4}>
-            <Image 
-            onError={addDefaultSrc}
-            priority
-             loader={() => {
-            return images[3]
-            }}  
-          src={images[3]} alt="logo" layout="fill" objectFit="cover"/>
-
+            <FallbackImage
+    key={images[3]}
+    layout="fill"
+    src={images[3]}
+    fallbackSrc={images[3]}
+/>
             </figure>
 
             </div>
