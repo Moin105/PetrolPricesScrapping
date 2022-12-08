@@ -7,8 +7,12 @@ const nextConfig = {
   },
   env: {
     NEXT_PUBLIC_API_URL: 'http://192.168.18.89/api',
-  },
-  future: { webpack5: true }
+  }, 
+  //  ...withImages(),
+      // future: {
+      //     webpack5: true,
+      // },
+  // future: { webpack5: true }
 }
 
 module.exports = nextConfig
@@ -19,10 +23,10 @@ module.exports = {
 }
 const withImages = require('next-images')
 
-module.exports = {
-    ...withImages(),
-    future: {
-        webpack5: true,
-    },
+// module.exports = {
+//     ...withImages(),
+//     future: {
+//         webpack5: true,
+//     },
 
-}
+// }
