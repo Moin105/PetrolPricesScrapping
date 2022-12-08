@@ -15,7 +15,7 @@ const BASE_URL = "http://128.199.227.15/api/compare_prices_api"
 const [data,setData] = useState([])
     useEffect(() => {
 console.log("base url",BASE_URL)
-      fetch(`${process.env.NEXT_PUBLIC_API_URL}/compare_prices_api`)
+      fetch("https://admin.extramiless.com/api/compare_prices_api")
       .then(response => {
         console.log("res",response);
         if(response.status == 200) {            

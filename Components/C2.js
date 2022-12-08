@@ -2,7 +2,6 @@ import React,{useEffect, useState} from 'react'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import increase from '../public/increase.png'
-// import {process} from "../next.config"
 import decrease from '../public/decrease.png'
 import nochange from '../public/unchanged.png'
 import spc from '../public/spc.png'
@@ -13,8 +12,9 @@ const BASE_URL = "http://128.199.227.15/api/compare_prices_api"
 const [data,setData] = useState([])
 const [state ,setState] = useState(0)
     useEffect(() => {
+console.log("base url",BASE_URL)
       // fetch("http://128.199.227.15/api/compare_prices_api")
-      fetch(`${process.env.NEXT_PUBLIC_API_URL}/compare_prices_api`)
+      fetch("https://admin.extramiless.com/api/compare_prices_api")
       .then(response => {
         console.log("res",response);
         if(response.status == 200) {            
