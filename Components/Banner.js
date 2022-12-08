@@ -10,7 +10,7 @@ function Banner() {
     <>
     <div className={styles.banner}>
        <figure className={styles.figure}>
-        <Image priority src={banner} alt="banner" layout="fill" width={100} objectFit="cover"/>
+        <Image  src={banner} alt="banner" layout="fill"  objectFit="cover" quality={100}/>
        </figure>
        <div className={styles.wrapper}>
             <div className={styles.content}>
@@ -26,7 +26,7 @@ function Banner() {
                      <div className={styles.b1}>
                         <div className={styles.box}>
                         <figure className={styles.box1}>
-                           <Image priority src={b1} alt="banner" layout="fill" width={100} objectFit="contain"/>
+                           <Image priority src={b1} alt="banner" layout="fill"  objectFit="contain"/>
                         </figure>
                         </div>
                         <p className={styles.p}>Compare petrol prices<br></br> in Malaysia.</p>
@@ -34,7 +34,7 @@ function Banner() {
                      <div className={styles.b2}>
                         <div className={styles.box}>
                         <figure className={styles.box1}>
-                           <Image priority src={b2} alt="banner" layout="fill" width={100} objectFit="contain"/>
+                           <Image priority src={b2} alt="banner" layout="fill"  objectFit="contain"/>
                         </figure>
                         </div>
                         <p className={styles.p}>Get COE Prices<br></br> comparison.</p>
@@ -42,7 +42,7 @@ function Banner() {
                      <div className={styles.b1}>
                         <div className={styles.box}>
                         <figure className={styles.box1}>
-                           <Image priority src={b1} alt="banner" layout="fill" width={100} objectFit="contain"/>
+                           <Image priority src={b1} alt="banner" layout="fill"  objectFit="contain"/>
                         </figure>
                         </div>
                         <p className={styles.p}>Get latest traffic & parking<br></br> Update..</p>

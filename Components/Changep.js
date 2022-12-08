@@ -8,11 +8,14 @@ import spc from '../public/spc.png'
 import sa from '../public/sa.png'
 
 function ChangeP(base) {
+  const myLoader = ({ src,quality }) => {
+    return `https://example.com/${src}&q=${quality || 75}`
+  }
 const BASE_URL = "http://128.199.227.15/api/compare_prices_api"
 const [data,setData] = useState([])
     useEffect(() => {
 console.log("base url",BASE_URL)
-      fetch("https://admin.extramiless.com/api/compare_prices_api")
+      fetch(`${process.env.NEXT_PUBLIC_API_URL}compare_prices_api`)
       .then(response => {
         console.log("res",response);
         if(response.status == 200) {            
@@ -39,11 +42,11 @@ console.log("base url",BASE_URL)
   <thead className={styles.thead}>
     <tr>
       <th className={styles.ts}  style={{borderRadius:"6px 0px 0px 0px"}}><span >Grade</span></th>
-      <th className={styles.th}><span className={styles.hspan}><figure className={styles.plogo}><Image priority src={esso} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
-      <th className={styles.th}><span className={styles.hspan}><figure className={styles.plogo}><Image priority src={shell} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
-      <th className={styles.th}><span className={styles.hspan}><figure className={styles.plogo}><Image priority src={spc} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
-      <th className={styles.th}><span className={styles.hspan}><figure className={styles.plogo}><Image priority src={caltex} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
-      <th className={styles.th}><span className={styles.hspan}><figure className={styles.plogo}><Image priority src={sa} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
+      <th className={styles.th}><span className={styles.hspan}><figure className={styles.plogo}><Image quality={100} priority={true}  src={esso} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
+      <th className={styles.th}><span className={styles.hspan}><figure className={styles.plogo}><Image quality={100} priority={true} src={shell} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
+      <th className={styles.th}><span className={styles.hspan}><figure className={styles.plogo}><Image quality={100} priority={true} src={spc} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
+      <th className={styles.th}><span className={styles.hspan}><figure className={styles.plogo}><Image quality={100} priority={true} src={caltex} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
+      <th className={styles.th}><span className={styles.hspan}><figure className={styles.plogo}><Image quality={100} priority={true} src={sa} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
     </tr>
   </thead>
   <tbody>

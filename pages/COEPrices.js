@@ -11,12 +11,13 @@ import Graph from '../Components/COE/Graph'
 import Table from '../Components/COE/Table'
  const base ='https://admin.extramiless.com/'
 export default function COEPrices() {
+  const [show , setShow] = useState(true)
   const [data,setData] = useState({})
   const [month ,setMonth] = useState("")
   const [year ,setYear ] = useState("")
   const [bidding,setBidding] = useState("")
   useEffect(() => {
-    fetch("https://admin.extramiless.com/api/open_bidding_data_api").then(res =>{if(res.status == 200) return res.json()}).then(res =>{
+    fetch(`${process.env.NEXT_PUBLIC_API_URL}open_bidding_data_api`).then(res =>{if(res.status == 200) return res.json()}).then(res =>{
      setData( res.data);
      console.log("das",data)
      setMonth(data[0]?.month)
@@ -28,14 +29,14 @@ export default function COEPrices() {
   
   return (
   <>
-  <div>
-  <Header/>
-  <Banners img={ban5}/>
-  </div>
+
+  <Header setShow={setShow}/>
+ {  show && <>
+ <Banners img={ban5}/>
   {data.length  > 0 ?<Table data={data} month={month} year={year} bidding={bidding} base={base}/> : null}
   <Graph  base={base}/>
   <Footer/>
-  <Footie/>
+  <Footie/></>}
   </>
   )
 }

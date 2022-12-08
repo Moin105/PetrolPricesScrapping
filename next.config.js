@@ -5,6 +5,9 @@ const nextConfig = {
    images: {
     domains: ['datamall.lta.gov.sg'], 
      unoptimized: true,
+  },
+  env:{
+   NEXT_PUBLIC_API_URL: 'http://3.108.80.52/api/'
   }
 }
 module.exports = nextConfig

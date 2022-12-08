@@ -2,6 +2,7 @@ import React,{useEffect, useState} from 'react'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import increase from '../public/increase.png'
+// import {process} from "../next.config"
 import decrease from '../public/decrease.png'
 import nochange from '../public/unchanged.png'
 import spc from '../public/spc.png'
@@ -12,9 +13,8 @@ const BASE_URL = "http://128.199.227.15/api/compare_prices_api"
 const [data,setData] = useState([])
 const [state ,setState] = useState(0)
     useEffect(() => {
-console.log("base url",BASE_URL)
       // fetch("http://128.199.227.15/api/compare_prices_api")
-      fetch("https://admin.extramiless.com/api/compare_prices_api")
+      fetch(`${process.env.NEXT_PUBLIC_API_URL}compare_prices_api`)
       .then(response => {
         console.log("res",response);
         if(response.status == 200) {            
@@ -91,7 +91,7 @@ console.log("base url",BASE_URL)
                     return  < div  key={index}className={styles.nochange}>
                     <h3 className={styles.h3}>{dat.grade}</h3>
                     <figure className={styles.figure}>
-                    <Image src={nochange} alt="logo" layout="fill" objectFit="contain" priority/>
+                    <Image priority={true} quality={100} src={nochange} alt="logo" layout="fill" objectFit="contain" />
                     <div key={index} className={styles.asb}><p className={styles.ps}>unchanged</p></div>
                     </figure>
                     <h3 className={styles.h3}>{ dat.motorist_fuel_prices[state]?.currency + dat.motorist_fuel_prices[state]?.price.toFixed(2)}</h3>
@@ -100,7 +100,7 @@ console.log("base url",BASE_URL)
                     return       <div key={index} className={styles.increase}>
                         <h3 className={styles.h3}>{dat.grade}</h3>
                         <figure className={styles.figure}>
-                        <Image src={increase} alt="logo" layout="fill" objectFit="contain" priority/>
+                        <Image src={increase} priority={true} quality={100} alt="logo" layout="fill" objectFit="contain" />
                         <div className={styles.asb}><p className={styles.ps}>{ dat.motorist_fuel_prices[state]?.change_in_price.toFixed(2)}</p><p className={styles.ps}>increased</p></div>
                         </figure>
                         <h3 className={styles.h3}>{ dat.motorist_fuel_prices[state]?.currency +  dat.motorist_fuel_prices[state]?.price}</h3>
@@ -110,7 +110,7 @@ console.log("base url",BASE_URL)
                         return       <div key={index} className={styles.decrease}>
                             <h3 className={styles.h3}>{dat.grade}</h3>
                             <figure className={styles.figure}>
-                            <Image src={decrease} alt="logo" layout="fill" objectFit="contain" priority/>
+                            <Image src={decrease} alt="logo" layout="fill" objectFit="contain" priority={true} quality={100}/>
                             <div className={styles.asb}><p className={styles.ps}>{ dat.motorist_fuel_prices[state]?.change_in_price.toFixed(2)}</p><p className={styles.ps}>decreased</p></div>
                             </figure>
                             <h3 className={styles.h3}>{dat.motorist_fuel_prices[state]?.currency + dat.motorist_fuel_prices[state]?.price.toFixed(2)}</h3>

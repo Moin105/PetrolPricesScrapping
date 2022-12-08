@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Chart as ChartJS } from 'chart.js/auto'
 import { Bar, Chart }            from 'react-chartjs-2'
 import styles from '../styles/Home.module.css'
-import { Line, } from 'react-chartjs-2'
+import { Line } from 'react-chartjs-2'
 
 
 function Cprices(base) {
@@ -82,7 +82,7 @@ function Cprices(base) {
         body: JSON.stringify(inputs),
       }; 
      const fetchGraph = () =>{
-      fetch( base+"api/motorist_price_graph",requestOptions)
+      fetch( `${process.env.NEXT_PUBLIC_API_URL}motorist_price_graph`,requestOptions)
       .then(res => {return res.json();} )
       .then(res=>{
       // console.log("saas",res)
@@ -130,8 +130,8 @@ function Cprices(base) {
 
     }
     useEffect(()=>{   
-    fetch("https://admin.extramiless.com/api/grades").then(res => {return res.json()}).then(
-    res =>  {console.log("sab bhula kayy", res.grades)
+    fetch(`${process.env.NEXT_PUBLIC_API_URL}grades`).then(res => {return res.json()}).then(
+    res =>  {console.log("why are you so gay?", res.grades)
     setPetrol(res.grades)
     console.log("cpmsad", inputs.grade_id)
   }
@@ -139,7 +139,7 @@ function Cprices(base) {
      
      
     
-      fetch("https://admin.extramiless.com/api/motorist_price_graph",requestOptions)
+      fetch(`${process.env.NEXT_PUBLIC_API_URL}motorist_price_graph`,requestOptions)
       .then(res => {return res.json();} )
       .then(res=>{
       // console.log("saas",res)
@@ -188,7 +188,8 @@ function Cprices(base) {
 
 
      
-    },[])
+    },[inputs])
+    
   
   return (
     <>

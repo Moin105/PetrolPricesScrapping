@@ -5,51 +5,111 @@ import styles from '../../styles/Home.module.css'
 function Modal({point,setShow}) {   
    //  const [days , setDays] = useState('')
    const [head ,setHead] = useState([])
+   const [heads ,setHeads] = useState([])
     const [Monday ,setMonday] = useState([])
     const [Sunday ,setSunday] = useState([])
     const [Daily ,setDaily] = useState([])
     var days = ''
     var timing = ''
+ var  current = ''
     let uniqueHead = []
-    var price = ''
-    var s = ["a","a","a","a","a"]
+    var price = ''  
+     var date = [];
   useEffect(() => {
 if(point.car_parking_days_prices.length != 0){
-  
-   for (var i = 0; i <  point.car_parking_days_prices.length; i++ ){ 
-      // console.log("monday",i) 
-        const dayz = point?.car_parking_days_prices[i]?.days
-      //   const time = point?.car_parking_days_prices[i]?.timing
-      //   const price = point?.car_parking_days_prices[i]?.price
-     
-      // console.log("monday=>",days)
-         if (days != point?.car_parking_days_prices[i].days ){
+
+  for(var i=0; i<point.car_parking_days_prices.length;i++){
+   current = point.car_parking_days_prices[i].days;
+   if(head.length != point.car_parking_days_prices.length ){
+       head.push({"key":current})
+   }
+   else{
+      return
+   }
+//    console.log("current" , current)
+//   for(var j = point.car_parking_days_prices.length ; j = 0; j--){
+//    console.log("current",current)
+//   }
+   // while (current != point.car_parking_days_prices[i]) {
+   //    console.log("current==>", current)
+   // }
+  }
+
+   // for (var i = 0; i <  point.car_parking_days_prices.length; i++ ){ 
+   //    // console.log("monday",i) 
+   //      const dayz = point?.car_parking_days_prices[i]?.days
+   //    //   const time = point?.car_parking_days_prices[i]?.timing
+   //    //   const price = point?.car_parking_days_prices[i]?.price
+   //   current = point?.car_parking_days_prices[i].days
+   //    // console.log("monday=>",days)
+
+   //       if (days != point?.car_parking_days_prices[i].days ){
             
-            days = point?.car_parking_days_prices[i]?.days;
-            setHead(prevValue =>[...prevValue,{days}])
-            timing = point?.car_parking_days_prices[i]?.timing;
-            price = point?.car_parking_days_prices[i]?.price;
-            console.log("monday ==>" ,head)
-            if(days.includes("Monday")){
-             setMonday(prevValue =>[...prevValue,{timing,price}])
-            } 
-            if(days.includes("Sunday") || days.includes("ph") || days.includes("Holiday") || days.includes("Public") ){
-               setSunday(prevValue =>[...prevValue,{timing,price}])
-            }    if(days.includes("Daily")){
-               setDaily(prevValue =>[...prevValue,{timing,price}])
-            } 
+   //          days = point?.car_parking_days_prices[i]?.days;
+   //          setHead(prevValue =>[...prevValue,{days}])
+   //          timing = point?.car_parking_days_prices[i]?.timing;
+   //          price = point?.car_parking_days_prices[i]?.price;
+   //          console.log("monday ==>" ,head)
+   //          // if(days.includes("Monday")){
+   //          //  setMonday(prevValue =>[...prevValue,{timing,price}])
+   //          // } 
+   //          // if(days.includes("Sunday") || days.includes("ph") || days.includes("Holiday") || days.includes("Public") ){
+   //          //    setSunday(prevValue =>[...prevValue,{timing,price}])
+   //          // }   
+   //          //  if(days.includes("Daily")){
+   //          //    setDaily(prevValue =>[...prevValue,{timing,price}])
+   //          // } 
+   //       }  if (days == point?.car_parking_days_prices[i].days ){
+        
+   //          days = point?.car_parking_days_prices[i]?.days;
+   //          setHeads(prevValue =>[...prevValue,{days}])
+   //          // setHead(prevValue =>[...prevValue,{days}])
+   //          // timing = point?.car_parking_days_prices[i]?.timing;
+   //          // price = point?.car_parking_days_prices[i]?.price;
+   //          // console.log("monday ==>" ,head)
+   //          // if(days.includes("Monday")){
+   //          //  setMonday(prevValue =>[...prevValue,{timing,price}])
+   //          // } 
+   //          // if(days.includes("Sunday") || days.includes("ph") || days.includes("Holiday") || days.includes("Public") ){
+   //          //    setSunday(prevValue =>[...prevValue,{timing,price}])
+   //          // }    if(days.includes("Daily")){
+   //          //    setDaily(prevValue =>[...prevValue,{timing,price}])
+   //          // } 
+   //       }
+     
+      
+   //    }
+   }   
+   //  console.log("days" , Monday,
+   if(head.length == point.car_parking_days_prices.length){
+      const days = head.filter(element => {
+         const isDuplicate = heads.includes(element.key);
+     
+         if (!isDuplicate) {
+           heads.push(element.key);
+     
+           return true;
          }
      
-      }
-   }   
-   //  console.log("days" , Monday,Sunday,Daily )
-   uniqueHead = head.filter((c, index) => {
-      return head.indexOf(c) === index;
-  });
-     console.log("MOONday",uniqueHead)
-         console.log("SOONday",Sunday)
-          console.log("Dayyday",Daily)}, [])
-    var date = [];
+         return false;
+       });
+      // uniqueHead = head.filter((c, index) => {   return head.indexOf(c) === index  });
+   }
+   console.log("barat",heads)
+//    uniqueHead = head.filter((c, index) => {
+//       // console.log("barat", head.indexOf(c),index)
+//       // if (head.indexOf(c) === index){
+//       //    date.push(head[index])
+//       // }
+//      return head.indexOf(c) === index
+//    //   return date.push(head.indexOf(c) === index
+//   });
+
+   //   console.log("MOONday",head)
+         // console.log("SOONday",Sunday)
+         //  console.log("Dayyday",Daily)
+         }, [])
+ 
  
   
     
@@ -61,14 +121,19 @@ if(point.car_parking_days_prices.length != 0){
          <div className={styles.map}>
              <iframe src={point.location} key={point.id} style={{width:"100%",height:"100%"}}></iframe>
          </div>
-         { head.length != 0 ?  uniqueHead.map((table,index) =>{return<div key={index} className={styles.timetable}>
-             <div className={styles.days}><h3 className={styles.h3}>{table}</h3></div>    
-            <div className={styles.timecontainer}>
-               {/* <div className={styles.ron}><p className={styles.p}>{table.timing}</p></div>
-               <div className={styles.ron}><p className={styles.p}>{table.price}</p></div> */}
-            </div>
-             </div>}) : null
-          
+         {
+         //  head.length != 0 ?  uniqueHead.map((head,index) =>{return(<div key={index} className={styles.timetable}>
+         //     <div className={styles.days}><h3 className={styles.h3}>{head.days}</h3></div>    
+         //    <div className={styles.timecontainer}>
+         //       {/* <div className={styles.ron}><p className={styles.p}>{table.timing}</p></div>
+         //       <div className={styles.ron}><p className={styles.p}>{table.price}</p></div> */}
+         //    </div>
+         //     </div>)}) : <h2>qwd</h2>
+         heads.length == 0  ?   heads.map((day,index) =>{
+            return    <div key={index}>{day}</div>
+              }) :heads.map((day,index) =>{
+       return    <div key={index}>{day}</div>
+         })
          }
          {/* {point.car_parking_days_prices.map(table =>{
              return(  <div className={styles.timetable}>

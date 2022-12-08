@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import flogo from '../public/flogo.png';
-import arrow from '../public/arrow.png';
+// import arrow from '../public/arrow.png';
 import Link from 'next/link'
 
 
@@ -19,7 +19,7 @@ function Footer() {
                 <div className={styles.inputbox}>
                       <input placeholder='Your Email' className={styles.input}/>
                    <figure className={styles.arrow}>
-                   <Image priority src={arrow} alt="banner" layout="fill" width={100} objectFit="contain"/>
+                   {/* <Image priority src={arrow} alt="banner" layout="fill" width={100} objectFit="contain"/> */}
                    </figure>
                 </div>
               
