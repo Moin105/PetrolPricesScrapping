@@ -11,50 +11,49 @@ function Traffic() {
     .then(res => {return res.json();} )
     .then(res => setImages(res.data))
     console.log("traffice",images )
-    for(var i = 0 ; i< images.length ; i++){
-      console.log(images[i].trafic_images)
-       for(var j = 0; j< images[i].trafic_images.length ; j++ ){
-        console.log(images[i].trafic_images[j].image)
-        console.log(images[i].trafic_images[j].image)
-        console.log()
-        fetch(images[i]?.trafic_images[j]?.image)
-        .then(res => {return res.json()})
-        .then(
-          res => {if (res.response == '404'){
-            console.log("jiyo")
-          }else{
-            console.log("j")
-          }
-        }
-        )
-       }
-    }
+    // for(var i = 0 ; i< images.length ; i++){
+    //   console.log(images[i].trafic_images)
+    //    for(var j = 0; j< images[i].trafic_images.length ; j++ ){
+    //     console.log(images[i].trafic_images[j].image)
+    //     console.log(images[i].trafic_images[j].image)
+    //     console.log()
+    //     fetch(images[i]?.trafic_images[j]?.image)
+    //     .then(res => {return res.json()})
+    //     .then(
+    //       res => {if (res.response == '404'){
+    //         console.log("jiyo")
+    //       }else{
+    //         console.log("j")
+    //       }
+    //     }
+    //     )
+    //    }
+    // }
     }, [])
     
   return (
     <>
        <div className={styles.tcard}>
           
-       {images.map((image,index)=>{
-   return<div key={index} className={styles.contain}>
-    <h2 className={styles.h4}>{image.description}</h2>
-           <div className={styles.image}>
+
+   <div  className={styles.contain}>
+          <div className={styles.image}>
             <figure className={styles.figure}>
             <Image
             priority
             loader={() => {
-                return image.trafic_images[0].image || logo
+              return images[0] || logo
               }}  
-            src={image.trafic_images[0].image || logo} alt="logo" layout="fill" objectFit="cover"/>
+          src={images[0] || logo} alt="logo" layout="fill" objectFit="cover"/>
             </figure>
           <div className={styles.image2}>
                       <figure className={styles.figure2}>
             <Image  
             priority
           loader={() => {
-            return image.trafic_images[1].image
+          return images[1]
           }}     
-            src={image.trafic_images[1].image} alt="logo" layout="fill" objectFit="cover"/>
+          src={images[1]} alt="logo" layout="fill" objectFit="cover"/>
 
             </figure>            
             <div className={styles.image3}>
@@ -62,18 +61,18 @@ function Traffic() {
             <Image 
             priority
              loader={() => {
-              return image.trafic_images[2].image
+            return images[2]
             }}  
-            src={image.trafic_images[2].image} alt="logo" layout="fill" objectFit="cover"/>
+          src={images[2]} alt="logo" layout="fill" objectFit="cover"/>
 
             </figure>            
             <figure className={styles.figure4}>
             <Image 
             priority
              loader={() => {
-              return image.trafic_images[3].image
+            return images[3]
             }}  
-            src={image.trafic_images[3].image} alt="logo" layout="fill" objectFit="cover"/>
+          src={images[3]} alt="logo" layout="fill" objectFit="cover"/>
 
             </figure>
 
@@ -83,13 +82,52 @@ function Traffic() {
   
            </div>
           </div>
-       }) 
-         }
-      
-       
-       
-        
-    
+          <div  className={styles.contain}>
+          <div className={styles.image}>
+            <figure className={styles.figure}>
+            <Image
+            priority
+            loader={() => {
+              return images[0] || logo
+              }}  
+          src={images[0] || logo} alt="logo" layout="fill" objectFit="cover"/>
+            </figure>
+          <div className={styles.image2}>
+                      <figure className={styles.figure2}>
+            <Image  
+            priority
+          loader={() => {
+          return images[1]
+          }}     
+          src={images[1]} alt="logo" layout="fill" objectFit="cover"/>
+
+            </figure>            
+            <div className={styles.image3}>
+         <figure className={styles.figure3}>
+            <Image 
+            priority
+             loader={() => {
+            return images[2]
+            }}  
+          src={images[2]} alt="logo" layout="fill" objectFit="cover"/>
+
+            </figure>            
+            <figure className={styles.figure4}>
+            <Image 
+            priority
+             loader={() => {
+            return images[3]
+            }}  
+          src={images[3]} alt="logo" layout="fill" objectFit="cover"/>
+
+            </figure>
+
+            </div>
+   
+          </div>  
+  
+           </div>
+          </div>
        </div>
     </>
   )

@@ -95,7 +95,7 @@ if(point.car_parking_days_prices.length != 0){
        });
       // uniqueHead = head.filter((c, index) => {   return head.indexOf(c) === index  });
    }
-   console.log("barat",heads)
+   console.log("barat",point.car_parking_days_prices)
 //    uniqueHead = head.filter((c, index) => {
 //       // console.log("barat", head.indexOf(c),index)
 //       // if (head.indexOf(c) === index){
@@ -121,19 +121,12 @@ if(point.car_parking_days_prices.length != 0){
          <div className={styles.map}>
              <iframe src={point.location} key={point.id} style={{width:"100%",height:"100%"}}></iframe>
          </div>
+
          {
-         //  head.length != 0 ?  uniqueHead.map((head,index) =>{return(<div key={index} className={styles.timetable}>
-         //     <div className={styles.days}><h3 className={styles.h3}>{head.days}</h3></div>    
-         //    <div className={styles.timecontainer}>
-         //       {/* <div className={styles.ron}><p className={styles.p}>{table.timing}</p></div>
-         //       <div className={styles.ron}><p className={styles.p}>{table.price}</p></div> */}
-         //    </div>
-         //     </div>)}) : <h2>qwd</h2>
-         heads.length == 0  ?   heads.map((day,index) =>{
-            return    <div key={index}>{day}</div>
-              }) :heads.map((day,index) =>{
-       return    <div key={index}>{day}</div>
-         })
+            point?.car_parking_days_prices?.map(days =>{
+               return <div className={styles.dayrow}><h2 className={styles.days}>{days.days}</h2><h3  className={styles.time}>{days.timing}</h3>
+               </div>
+            })
          }
          {/* {point.car_parking_days_prices.map(table =>{
              return(  <div className={styles.timetable}>

@@ -38,15 +38,15 @@ console.log("base url",BASE_URL)
                  <h2 className={styles.h2}>Compare Petrol Prices</h2>     
                  <div className={styles.table}>
 
-{data.length != 0 ? <table className={styles.table} style={{width:"100%", borderCollapse: "collapse;" ,borderRadius:"6px 6px 0px 0px"}}>
+{data.length != 0 ? <table className={styles.table} style={{width:"100%", borderCollapse: "collapse;" }}>
   <thead className={styles.thead}>
     <tr>
-      <th className={styles.ts}  style={{borderRadius:"6px 0px 0px 0px"}}><span >Grade</span></th>
+      <th className={styles.ts}  ><span >Grade</span></th>
       <th className={styles.th}><span className={styles.hspan}><figure className={styles.plogo}><Image quality={100} priority={true}  src={esso} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
       <th className={styles.th}><span className={styles.hspan}><figure className={styles.plogo}><Image quality={100} priority={true} src={shell} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
       <th className={styles.th}><span className={styles.hspan}><figure className={styles.plogo}><Image quality={100} priority={true} src={spc} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
       <th className={styles.th}><span className={styles.hspan}><figure className={styles.plogo}><Image quality={100} priority={true} src={caltex} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
-      <th className={styles.th}><span className={styles.hspan}><figure className={styles.plogo}><Image quality={100} priority={true} src={sa} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
+      <th className={styles.th}><span className={`${styles.hspan}`} ><figure className={styles.plogo}><Image quality={100} priority={true} src={sa} alt="logo" layout="fill" objectFit="contain"/></figure></span></th>
     </tr>
   </thead>
   <tbody>

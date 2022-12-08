@@ -1,5 +1,8 @@
 
 // globals
+.rad{
+  border-radius:"0px 6px 0px 0px"!important;
+}
 .body{
   margin: 0;
 }
@@ -374,6 +377,7 @@ line-height: 30px;
 
              .th{
               padding: 25px 0px 26px 0px;
+              // border-radius: 0px 6px 0px 0px;
               text-align: center;
               .plogo{
                 width: 40px;
@@ -1735,7 +1739,6 @@ text-align: center;
   display: flex;
   flex-direction: column;
   width: 70%;
-  height: 65%;
   max-width: 1316px;
   max-height: 904px;
   padding: 2em;
@@ -5138,6 +5141,7 @@ text-align: center;
       }
       .image2{
         display: flex;
+        flex-direction: column;
         max-width: 760px;
         gap:20px;
       }
@@ -5145,6 +5149,7 @@ text-align: center;
         display: flex;
         flex-direction: column;
         gap:10px;
+        width: 100%;
       }
       .figure{
         border-radius: 12px;
@@ -5156,7 +5161,7 @@ text-align: center;
         }
       }
       .figure2{
-        width: 60%;
+        width: 100%;
         height: 320px;
         max-width: 376px;
         position: relative;
@@ -5165,7 +5170,7 @@ text-align: center;
         }
       }
         .figure3{
-          width: 226.61px;
+          width: 100%;
           position: relative;
           height: 155px;
           img {
@@ -5174,7 +5179,7 @@ text-align: center;
         }
         .figure4{
           position: relative;
-          width: 226.61px;
+          width: 100%;
           height: 155px;
           img {
             border-radius: 12px;
@@ -5212,7 +5217,7 @@ text-align: center;
   }
 
 /// mobile 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 580px) {
   .tcard{
     padding-top: 100px;
     
@@ -5247,6 +5252,7 @@ text-align: center;
       }
       .image2{
         display: flex;
+        flex-direction: column;
         max-width: 400px;
         width: 95%;
         gap:20px;
@@ -5266,7 +5272,7 @@ text-align: center;
         }
       }
       .figure2{
-        width: 60%;
+        width: 100%;
         height: 320px;
         max-width: 376px;
         position: relative;
@@ -5275,7 +5281,7 @@ text-align: center;
         }
       }
         .figure3{
-          width: 226.61px;
+          width: 100%;
           position: relative;
           height: 155px;
           img {
@@ -5284,7 +5290,7 @@ text-align: center;
         }
         .figure4{
           position: relative;
-          width: 226.61px;
+          width: 100%;
           height: 155px;
           img {
             border-radius: 12px;
@@ -6829,5 +6835,24 @@ text-align: center;
         }
       }
     }
+  }
+}
+.dayrow{
+  display: flex;
+  align-items: center;
+  .days{
+    width: 50%;
+    font-size: 16px;
+    padding: 12px;
+    background-color: #FBBC05;
+    font-weight: 500;
+    margin: 3px;
+  }
+  .time{
+    width: 50%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #767676;
   }
 }

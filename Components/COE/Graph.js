@@ -1,7 +1,7 @@
 import React,{useEffect, useState} from 'react'
 import Image from 'next/image'
 import { Chart as ChartJS } from 'chart.js/auto'
-import { Chart }            from 'react-chartjs-2'
+import { Bar, Chart }            from 'react-chartjs-2'
 import styles from '../../styles/Home.module.css'
 import { Line, } from 'react-chartjs-2'
 import G1 from '../../public/G1.png'
@@ -43,21 +43,21 @@ function Cprices(base) {
           label: '',
           data: [65, 59, 80, 81, 56, 55, 40],
           fill: false,
-          // borderColor: 'rgb(75, 12, 192)',
+          // backgroundColor: 'rgb(75, 12, 192)',
           tension: 0.1
         },
         {
             label: '98',
             data: [65, 29, 90, 31, 46, 25, 60],
             fill: false,
-            // borderColor: 'rgb(75, 192, 12)',
+            // backgroundColor: 'rgb(75, 192, 12)',
             tension: 0.1
           },
           {
             label: 'Deisel',
             data: [45, 69, 30, 21, 66, 35, 20],
             fill: false,
-            // borderColor: 'rgb(75, 192, 192)',
+            // backgroundColor: 'rgb(75, 192, 192)',
             tension: 0.1
           }
     ]
@@ -262,7 +262,7 @@ function Cprices(base) {
   </div>
   </div>                
 </div>
-                  <Line
+                  <Bar
                     datasetIdKey='id'
                     
                   data={{
@@ -272,34 +272,34 @@ function Cprices(base) {
                       // data:  [65, 29, 90, 31, 46, 25, 60],
                       data:p1,
                       fill: false,
-                      borderColor: 'rgb(40,167,69)',
+                      backgroundColor: 'rgb(40,167,69)',
                       tension: 0.1
                     },
                     {
                         label: 'Shell',
                         data: p2,
                         fill: false,
-                        borderColor: 'rgb(251,188,5,)',
+                        backgroundColor: 'rgb(251,188,5,)',
                         tension: 0.1
                       },
                       {
                         label: 'esso',
                         data: p3,
                         fill: false,
-                        borderColor: 'rgb(0,173,238)',
+                        backgroundColor: 'rgb(0,173,238)',
                         tension: 0.1
                       }, {
                         label: 'spc',
                         data: p4,
                         fill: false,
-                        borderColor: 'rgb(29,102,255)',
+                        backgroundColor: 'rgb(29,102,255)',
                         tension: 0.1
                       },
                       {
                         label: 'caltex',
                         data: p5,
                         fill: false,
-                        borderColor: 'rgb(231,45,69)',
+                        backgroundColor: 'rgb(231,45,69)',
                         tension: 0.1
                       }
                 ]

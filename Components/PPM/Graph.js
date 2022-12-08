@@ -1,7 +1,7 @@
 import React,{useEffect, useState,useCallback} from 'react'
 import Image from 'next/image'
 import { Chart as ChartJS } from 'chart.js/auto'
-import { Chart }            from 'react-chartjs-2'
+import { Bar, Chart }            from 'react-chartjs-2'
 import styles from '../../styles/Home.module.css'
 import { Line, } from 'react-chartjs-2'
 
@@ -39,21 +39,21 @@ function Graph(base) {
           label: '',
           data: [65, 59, 80, 81, 56, 55, 40],
           fill: false,
-          // borderColor: 'rgb(75, 12, 192)',
+          // backgroundColor: 'rgb(75, 12, 192)',
           tension: 0.1
         },
         {
             label: '98',
             data: [65, 29, 90, 31, 46, 25, 60],
             fill: false,
-            // borderColor: 'rgb(75, 192, 12)',
+            // backgroundColor: 'rgb(75, 192, 12)',
             tension: 0.1
           },
           {
             label: 'Deisel',
             data: [45, 69, 30, 21, 66, 35, 20],
             fill: false,
-            // borderColor: 'rgb(75, 192, 192)',
+            // backgroundColor: 'rgb(75, 192, 192)',
             tension: 0.1
           }
     ]
@@ -162,7 +162,7 @@ function Graph(base) {
               </div>
                {labels.length != 0   ?  <div>
 
-                  <Line
+                  <Bar
                     datasetIdKey='id'
                     
                   data={{
@@ -172,21 +172,21 @@ function Graph(base) {
                       // data:  [65, 29, 90, 31, 46, 25, 60],
                       data:p1,
                       fill: false,
-                      borderColor: 'rgb(40,167,69)',
+                      backgroundColor: 'rgb(40,167,69)',
                       tension: 0.1
                     },
                     {
                         label: 'Ron 97',
                         data: p2,
                         fill: false,
-                        borderColor: 'rgb(251,188,5)',
+                        backgroundColor: 'rgb(251,188,5)',
                         tension: 0.1
                       },
                       {
                         label: 'Diesel',
                         data: p3,
                         fill: false,
-                        borderColor: 'rgb(29,102,255)',
+                        backgroundColor: 'rgb(29,102,255)',
                         tension: 0.1
                       },
                 ]

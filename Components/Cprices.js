@@ -323,35 +323,35 @@ function Cprices(base) {
                       // data:  [65, 29, 90, 31, 46, 25, 60],
                       data:p1,
                       fill: false,
-                      borderColor: 'rgb(40,167,69)',
-                      tension: 0.1
+                      
+                      backgroundColor: 'rgb(40,167,69)',
                     },
                     {
                         label: 'Shell',
                         data: p2,
                         fill: false,
-                        borderColor: 'rgb(251,188,5,)',
-                        tension: 0.1
+                        backgroundColor: 'rgb(251,188,5,)',
+  
                       },
                       {
                         label: 'esso',
                         data: p3,
                         fill: false,
-                        borderColor: 'rgb(0,173,238)',
-                        tension: 0.1
+                        backgroundColor: 'rgb(0,173,238)',
+  
                       }, {
                         label: 'spc',
                         data: p4,
                         fill: false,
-                        borderColor: 'rgb(29,102,255)',
-                        tension: 0.1
+                        backgroundColor: 'rgb(29,102,255)',
+  
                       },
                       {
                         label: 'caltex',
                         data: p5,
                         fill: false,
-                        borderColor: 'rgb(231,45,69)',
-                        tension: 0.1
+                        backgroundColor: 'rgb(231,45,69)',
+  
                       }
                 ]
                   }} options={options}/>
