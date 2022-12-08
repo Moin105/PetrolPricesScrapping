@@ -4,7 +4,9 @@ import Image from 'next/image'
 import logo from '../../public/logo.png'
 
 
+
 function Traffic() {
+
     const [images,setImages]=useState([])
     useEffect(() => {
     fetch(`${process.env.NEXT_PUBLIC_API_URL}traffic_images_api`)
@@ -30,7 +32,9 @@ function Traffic() {
     //    }
     // }
     }, [])
-    
+    const  addDefaultSrc = (ev)=>{
+      ev.target.src = logo
+    }
   return (
     <>
        <div className={styles.tcard}>
@@ -86,6 +90,7 @@ function Traffic() {
           <div className={styles.image}>
             <figure className={styles.figure}>
             <Image
+            onError={addDefaultSrc}
             priority
             loader={() => {
               return images[0] || logo
@@ -94,7 +99,8 @@ function Traffic() {
             </figure>
           <div className={styles.image2}>
                       <figure className={styles.figure2}>
-            <Image  
+            <Image 
+            onError={addDefaultSrc} 
             priority
           loader={() => {
           return images[1]
@@ -105,6 +111,7 @@ function Traffic() {
             <div className={styles.image3}>
          <figure className={styles.figure3}>
             <Image 
+            onError={addDefaultSrc}
             priority
              loader={() => {
             return images[2]
@@ -114,6 +121,7 @@ function Traffic() {
             </figure>            
             <figure className={styles.figure4}>
             <Image 
+            onError={addDefaultSrc}
             priority
              loader={() => {
             return images[3]
@@ -141,7 +149,8 @@ export default Traffic
           
 //   if(index % 1 == 0){
 //     return   <figure className={styles.fig}>
-//     <Image  loader={() => {
+//     <Image 
+// onError={addDefaultSrc} loader={() => {
 //   return image.image
 // }}  
 //     src={image.image} alt="logo" layout="fill" objectFit="cover"/>
