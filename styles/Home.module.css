@@ -2,10 +2,6 @@
   margin: 0;
 }
 
-.ham {
-  display: none;
-}
-
 .hp {
   font-family: "Poppins";
   font-style: normal;
@@ -53,6 +49,7 @@
 .header {
   display: flex;
   padding: 43px 0px 32px 0px;
+  max-width: 1920px;
   margin: 0 auto;
   background-color: rgba(0, 171, 65, 0.3);
   width: 100%;
@@ -94,6 +91,7 @@
 .headers {
   display: flex;
   padding: 43px 0px 32px 0px;
+  max-width: 1920px;
   margin: 0 auto;
   width: 100%;
   justify-content: center;
@@ -384,7 +382,7 @@
   text-align: center;
 }
 .controlp .wrapper .tables .table .thead tr .th .plogo {
-  width: 40px;
+  width: 50px;
   height: 35px;
   position: relative;
 }
@@ -5071,98 +5069,6 @@
   }
 }
 @media only screen and (max-width: 425px) {
-  .tcard {
-    padding-top: 100px;
-    display: flex;
-    width: 95%;
-    max-width: 425px;
-    flex-direction: column;
-    margin: 0 auto;
-    justify-content: space-between;
-  }
-  .tcard .h4 {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 24px;
-    color: black;
-    margin-bottom: 36px;
-  }
-  .tcard .contain {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 20px 30px 22px 30px;
-    display: flex;
-    border-radius: 12px;
-    width: 100%;
-    flex-direction: column;
-    gap: 20px;
-  }
-  .tcard .contain .image {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    gap: 15px;
-  }
-  .tcard .contain .image2 {
-    display: flex;
-    max-width: 400px;
-    width: 95%;
-    gap: 20px;
-  }
-  .tcard .contain .image3 {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .tcard .contain .figure {
-    border-radius: 12px;
-    width: 100%;
-    height: 439px;
-    position: relative;
-  }
-  .tcard .contain .figure img {
-    border-radius: 12px;
-  }
-  .tcard .contain .figure2 {
-    width: 60%;
-    height: 320px;
-    max-width: 376px;
-    position: relative;
-  }
-  .tcard .contain .figure2 img {
-    border-radius: 12px;
-  }
-  .tcard .contain .figure3 {
-    width: 226.61px;
-    position: relative;
-    height: 155px;
-  }
-  .tcard .contain .figure3 img {
-    border-radius: 12px;
-  }
-  .tcard .contain .figure4 {
-    position: relative;
-    width: 226.61px;
-    height: 155px;
-  }
-  .tcard .contain .figure4 img {
-    border-radius: 12px;
-  }
-  .tcard .fig {
-    width: 100%;
-    height: 100%;
-    position: relative;
-  }
-  .tcard .figu {
-    width: 300px;
-    height: 200px;
-    position: relative;
-  }
-  .tcard .figur {
-    width: 500px;
-    height: 600px;
-    position: relative;
-  }
   .wrapper {
     max-width: 425px;
     width: calc(100% - 40px);
@@ -5201,98 +5107,15 @@
     font-size: 16px;
     line-height: 20px;
   }
-  .ham {
-    color: #00AB41;
-    display: block;
-    font-size: 22px;
-    margin-top: 5px;
-  }
-  .mobilenav {
-    display: flex;
-    position: fixed;
-    width: 100%;
-    background: #fff;
-    right: 0;
-    height: 100%;
-    top: 0;
-    z-index: 11111111111111;
-    color: #fff;
-  }
-  .mobilenav .mobileback {
-    height: 100%;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: white;
-  }
-  .mobilenav .mobileback div {
-    margin: 10px 0px 0px 99px;
-    background-color: white;
-    padding: 15px;
-    font-size: 23px;
-    border-radius: 50px;
-    color: white;
-  }
-  .mobilenav .mobileback div figure {
-    width: 35px;
-    height: 35px;
-    position: relative;
-  }
-  .mobilenav .mobilebar {
-    display: flex;
-    width: calc(100% - 42px);
-    flex-direction: column;
-    background-color: #00AB41;
-    height: 100%;
-  }
-  .mobilenav .mobilebar figure {
-    position: relative;
-    margin: 10px 0px 21px 22px;
-  }
-  .mobilenav .mobilebar .uppernav {
-    padding: 33px 0px 0px 46px;
-    border-top: 0.5px solid #000;
-    list-style-type: none;
-  }
-  .mobilenav .mobilebar .uppernav li {
-    padding-bottom: 16px !important;
-  }
-  .header {
-    width: calc(100% - 80px);
-    max-width: 1920px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .header .hlogo {
-    position: relative;
-    width: 133px !important;
-    height: 76px !important;
-  }
-  .header li {
-    list-style-type: none;
-    font-size: 14px;
-    color: #000000;
-  }
-  .header ul {
-    display: block;
-  }
-  .navbar {
-    position: relative;
-    display: block;
-    width: 20px;
-    height: 14px;
-  }
   .header {
     display: flex;
     padding: 23px 0px 22px 0px;
-    width: 100%;
+    max-width: 425px;
     justify-content: center;
   }
   .header .wrap {
     max-width: 425px;
-    width: calc(100% - 30px);
+    width: calc(100% - 20px);
   }
   .header .wrap .blogo {
     width: 202px;
@@ -5301,16 +5124,17 @@
     position: relative;
   }
   .header .wrap .logo {
-    width: 114px;
+    width: 200px;
     cursor: pointer;
-    height: 39px;
+    height: 70px;
+    position: relative;
   }
   .header .wrap .ul {
     display: none;
   }
   .headers {
     display: flex;
-    padding: 33px 20px 32px 20px;
+    padding: 43px 0px 32px 0px;
     max-width: 425px;
     width: 100%;
     justify-content: center;
@@ -5326,9 +5150,9 @@
     position: relative;
   }
   .headers .wrap .logo {
-    width: 114px;
+    width: 200px;
     cursor: pointer;
-    height: 39px;
+    height: 70px;
     position: relative;
   }
   .headers .wrap .ul {
@@ -5420,32 +5244,6 @@
   .banner .wrapper .content .right .b2 .box .box1 {
     width: 18px;
     height: 16px;
-  }
-  .banners .figure {
-    width: 100%;
-    height: 229px;
-    position: relative;
-    top: 0;
-  }
-  .sbanner {
-    flex-direction: column;
-    display: flex;
-    width: 100%;
-    position: relative;
-    top: 0;
-    align-items: center;
-    justify-content: center;
-    max-height: 410px;
-  }
-  .sbanner .figure {
-    width: 100%;
-    height: 229px;
-    position: relative;
-    top: 0;
-    z-index: -1111;
-  }
-  .sbanner .wrapper {
-    display: none;
   }
   .controlp {
     width: 100%;
@@ -5590,8 +5388,7 @@
   .fuel .wrapper .pbox {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    margin-top: 20px;
+    width: 75%;
   }
   .fuel .wrapper .pbox .nochange {
     display: flex;
@@ -5704,8 +5501,8 @@
     gap: 10px;
   }
   .fuel .wrapper .pbox .nochangerm .figures {
-    width: 77px;
-    height: 147px;
+    width: 248px;
+    height: 390px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -5741,8 +5538,8 @@
     gap: 10px;
   }
   .fuel .wrapper .pbox .increaserm .figures {
-    width: 77px;
-    height: 147px;
+    width: 248px;
+    height: 390px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -5787,8 +5584,8 @@
     gap: 10px;
   }
   .fuel .wrapper .pbox .decreaserm .figures {
-    width: 77px;
-    height: 147px;
+    width: 248px;
+    height: 390px;
     position: relative;
     display: flex;
     justify-content: center;

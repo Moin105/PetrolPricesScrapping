@@ -91,7 +91,7 @@ console.log("base url",BASE_URL)
                     return  < div  key={index}className={styles.nochange}>
                     <h3 className={styles.h3}>{dat.grade}</h3>
                     <figure className={styles.figure}>
-                    <Image priority={true} quality={100} src={nochange} alt="logo" layout="fill" objectFit="contain" />
+                    <Image src={nochange} alt="logo" layout="fill" objectFit="contain" priority/>
                     <div key={index} className={styles.asb}><p className={styles.ps}>unchanged</p></div>
                     </figure>
                     <h3 className={styles.h3}>{ dat.motorist_fuel_prices[state]?.currency + dat.motorist_fuel_prices[state]?.price.toFixed(2)}</h3>
@@ -100,7 +100,7 @@ console.log("base url",BASE_URL)
                     return       <div key={index} className={styles.increase}>
                         <h3 className={styles.h3}>{dat.grade}</h3>
                         <figure className={styles.figure}>
-                        <Image src={increase} priority={true} quality={100} alt="logo" layout="fill" objectFit="contain" />
+                        <Image src={increase} alt="logo" layout="fill" objectFit="contain" priority/>
                         <div className={styles.asb}><p className={styles.ps}>{ dat.motorist_fuel_prices[state]?.change_in_price.toFixed(2)}</p><p className={styles.ps}>increased</p></div>
                         </figure>
                         <h3 className={styles.h3}>{ dat.motorist_fuel_prices[state]?.currency +  dat.motorist_fuel_prices[state]?.price}</h3>
@@ -110,7 +110,7 @@ console.log("base url",BASE_URL)
                         return       <div key={index} className={styles.decrease}>
                             <h3 className={styles.h3}>{dat.grade}</h3>
                             <figure className={styles.figure}>
-                            <Image src={decrease} alt="logo" layout="fill" objectFit="contain" priority={true} quality={100}/>
+                            <Image src={decrease} alt="logo" layout="fill" objectFit="contain" priority/>
                             <div className={styles.asb}><p className={styles.ps}>{ dat.motorist_fuel_prices[state]?.change_in_price.toFixed(2)}</p><p className={styles.ps}>decreased</p></div>
                             </figure>
                             <h3 className={styles.h3}>{dat.motorist_fuel_prices[state]?.currency + dat.motorist_fuel_prices[state]?.price.toFixed(2)}</h3>

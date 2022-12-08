@@ -1,28 +1,16 @@
-import React,{useState} from 'react'
+import React from 'react'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import logo from '../public/logo.png'
 import Link from 'next/link'
-import {GiHamburgerMenu} from 'react-icons/gi'
-import Nav from './Nav'
-function Header(props) {
-  const [show ,setShow] = useState(true)
-  const navHandle = () => {
-    console.log("$$$$$", nav);
-    setNav(!nav);
-  };
-  const dataHandle = () => {
-    setShow(!show)
-    props.setShow(!show);
-  };
-  const [nav, setNav] = useState(false);
+function Header() {
   return (
     <>
     <header className={styles.header}>
         <div className={styles.wrap}>
-        <Link href="/"><figure className={styles.logo}>
+            <figure className={styles.logo}>
                 <Image priority src={logo} alt="logo" layout="fill" objectFit="contain"/>
-            </figure></Link>
+            </figure>
             <ul className={styles.ul}>
                 <Link href="/"><li className={styles.li}><p className={styles.hp}>Petrol prices SG</p>      </li></Link>
                 <Link href="/PetrolPricesMalaysia"><li className={styles.li}><p className={styles.hp}>Petrol prices Malaysia</p></li></Link>
@@ -30,13 +18,6 @@ function Header(props) {
                 <Link href="/COEPrices"><li className={styles.li}><p className={styles.hp}>COE Prices</p>            </li></Link>
                 <Link href="/CarParkingSG"><li className={styles.li}><p className={styles.hp}>Car Parking SG</p>        </li></Link>
             </ul>
-            <div className={styles.ham}  onClick={()=>{
-        navHandle()
-        dataHandle();
-      }}>
-                  <GiHamburgerMenu/>
-                  {nav && <Nav setNav={setNav} setShows={props.setShow} />}
-            </div>
         </div>
     </header>
     </>

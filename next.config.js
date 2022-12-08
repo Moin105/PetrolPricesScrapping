@@ -3,13 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: false, 
    images: {
-    domains: ['datamall.lta.gov.sg'],
-  },
-  images: {
-    unoptimized: true,
-  },
-  env: {
-    NEXT_PUBLIC_API_URL: 'http://192.168.18.89/api',
-  },
+    domains: ['datamall.lta.gov.sg'], 
+     unoptimized: true,
+  }
 }
 module.exports = nextConfig

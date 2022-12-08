@@ -15,7 +15,10 @@
     "react": "18.2.0",
     "react-chartjs-2": "^4.3.1",
     "react-dom": "18.2.0",
+<<<<<<< HEAD
     "react-icons": "^4.7.1",
+=======
+>>>>>>> parent of 083f6d9 (mobile responsiveness)
     "scss": "^0.2.4"
   },
   "devDependencies": {

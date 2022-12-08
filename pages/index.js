@@ -1,4 +1,3 @@
-import React,{useState} from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import Banner from '../Components/Banner'
@@ -13,19 +12,18 @@ import styles from '../styles/Home.module.css'
 
  const base ='https://admin.extramiless.com/'
 export default function Home() {
-  const [show , setShow] = useState(true)
-
   return (
   <>
-  
-  <Headers setShow={setShow}/>
+  <div>
+  <Headers/>
   <Banner/>
-  {show &&  <> <ChangeP base={base}/>  
+  </div>
+  <ChangeP base={base}/>  
   <C2  base={base}/>
   <Cprices  base={base}/>
+
   <Footer/>
   <Footie/>
   </>
-  }</>
   )
 }
