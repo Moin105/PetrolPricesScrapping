@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import flogo from '../public/flogo.png';
-// import arrow from '../public/arrow.png';
+import arrow from '../public/arrow.png';
 import Link from 'next/link'
 
 
@@ -19,7 +19,7 @@ function Footer() {
                 <div className={styles.inputbox}>
                       <input placeholder='Your Email' className={styles.input}/>
                    <figure className={styles.arrow}>
-                   {/* <Image priority src={arrow} alt="banner" layout="fill" width={100} objectFit="contain"/> */}
+                   <Image priority src={arrow} alt="banner" layout="fill" width={100} objectFit="contain"/>
                    </figure>
                 </div>
               
@@ -44,7 +44,7 @@ function Footer() {
                 <div className={styles.foot2}>
                 <ul className={styles.ul}>
                     <li className={styles.li}><h3 className={styles.h3}>Support</h3></li>
-                    <li className={styles.li}><p className={styles.p}>Help & FAQ &apos;s</p></li>
+                    <li className={styles.li}><p className={styles.p}>Help & FAQ&apos;s</p></li>
                     <li className={styles.li}><p className={styles.p}>hello@catperson.com</p></li>
                     <li className={styles.li}><p className={styles.p}>Tell: (855) 918-2287</p></li>
                     <li className={styles.li}><p className={styles.p}></p></li>

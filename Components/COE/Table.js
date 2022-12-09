@@ -23,7 +23,7 @@ const requestOptions = {
     useEffect(() => {
       console.log("log",props.data)
 console.log("base url",BASE_URL)
-      fetch(`${process.env.NEXT_PUBLIC_API_URL}open_bidding-api"`,requestOptions)
+      fetch(`${process.env.NEXT_PUBLIC_API_URL}open_bidding-api`,requestOptions)
       .then(response => {
         console.log("rest",response);
         if(response.status == 200) {            
@@ -43,10 +43,10 @@ console.log("base url",BASE_URL)
                  <h2 className={styles.h2}>COE Results</h2>     
                  <div className={styles.table}>
 
-{data.length != 0 ? <table className={styles.table} style={{width:"100%", borderCollapse: "collapse;" ,borderRadius:"6px 6px 0px 0px !important"}}>
+{data.length != 0 ? <table className={styles.table} style={{width:"100%", borderCollapse: "collapse;" }}>
   <thead className={styles.thead}>
     <tr>
-      <th className={styles.ts}  style={{borderRadius:"6px 0px 0px 0px"}}><span >COE Category</span></th>
+      <th className={styles.ts}  ><span >COE Category</span></th>
       <th className={styles.th} style={{borderRadius:"0px 0px 0px 0px !important"}}><span className={styles.hspan}> <figure className={styles.plogo}><Image priority src={g1} alt="logo" layout="fill" objectFit="contain"/></figure><p className={styles.p}>Category A</p></span></th>
       <th className={styles.th} style={{borderRadius:"0px 0px 0px 0px !important"}}><span className={styles.hspan}> <figure className={styles.plogo}><Image priority src={g2} alt="logo" layout="fill" objectFit="contain"/></figure><p className={styles.p}>Category B</p></span></th>
       <th className={styles.th} style={{borderRadius:"0px 0px 0px 0px !important"}}><span className={styles.hspan}> <figure className={styles.vlogo}><Image priority src={g3} alt="logo" layout="fill" objectFit="contain"/></figure><p className={styles.p}>Category C</p></span></th>

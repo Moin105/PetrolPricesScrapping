@@ -177,10 +177,10 @@ line-height: 30px;
         .button{
           border: none;
           outline: none;
-          background-color: #FBBC05;
-          color: black;
+          background-color: #ffffff;
+          color: #00AB41;
           font-style: normal;
-          font-weight: 400;
+          font-weight: 500;
           padding: 14px 73px;
           font-size: 20px;
           cursor: pointer;
@@ -200,7 +200,7 @@ line-height: 30px;
           gap: 10px; 
           width: fit-content;
           border-radius: 9px;
-          background: rgba(255, 255, 255);
+          background: rgba(255, 255, 255,0.8);
           .box{
             width: 46px;
             height: 46px;
@@ -227,7 +227,7 @@ line-height: 30px;
           align-items: center;
           align-self: flex-end;
           border-radius: 9px;
-          background: rgba(255, 255, 255);
+          background: rgba(255, 255, 255,0.8);
           .box{
             width: 46px;
             height: 46px;
@@ -1798,7 +1798,7 @@ padding:19px 16px;
   }
 }
 /// 1550 media for all pages
-@media only screen and (max-width: 1550px) {
+@media only screen and (max-width: 1750px) {
 /// start 1
 .hp{
   font-family: 'Poppins';
@@ -1967,10 +1967,10 @@ line-height: 18px;
         .button{
           border: none;
           outline: none;
-          background-color: #FBBC05;
-          color: black;
+          background-color: #ffffff;
+          color: #00AB41;
           font-style: normal;
-          font-weight: 400;
+          font-weight: 500;
           padding: 14px 73px;
           font-size: 20px;
           cursor: pointer;
@@ -1991,7 +1991,7 @@ line-height: 18px;
           align-items: center;
           width: fit-content;
           border-radius: 9px;
-          background: rgba(255, 255, 255);
+          background: rgba(255, 255, 255,0.8);
           .box{
             width: 36px;
             height: 36px;
@@ -2018,7 +2018,7 @@ line-height: 18px;
           width: fit-content;
           align-self: flex-end;
           border-radius: 9px;
-          background: rgba(255, 255, 255);
+          background: rgba(255, 255, 255,0.8);
           .box{
             width: 36px;
             height: 36px;
@@ -3675,10 +3675,10 @@ text-align: center;
           .button{
             border: none;
             outline: none;
-            background-color: #FBBC05;
-            color: black;
+            background-color: #ffffff;
+            color: #00AB41;
             font-style: normal;
-            font-weight: 400;
+            font-weight: 500;
             padding: 6px 21px;
             font-size: 12px;
             cursor: pointer;
@@ -3699,7 +3699,7 @@ text-align: center;
             align-items: center;
             width: fit-content;
             border-radius: 9px;
-            background: rgba(255, 255, 255);
+            background: rgba(255, 255, 255,0.8);
             .box{
               width: 36px;
               height: 36px;
@@ -3726,7 +3726,7 @@ text-align: center;
             width: fit-content;
             align-self: flex-end;
             border-radius: 9px;
-            background: rgba(255, 255, 255);
+            background: rgba(255, 255, 255,0.8);
             .box{
               width: 36px;
               height: 36px;
@@ -3976,6 +3976,7 @@ text-align: center;
       }
       .h2{
         margin-bottom: 0px;
+      line-height: 15px;
         color: black;
        
       }
@@ -5218,6 +5219,15 @@ text-align: center;
 
 /// mobile 
 @media only screen and (max-width: 580px) {
+  .des{
+    color: #767676;
+    padding: 12px 0px;
+    font-weight: 400;
+  font-size: 6px;
+  line-height: 8px;
+  text-align: center;
+  
+  }
   .tcard{
     padding-top: 100px;
     
@@ -5566,6 +5576,7 @@ text-align: center;
             }
           }
           .b2{
+            background: rgba(255, 255, 255,0.8);
             display: flex;
             padding: 3px 11px 4px 6px;
             gap: 10px; 
@@ -5667,13 +5678,16 @@ text-align: center;
         
         width: 95%;
         .ts{
-          padding: 0px 0px 0px 16px ;
+          padding: 0px 0px 0px 6px ;
           text-align: left;
-          font-size: 12px;
+          font-size: 9px;
         }
       .td{
         text-align: center;
-        padding: 8px
+        padding: 8px;
+        p{
+font-size: 10px !important;
+        }
       }
         display: flex;
         flex-direction: column;
@@ -5688,8 +5702,13 @@ text-align: center;
             background-color: #FBBC05;
             border-radius: 6px !important;
             tr {
+              td{
+                font-size: 6px !important;
+              .des{
+                font-size: 6px !important;
+              }}
                .th{
-                padding: 9px 0px 8px 0px;
+                padding: 9px 6px 8px 0px;
                 text-align: center;
                 .plogo{
                   width: 32px;
@@ -5698,18 +5717,18 @@ text-align: center;
              
                 }
                 .vlogo{
-                  width: 80px;
-                  height: 35px;
+                  width: 51px;
+                  height: 22px;
                   position: relative;
                 } 
                 .clogo{
-                  width: 120px;
-                  height: 35px;
+                  width: 62px;
+                  height: 22px;
                   position: relative;
                 }   
                 .dlogo{
-                  width: 40px;
-                  height: 35px;
+                  width: 26px;
+                  height: 22px;
                   position: relative;
                 }        }
           }
@@ -6352,12 +6371,15 @@ text-align: center;
           display: flex;
           align-items: center;
           background-color: white;
-          padding: 10px;
+          padding: 5px;
            color: #767676;
+           .p{
+            line-height: 10px;
+           }
           border-radius: 22px;
           border: 1px solid #767676;
           cursor: pointer;
-          gap: 5px;
+          gap: 0px;
           .circle{
             width: 15px;
             height: 15px;
@@ -6368,11 +6390,14 @@ text-align: center;
             display: flex;
             align-items: center;
             background-color: #FBBC05;
-            padding: 10px;
+            padding: 5px;
              color: black;
             border-radius: 22px;
+            .p{
+              line-height: 10px;
+             }
             cursor: pointer;
-            gap: 5px;
+            gap: 0px;
             .circle{
               width: 15px;
               height: 15px;
@@ -6408,6 +6433,7 @@ text-align: center;
         .list{
           display: flex;
           gap: 10px;
+          display: none;
           .name{
           display: flex;
           align-items: center;

@@ -33,7 +33,7 @@ console.log("base url",BASE_URL)
         <div className={styles.wrapper}>
             <div className={styles.tables}>
                  <h2 className={styles.h2}>Latest Fuel prices in Malaysia</h2>  
-                 <div className={styles.pcontainer}>
+                 <div className={styles.pcontainer} style={{margin:"10px 0px 0px 0px"}}>
                 {data.length != 0 ?   <div className={styles.pbox}>
                 
 

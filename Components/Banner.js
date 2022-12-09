@@ -45,7 +45,7 @@ function Banner() {
                            <Image priority src={b1} alt="banner" layout="fill"  objectFit="contain"/>
                         </figure>
                         </div>
-                        <p className={styles.p}>Get latest traffic & parking<br></br> Update..</p>
+                        <p className={styles.p}>Get latest traffic & parking<br></br> Update.</p>
                      </div>
                 </div>
             </div>

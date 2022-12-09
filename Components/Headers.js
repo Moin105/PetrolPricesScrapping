@@ -21,7 +21,7 @@ function Headers(props) {
     <>
     <header className={styles.headers}>
         <div className={styles.wrap}>
-        <Link href="/PetrolPricesMalaysia"><figure className={styles.logo}>
+        <Link href="/"><figure className={styles.logo}>
                 <Image priority src={logo} alt="logo" layout="fill" objectFit="contain"/>
             </figure></Link>
             <ul className={styles.ul}>
