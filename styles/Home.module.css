@@ -1728,6 +1728,7 @@
 
 .map {
   width: 100%;
+  margin-top: 12px;
   height: 50%;
 }
 
@@ -1765,6 +1766,25 @@
 }
 
 @media only screen and (max-width: 1750px) {
+  .modals {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    max-width: 1316px;
+    max-height: 904px;
+    padding: 1em;
+    font-size: 20px;
+    min-width: 20em;
+    z-index: 111111111111111100000000000000;
+    color: black;
+    background-color: #fff;
+    border-radius: 1em;
+    transform: translate(-50%, -50%);
+    outline: transparent;
+  }
   .hp {
     font-family: "Poppins";
     font-style: normal;
@@ -3425,7 +3445,7 @@
     align-items: center;
   }
   .dayrow .days {
-    width: 50%;
+    width: 35%;
     font-size: 12px !important;
     padding: 10px !important;
     background-color: #FBBC05;
@@ -3433,14 +3453,14 @@
     margin: 3px;
   }
   .dayrow .time {
-    width: 30%;
+    width: 25%;
     padding: 10px !important;
     font-size: 12px !important;
     font-weight: 400;
     background-color: white;
   }
   .dayrow .price {
-    width: 20%;
+    width: 40%;
     padding: 10px !important;
     font-size: 12px !important;
     font-weight: 400;
@@ -4563,6 +4583,7 @@
     border-radius: 222px;
   }
   .cprises .wrapper .changes .petrols {
+    flex-direction: column;
     display: flex;
     justify-content: space-between;
     gap: 10px;
@@ -4604,23 +4625,23 @@
     border-radius: 222px;
   }
   .cprises .wrapper .changes .petrols .plogo {
-    width: 35px;
-    height: 35px;
+    width: 26px;
+    height: 22px;
     position: relative;
   }
   .cprises .wrapper .changes .petrols .vlogo {
-    width: 55px;
-    height: 35px;
+    width: 40px;
+    height: 22px;
     position: relative;
   }
   .cprises .wrapper .changes .petrols .clogo {
-    width: 95px;
-    height: 35px;
+    width: 70px;
+    height: 22px;
     position: relative;
   }
   .cprises .wrapper .changes .petrols .dlogo {
-    width: 30px;
-    height: 35px;
+    width: 22px;
+    height: 22px;
     position: relative;
   }
   .cprises .wrapper .changes .petrols .list {
@@ -4633,8 +4654,8 @@
     gap: 5px;
   }
   .cprises .wrapper .changes .petrols .list .name .circle {
-    width: 15px;
-    height: 15px;
+    width: 7px;
+    height: 7px;
     border-radius: 222px;
   }
   .cprises .wrapper .changes .petrols .petro {
@@ -5032,15 +5053,1836 @@
   .tcard .contain .image {
     display: flex;
     flex-direction: column;
-    max-width: 610px;
+    max-width: 750px;
     width: 100%;
     gap: 15px;
   }
   .tcard .contain .image2 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     max-width: 760px;
+    gap: 10px;
+  }
+  .tcard .contain .image3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  .tcard .contain .figure {
+    border-radius: 12px;
+    width: 100%;
+    height: 439px;
+    position: relative;
+  }
+  .tcard .contain .figure img {
+    border-radius: 12px;
+  }
+  .tcard .contain .figure2 {
+    width: 100%;
+    height: 320px;
+    max-width: 376px;
+    position: relative;
+  }
+  .tcard .contain .figure2 img {
+    border-radius: 12px;
+  }
+  .tcard .contain .figure3 {
+    width: 100%;
+    position: relative;
+    height: 155px;
+  }
+  .tcard .contain .figure3 img {
+    border-radius: 12px;
+  }
+  .tcard .contain .figure4 {
+    position: relative;
+    width: 100%;
+    height: 155px;
+  }
+  .tcard .contain .figure4 img {
+    border-radius: 12px;
+  }
+  .tcard .fig {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .tcard .figu {
+    width: 300px;
+    height: 200px;
+    position: relative;
+  }
+  .tcard .figur {
+    width: 500px;
+    height: 600px;
+    position: relative;
+  }
+  .des {
+    color: #767676;
+    padding: 12px 2px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .dayrow {
+    display: flex;
+    align-items: center;
+  }
+  .dayrow .days {
+    width: 35%;
+    font-size: 10px !important;
+    padding: 6px !important;
+    background-color: #FBBC05;
+    font-weight: 500;
+    margin: 3px;
+  }
+  .dayrow .time {
+    width: 25%;
+    padding: 6px !important;
+    font-size: 10px !important;
+    font-weight: 400;
+    background-color: white;
+  }
+  .dayrow .price {
+    width: 45%;
+    padding: 6px !important;
+    font-size: 10px !important;
+    font-weight: 400;
+    background-color: #767676;
+  }
+  .hp {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 14px;
+  }
+  .p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 5px;
+  }
+  .h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: black;
+  }
+  .h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 15px;
+  }
+  .wrapper {
+    max-width: 1250px;
+    width: calc(100% - 120px);
+    display: flex;
+    justify-content: center;
+  }
+  .header {
+    display: flex;
+    padding: 15px 0px 13px 0px;
+    max-width: 1250px;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+  }
+  .header .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1250px;
+    width: calc(100% - 180px);
+  }
+  .header .wrap .blogo {
+    width: 202px;
+    cursor: pointer;
+    height: 65px;
+    position: relative;
+  }
+  .header .wrap .logo {
+    width: 120px;
+    cursor: pointer;
+    height: 45px;
+    position: relative;
+  }
+  .header .wrap .ham {
+    color: #00AB41;
+    display: block;
+    font-size: 22px;
+    margin-top: 5px;
+  }
+  .header .wrap .navbar {
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 14px;
+  }
+  .header .wrap .mobilenav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    right: 0;
+    height: 100%;
+    top: 0;
+    z-index: 11111111111111;
+    color: #fff;
+  }
+  .header .wrap .mobilenav .mobileback {
+    height: 100%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+  }
+  .header .wrap .mobilenav .mobileback div {
+    margin: 10px 0px 0px 99px;
+    background-color: white;
+    padding: 15px;
+    font-size: 23px;
+    border-radius: 50px;
+    color: white;
+  }
+  .header .wrap .mobilenav .mobileback div figure {
+    width: 35px;
+    height: 35px;
+    position: relative;
+  }
+  .header .wrap .mobilenav .mobilebar {
+    display: flex;
+    width: calc(100% - 42px);
+    flex-direction: column;
+    background-color: #00AB41;
+    height: 100%;
+  }
+  .header .wrap .mobilenav .mobilebar figure {
+    position: relative;
+    margin: 10px 0px 21px 22px;
+  }
+  .header .wrap .mobilenav .mobilebar .uppernav {
+    padding: 33px 0px 0px 46px;
+    border-top: 0.5px solid #000;
+    list-style-type: none;
+  }
+  .header .wrap .mobilenav .mobilebar .uppernav li {
+    padding-bottom: 16px !important;
+  }
+  .header .wrap .ul {
+    display: none;
+    gap: 28px;
+    list-style: none;
+  }
+  .header .wrap .ul .li {
+    color: black;
+    cursor: pointer;
+  }
+  .header .wrap .ul :hover {
+    font-weight: 700;
+    color: #28A745;
+  }
+  .headers {
+    display: flex;
+    padding: 15px 0px 13px 0px;
+    max-width: 1250px;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+  }
+  .headers .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1250px;
+    width: calc(100% - 180px);
+  }
+  .headers .wrap .blogo {
+    width: 202px;
+    cursor: pointer;
+    height: 65px;
+    position: relative;
+  }
+  .headers .wrap .logo {
+    width: 120px;
+    cursor: pointer;
+    height: 45px;
+    position: relative;
+  }
+  .headers .wrap .ham {
+    color: #00AB41;
+    display: block;
+    font-size: 22px;
+    margin-top: 5px;
+  }
+  .headers .wrap .navbar {
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 14px;
+  }
+  .headers .wrap .mobilenav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    right: 0;
+    height: 100%;
+    top: 0;
+    z-index: 11111111111111;
+    color: #fff;
+  }
+  .headers .wrap .mobilenav .mobileback {
+    height: 100%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+  }
+  .headers .wrap .mobilenav .mobileback div {
+    margin: 10px 0px 0px 99px;
+    background-color: white;
+    padding: 15px;
+    font-size: 23px;
+    border-radius: 50px;
+    color: white;
+  }
+  .headers .wrap .mobilenav .mobileback div figure {
+    width: 35px;
+    height: 35px;
+    position: relative;
+  }
+  .headers .wrap .mobilenav .mobilebar {
+    display: flex;
+    width: calc(100% - 42px);
+    flex-direction: column;
+    background-color: #00AB41;
+    height: 100%;
+  }
+  .headers .wrap .mobilenav .mobilebar figure {
+    position: relative;
+    margin: 10px 0px 21px 22px;
+  }
+  .headers .wrap .mobilenav .mobilebar .uppernav {
+    padding: 33px 0px 0px 46px;
+    border-top: 0.5px solid #000;
+    list-style-type: none;
+  }
+  .headers .wrap .mobilenav .mobilebar .uppernav li {
+    padding-bottom: 16px !important;
+  }
+  .headers .wrap .ul {
+    display: none;
+    gap: 28px;
+    list-style: none;
+  }
+  .headers .wrap .ul .li {
+    color: black;
+    cursor: pointer;
+  }
+  .headers .wrap .ul :hover {
+    font-weight: 700;
+    color: #28A745;
+  }
+  .banners .figure {
+    width: 100%;
+    height: 374px;
+    position: relative;
+  }
+  .banner {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    max-height: 585px;
+    z-index: -11111111111111;
+  }
+  .banner .figure {
+    width: 100%;
+    height: 445px;
+    position: absolute;
+    top: 0;
+    z-index: -1111;
+  }
+  .banner .wrapper {
+    position: relative;
+    align-items: center;
+  }
+  .banner .wrapper .content {
+    gap: 25px;
+    justify-content: flex-start;
+    height: 372px;
+    align-items: center;
+    display: flex;
+    width: 95%;
+  }
+  .banner .wrapper .content .left {
+    width: 31%;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
+  .banner .wrapper .content .left .h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: black;
+  }
+  .banner .wrapper .content .left .button {
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    color: #00AB41;
+    font-style: normal;
+    font-weight: 500;
+    padding: 6px 21px;
+    font-size: 12px;
+    cursor: pointer;
+    line-height: 30px;
+    border-radius: 100px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .banner .wrapper .content .right {
+    width: 21%;
+    display: flex;
+    flex-direction: column;
+    margin: -100px 0px 0px 0px;
     gap: 20px;
+  }
+  .banner .wrapper .content .right .b1 {
+    display: flex;
+    padding: 3px 10px 4px 2px;
+    gap: 0px;
+    align-items: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 9px;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  .banner .wrapper .content .right .b1 .box {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner .wrapper .content .right .b1 .box .box1 {
+    width: 18px;
+    height: 20px;
+    position: relative;
+  }
+  .banner .wrapper .content .right .b1 .p {
+    line-height: 12px;
+    color: black;
+  }
+  .banner .wrapper .content .right .b2 {
+    display: flex;
+    padding: 3px 10px 4px 2px;
+    gap: 0px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    align-self: flex-end;
+    border-radius: 9px;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  .banner .wrapper .content .right .b2 .box {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner .wrapper .content .right .b2 .box .box1 {
+    width: 20px;
+    height: 25px;
+    position: relative;
+  }
+  .banner .wrapper .content .right .b2 .p {
+    line-height: 12px;
+    color: black;
+  }
+  .sbanner {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    position: relative;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    max-height: 410px;
+    z-index: -11111111111111;
+  }
+  .sbanner .figure {
+    width: 100%;
+    height: 410px;
+    position: relative;
+    top: 0;
+    z-index: -1111;
+    position: absolute;
+  }
+  .sbanner .wrapper {
+    position: relative;
+    align-items: center;
+  }
+  .sbanner .wrapper .content {
+    gap: 25px;
+    justify-content: flex-start;
+    height: 410px;
+    align-items: center;
+    display: flex;
+    width: 95%;
+  }
+  .sbanner .wrapper .content .left {
+    width: 70%;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+  }
+  .sbanner .wrapper .content .left .h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    color: white;
+  }
+  .controlp {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .controlp .wrapper {
+    padding: 30px 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .controlp .wrapper .citi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+  }
+  .controlp .wrapper .citi .tabs {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+  }
+  .controlp .wrapper .citi .tabs .tableheading {
+    padding: 20px 0px 19px 18px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    background-color: #FBBC05;
+    border-radius: 6px 6px 0px 0px;
+    color: black;
+  }
+  .controlp .wrapper .citi .tabs .container {
+    -moz-columns: 3 auto;
+         columns: 3 auto;
+  }
+  .controlp .wrapper .citi .tabs .container .cell {
+    margin-bottom: 10px;
+    padding: 12px 16px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 1px solid rgba(149, 157, 165, 0.2);
+  }
+  .controlp .wrapper .tables {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+  }
+  .controlp .wrapper .tables .table {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 6px 6px 0px 0px;
+    border-collapse: collapse !important;
+    border: none !important;
+    border-spacing: 0px !important;
+  }
+  .controlp .wrapper .tables .ts {
+    padding: 0px 0px 0px 16px;
+    text-align: left;
+    font-size: 10px;
+  }
+  .controlp .wrapper .tables .td {
+    text-align: center;
+    padding: 8px;
+    font-size: 10px;
+  }
+  .controlp .wrapper .tables .h2 {
+    color: black;
+    margin: 0px 0px 25px 0px;
+  }
+  .controlp .wrapper .tables .table {
+    width: 75%;
+  }
+  .controlp .wrapper .tables .table .thead {
+    background-color: #FBBC05;
+    border-radius: 6px !important;
+  }
+  .controlp .wrapper .tables .table .thead tr .th {
+    padding: 14px 0px 16px 0px;
+    text-align: center;
+  }
+  .controlp .wrapper .tables .table .thead tr .th .plogo {
+    width: 22px;
+    height: 22px;
+    position: relative;
+  }
+  .controlp .wrapper .tables .table .thead tr .th .vlogo {
+    width: 55px;
+    height: 35px;
+    position: relative;
+  }
+  .controlp .wrapper .tables .table .thead tr .th .clogo {
+    width: 95px;
+    height: 35px;
+    position: relative;
+  }
+  .controlp .wrapper .tables .table .thead tr .th .dlogo {
+    width: 30px;
+    height: 35px;
+    position: relative;
+  }
+  .controlp .wrapper .tables .table .hspan {
+    font-family: "Poppins";
+    font-style: normal;
+    align-items: center;
+    font-weight: 500;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .fuel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fuel .wrapper {
+    padding: 30px 0px 60px 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fuel .wrapper .tables {
+    justify-content: space-between;
+    width: 95%;
+  }
+  .fuel .wrapper .tables .row2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    width: 75%;
+    margin: 0px 0px 40px 0px;
+  }
+  .fuel .wrapper .tables .lists {
+    display: flex;
+    gap: 10px;
+  }
+  .fuel .wrapper .tables .lists .name {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+    color: #767676;
+    border-radius: 22px;
+    border: 1px solid #767676;
+    cursor: pointer;
+    gap: 5px;
+  }
+  .fuel .wrapper .tables .lists .name .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .fuel .wrapper .tables .lists .nam {
+    display: flex;
+    align-items: center;
+    background-color: #FBBC05;
+    padding: 10px;
+    color: black;
+    border-radius: 22px;
+    cursor: pointer;
+    gap: 5px;
+  }
+  .fuel .wrapper .tables .lists .nam .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .fuel .wrapper .tables .h2 {
+    margin-bottom: 0px;
+    line-height: 15px;
+    color: black;
+  }
+  .fuel .wrapper .pbox {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+  }
+  .fuel .wrapper .pbox .nochange {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .fuel .wrapper .pbox .nochange .figures {
+    width: 248px;
+    height: 390px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .nochange .figures .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .nochange .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .nochange .figure {
+    width: 183.86px;
+    height: 287.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .nochange .figure .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .nochange .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .increase {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
+  }
+  .fuel .wrapper .pbox .increase .figures {
+    width: 248px;
+    height: 390px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .increase .figures .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .increase .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .increase .figure {
+    width: 183.86px;
+    height: 287.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .increase .figure .asb {
+    bottom: 155px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .increase .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .decrease {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px 0px 0px 0px;
+    gap: 10px;
+  }
+  .fuel .wrapper .pbox .decrease .figures {
+    width: 248px;
+    height: 390px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .decrease .figures .asb {
+    bottom: 115px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .decrease .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .decrease .figure {
+    width: 183.86px;
+    height: 287.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .decrease .figure .asb {
+    bottom: 108px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .decrease .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .nochangerm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .fuel .wrapper .pbox .nochangerm .figures {
+    width: 210px;
+    height: 330px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .nochangerm .figures .asb {
+    bottom: 125px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .nochangerm .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .nochangerm .figure {
+    width: 183.86px;
+    height: 287.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .nochangerm .figure .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .nochangerm .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .increaserm {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
+  }
+  .fuel .wrapper .pbox .increaserm .figures {
+    width: 210px;
+    height: 330px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .increaserm .figures .asb {
+    bottom: 225px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .increaserm .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .increaserm .figure {
+    width: 183.86px;
+    height: 287.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .increaserm .figure .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .increaserm .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .decreaserm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .fuel .wrapper .pbox .decreaserm .figures {
+    width: 210px;
+    height: 330px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .decreaserm .figures .asb {
+    bottom: 140px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .decreaserm .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pbox .decreaserm .figure {
+    width: 183.86px;
+    height: 287.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pbox .decreaserm .figure .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pbox .decreaserm .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    flex-wrap: wrap;
+  }
+  .fuel .wrapper .pboxs .nochange {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .fuel .wrapper .pboxs .nochange .figures {
+    width: 248px;
+    height: 390px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .nochange .figures .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .nochange .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .nochange .figure {
+    width: 104.86px;
+    height: 168.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .nochange .figure .asb {
+    bottom: 55px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .nochange .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 8px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .increase {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
+  }
+  .fuel .wrapper .pboxs .increase .figures {
+    width: 248px;
+    height: 390px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .increase .figures .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .increase .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .increase .figure {
+    width: 104.86px;
+    height: 168.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .increase .figure .asb {
+    bottom: 97px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .increase .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 8px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .decrease {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px 0px 0px 0px;
+    gap: 10px;
+  }
+  .fuel .wrapper .pboxs .decrease .figures {
+    width: 248px;
+    height: 390px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .decrease .figures .asb {
+    bottom: 115px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .decrease .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .decrease .figure {
+    width: 104.86px;
+    height: 168.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .decrease .figure .asb {
+    bottom: 65px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .decrease .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 8px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .nochangerm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .fuel .wrapper .pboxs .nochangerm .figures {
+    width: 210px;
+    height: 330px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .nochangerm .figures .asb {
+    bottom: 125px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .nochangerm .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .nochangerm .figure {
+    width: 183.86px;
+    height: 287.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .nochangerm .figure .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .nochangerm .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .increaserm {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
+  }
+  .fuel .wrapper .pboxs .increaserm .figures {
+    width: 210px;
+    height: 330px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .increaserm .figures .asb {
+    bottom: 225px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .increaserm .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .increaserm .figure {
+    width: 183.86px;
+    height: 287.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .increaserm .figure .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .increaserm .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .decreaserm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .fuel .wrapper .pboxs .decreaserm .figures {
+    width: 210px;
+    height: 330px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .decreaserm .figures .asb {
+    bottom: 140px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .decreaserm .figures .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .fuel .wrapper .pboxs .decreaserm .figure {
+    width: 183.86px;
+    height: 287.72px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .fuel .wrapper .pboxs .decreaserm .figure .asb {
+    bottom: 95px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+  .fuel .wrapper .pboxs .decreaserm .figure .asb .ps {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .cprises {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 171, 65, 0.1);
+    align-items: center;
+  }
+  .cprises .chr {
+    padding: 38px;
+    width: 75%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+  }
+  .cprises .wrapper {
+    padding: 45px 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cprises .wrapper .hs {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 26px;
+  }
+  .cprises .wrapper .tables .h {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #28A745;
+  }
+  .cprises .wrapper .changes {
+    background-color: white;
+    padding: 26px 17px;
+    border-radius: 4px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .cprises .wrapper .changes .row2 {
+    display: flex;
+    margin: 0px 0px 16px 0px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cprises .wrapper .changes .row2 .h {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #28A745;
+  }
+  .cprises .wrapper .changes .row2 .lists {
+    display: flex;
+    gap: 10px;
+  }
+  .cprises .wrapper .changes .row2 .lists .name {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    color: #767676;
+    border-radius: 22px;
+    border: 1px solid #767676;
+    cursor: pointer;
+    gap: 5px;
+  }
+  .cprises .wrapper .changes .row2 .lists .name .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .changes .row2 .lists .nam {
+    display: flex;
+    align-items: center;
+    background-color: #FBBC05;
+    padding: 10px;
+    color: black;
+    border-radius: 22px;
+    cursor: pointer;
+    gap: 5px;
+  }
+  .cprises .wrapper .changes .row2 .lists .nam .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .changes .petrols {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .cprises .wrapper .changes .petrols .lists {
+    display: flex;
+    gap: 10px;
+  }
+  .cprises .wrapper .changes .petrols .lists .name {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    color: #767676;
+    border-radius: 22px;
+    border: 1px solid #767676;
+    cursor: pointer;
+    gap: 5px;
+  }
+  .cprises .wrapper .changes .petrols .lists .name .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .changes .petrols .lists .nam {
+    display: flex;
+    align-items: center;
+    background-color: #FBBC05;
+    padding: 0px 11px;
+    color: black;
+    border-radius: 28px;
+    cursor: pointer;
+    gap: 5px;
+  }
+  .cprises .wrapper .changes .petrols .lists .nam .circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .changes .petrols .plogo {
+    width: 26px;
+    height: 22px;
+    position: relative;
+  }
+  .cprises .wrapper .changes .petrols .vlogo {
+    width: 40px;
+    height: 22px;
+    position: relative;
+  }
+  .cprises .wrapper .changes .petrols .clogo {
+    width: 70px;
+    height: 22px;
+    position: relative;
+  }
+  .cprises .wrapper .changes .petrols .dlogo {
+    width: 22px;
+    height: 22px;
+    position: relative;
+  }
+  .cprises .wrapper .changes .petrols .list {
+    display: flex;
+    gap: 10px;
+  }
+  .cprises .wrapper .changes .petrols .list .name {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .cprises .wrapper .changes .petrols .list .name .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .changes .petrols .petro {
+    display: flex;
+    gap: 10px;
+  }
+  .cprises .wrapper .changes .petrols .btun {
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 122px;
+    color: black;
+    border: 1px solid #363636;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .cprises .wrapper .changes .petrols .btuna {
+    outline: none;
+    cursor: pointer;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 122px;
+    background-color: #1D1D1B;
+    border: 1px solid #363636;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .cprises .wrapper .changes .ts {
+    padding: 0px 0px 0px 16px;
+    text-align: left;
+  }
+  .cprises .wrapper .changes .td {
+    text-align: center;
+    padding: 18px;
+  }
+  .cprises .wrapper .changes .h2 {
+    color: black;
+  }
+  .cprises .wrapper .changes .table {
+    width: 75%;
+  }
+  .cprises .wrapper .changes .table .thead {
+    background-color: #FBBC05;
+    border-radius: 6px !important;
+  }
+  .cprises .wrapper .changes .table .thead tr .th {
+    padding: 25px 0px 26px 0px;
+    text-align: center;
+  }
+  .cprises .wrapper .changes .table .thead tr .th .plogo {
+    width: 50px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .changes .table .hspan {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .cprises .wrapper .changes .table .hspan .vlogo {
+    width: 80px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .change {
+    background-color: white;
+    padding: 26px 17px;
+    border-radius: 4px;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+  }
+  .cprises .wrapper .change .row2 {
+    display: flex;
+    margin: 0px 0px 20px 0px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cprises .wrapper .change .row2 .h {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #28A745;
+  }
+  .cprises .wrapper .change .row2 .lists {
+    display: flex;
+    gap: 10px;
+  }
+  .cprises .wrapper .change .row2 .lists .name {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+    color: #767676;
+    border-radius: 22px;
+    border: 1px solid #767676;
+    cursor: pointer;
+  }
+  .cprises .wrapper .change .row2 .lists .name .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .change .row2 .lists .nam {
+    display: flex;
+    align-items: center;
+    background-color: #FBBC05;
+    padding: 5px;
+    color: black;
+    border-radius: 22px;
+    cursor: pointer;
+    gap: 5px;
+  }
+  .cprises .wrapper .change .row2 .lists .nam .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .change .petrols {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .cprises .wrapper .change .petrols .lists {
+    display: flex;
+    gap: 10px;
+  }
+  .cprises .wrapper .change .petrols .lists .name {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    color: #767676;
+    border-radius: 22px;
+    border: 1px solid #767676;
+    cursor: pointer;
+    gap: 5px;
+  }
+  .cprises .wrapper .change .petrols .lists .name .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .change .petrols .lists .nam {
+    display: flex;
+    align-items: center;
+    background-color: #FBBC05;
+    padding: 10px;
+    color: black;
+    border-radius: 22px;
+    cursor: pointer;
+    gap: 5px;
+  }
+  .cprises .wrapper .change .petrols .lists .nam .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .change .petrols .plogo {
+    width: 50px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .change .petrols .vlogo {
+    width: 80px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .change .petrols .clogo {
+    width: 120px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .change .petrols .dlogo {
+    width: 40px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .change .petrols .list {
+    display: flex;
+    gap: 10px;
+  }
+  .cprises .wrapper .change .petrols .list .name {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .cprises .wrapper .change .petrols .list .name .circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 222px;
+  }
+  .cprises .wrapper .change .petrols .petro {
+    display: flex;
+    gap: 10px;
+  }
+  .cprises .wrapper .change .petrols .btun {
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+    padding: 4px 6px;
+    border-radius: 122px;
+    color: black;
+    border: 1px solid #363636;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .cprises .wrapper .change .petrols .btuna {
+    outline: none;
+    cursor: pointer;
+    color: white;
+    padding: 4px 6px;
+    border-radius: 122px;
+    background-color: #1D1D1B;
+    border: 1px solid #363636;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .cprises .wrapper .change .ts {
+    padding: 0px 0px 0px 16px;
+    text-align: left;
+  }
+  .cprises .wrapper .change .td {
+    text-align: center;
+    padding: 18px;
+  }
+  .cprises .wrapper .change .h2 {
+    color: black;
+  }
+  .cprises .wrapper .change .table {
+    width: 75%;
+  }
+  .cprises .wrapper .change .table .thead {
+    background-color: #FBBC05;
+    border-radius: 6px !important;
+  }
+  .cprises .wrapper .change .table .thead tr .th {
+    padding: 25px 0px 26px 0px;
+    text-align: center;
+  }
+  .cprises .wrapper .change .table .thead tr .th .plogo {
+    width: 50px;
+    height: 35px;
+    position: relative;
+  }
+  .cprises .wrapper .change .table .hspan {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .cprises .wrapper .change .table .hspan .vlogo {
+    width: 80px;
+    height: 35px;
+    position: relative;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px 40px 0px;
+  }
+  .footer .wrapper {
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .wrapper .foots {
+    justify-content: space-between;
+    display: flex;
+    width: 95%;
+    align-items: center;
+  }
+  .footer .wrapper .foot1 {
+    display: flex;
+    flex-direction: column;
+    width: 246px;
+  }
+  .footer .wrapper .foot1 .figure {
+    cursor: pointer;
+    width: 155px;
+    margin: 0px 0px 14px 0px;
+    height: 60px;
+    position: relative;
+  }
+  .footer .wrapper .foot1 .inputbox {
+    position: relative;
+    margin: 0px 0px 14px 0px;
+  }
+  .footer .wrapper .foot1 .inputbox .arrow {
+    width: 16px;
+    height: 8px;
+    position: absolute;
+    right: 22px;
+    top: 16px;
+  }
+  .footer .wrapper .foot1 .input {
+    width: 225px;
+    outline: none;
+    border: 0px solid black;
+    border-bottom: 1px solid black;
+    font-style: normal;
+    font-weight: 400;
+    padding: 11px 40px 11px 2px;
+    font-size: 14px;
+    line-height: 12px;
+  }
+  .footer .wrapper .foot1 .p {
+    color: black;
+    line-height: 12px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  .footer .wrapper .foote {
+    display: flex;
+    gap: 36px;
+  }
+  .footer .wrapper .foot2 {
+    width: 115px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .wrapper .foot2 .ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .footer .wrapper .foot2 .ul .li .h3 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0px 0px 8px 0px;
+  }
+  .footer .wrapper .foot2 .ul .li .p {
+    cursor: pointer;
+  }
+  .footie {
+    display: flex;
+    background-color: #28A745;
+    justify-content: center;
+    padding: 22px 0px 22px 0px;
+    margin-top: 5px;
+  }
+  .footie .wrapper {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footie .wrapper .p {
+    cursor: pointer;
+  }
+  .footie .wrapper .foote {
+    display: flex;
+    color: white;
+    gap: 16px;
+  }
+  .footie .wrapper .foote .p {
+    cursor: pointer;
+    color: white;
+  }
+  .tcard {
+    padding-top: 100px;
+    display: flex;
+    width: 85%;
+    max-width: 1550px;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  .tcard .h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    color: black;
+    margin-bottom: 36px;
+  }
+  .tcard .contain {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px 30px 22px 30px;
+    display: flex;
+    border-radius: 12px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .tcard .contain .image {
+    display: flex;
+    flex-direction: column;
+    max-width: 750px;
+    width: 100%;
+    gap: 15px;
+  }
+  .tcard .contain .image2 {
+    display: flex;
+    flex-direction: row;
+    max-width: 760px;
+    gap: 10px;
   }
   .tcard .contain .image3 {
     display: flex;
@@ -5101,7 +6943,7 @@
     color: #767676;
     padding: 12px 0px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 7px;
     line-height: 16px;
     text-align: center;
   }
@@ -5422,6 +7264,8 @@
   }
   .banner .wrapper .content .left .button {
     padding: 10.5px 30px;
+    background-color: #FBBC05 !important;
+    color: black !important;
     font-size: 14px;
     line-height: 21px;
   }
@@ -5527,8 +7371,8 @@
     color: black;
   }
   .controlp .wrapper .citi .tabs .container {
-    -moz-columns: 4 auto;
-         columns: 4 auto;
+    -moz-columns: 2 auto;
+         columns: 2 auto;
   }
   .controlp .wrapper .citi .tabs .container .cell {
     margin-bottom: 10px;
@@ -6689,27 +8533,33 @@
 }
 .dayrow {
   display: flex;
+  background-color: #FBBC05;
   align-items: center;
+  height: 57px;
 }
 .dayrow .days {
-  width: 50%;
+  width: 35%;
   font-size: 16px;
   padding: 12px;
+  height: 57px;
   background-color: #FBBC05;
   font-weight: 500;
   margin: 3px;
 }
 .dayrow .time {
-  width: 30%;
+  width: 25%;
   padding: 12px;
   font-size: 16px;
   font-weight: 400;
+  height: 57px;
   background-color: white;
+  text-align: center;
 }
 .dayrow .price {
-  width: 20%;
+  width: 45%;
   padding: 12px;
   font-size: 16px;
+  height: 57px;
   font-weight: 400;
   background-color: #767676;
 }/*# sourceMappingURL=Home.module.css.map */

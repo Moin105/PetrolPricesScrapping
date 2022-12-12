@@ -39,7 +39,6 @@ function Headers(props) {
                   {nav && <Nav setNav={setNav} setShows={props.setShow} />}
             </div>
         </div>
-
     </header>
     </>
   )
