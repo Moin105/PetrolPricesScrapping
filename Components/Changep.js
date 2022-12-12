@@ -53,11 +53,11 @@ console.log("base url",BASE_URL)
    
      {data.map(((dat,index) =>{
         return <tr key={index}>  <td className={styles.ts}><span style={{fontWeight:"600"}}>{dat.grade}</span>
-      </td> <td className={styles.td}>{ dat ? dat.motorist_fuel_prices[0].currency + dat.motorist_fuel_prices[0].price.toFixed(2) : "="}</td>
-        <td className={styles.td}>{ dat ? dat.motorist_fuel_prices[0].currency + dat.motorist_fuel_prices[1].price.toFixed(2) : "="}</td>     
-        <td className={styles.td}>{ dat ? dat.motorist_fuel_prices[0].currency + dat.motorist_fuel_prices[2].price.toFixed(2) : "="}</td>
-        <td className={styles.td}>{ dat ? dat.motorist_fuel_prices[0].currency + dat.motorist_fuel_prices[3].price.toFixed(2) : "="}</td>
-        <td className={styles.td}>{ dat ? dat.motorist_fuel_prices[0].currency + dat.motorist_fuel_prices[4].price.toFixed(2) : "="}</td>
+      </td> <td className={styles.td}> { dat.motorist_fuel_prices[0].price.toFixed(2) == 0 ?  "NaN": dat.motorist_fuel_prices[0].currency + dat.motorist_fuel_prices[0].price.toFixed(2)}</td>
+        <td className={styles.td}>{  dat.motorist_fuel_prices[1].price.toFixed(2) == 0 ?  "NaN": dat.motorist_fuel_prices[0].currency + dat.motorist_fuel_prices[1].price.toFixed(2)}</td>     
+        <td className={styles.td}>{  dat.motorist_fuel_prices[2].price.toFixed(2) == 0 ?  "NaN": dat.motorist_fuel_prices[0].currency + dat.motorist_fuel_prices[2].price.toFixed(2)}</td>
+        <td className={styles.td}>{  dat.motorist_fuel_prices[3].price.toFixed(2) == 0 ?  "NaN": dat.motorist_fuel_prices[0].currency + dat.motorist_fuel_prices[3].price.toFixed(2)}</td>
+        <td className={styles.td}>{  dat.motorist_fuel_prices[4].price.toFixed(2) == 0 ?  "NaN": dat.motorist_fuel_prices[0].currency + dat.motorist_fuel_prices[4].price.toFixed(2)}</td>
      </tr> }))}  
      {/* <tr>
      <td className={styles.ts}><span style={{fontWeight:"600"}}>95</span>

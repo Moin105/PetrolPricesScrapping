@@ -348,6 +348,7 @@
 }
 .controlp .wrapper .citi .tabs .container .cell {
   margin-bottom: 10px;
+  cursor: pointer;
   padding: 12px 16px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border: 1px solid rgba(149, 157, 165, 0.2);
@@ -2078,10 +2079,11 @@
     flex-direction: column;
   }
   .controlp .wrapper .citi .tabs .tableheading {
-    padding: 20px 0px 19px 18px;
+    padding: 20px 18px 19px 18px;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
+    margin: 20px 0px;
     line-height: 16px;
     background-color: #FBBC05;
     border-radius: 6px 6px 0px 0px;
@@ -3418,6 +3420,32 @@
   }
 }
 @media only screen and (max-width: 1250px) {
+  .dayrow {
+    display: flex;
+    align-items: center;
+  }
+  .dayrow .days {
+    width: 50%;
+    font-size: 12px !important;
+    padding: 10px !important;
+    background-color: #FBBC05;
+    font-weight: 500;
+    margin: 3px;
+  }
+  .dayrow .time {
+    width: 30%;
+    padding: 10px !important;
+    font-size: 12px !important;
+    font-weight: 400;
+    background-color: white;
+  }
+  .dayrow .price {
+    width: 20%;
+    padding: 10px !important;
+    font-size: 12px !important;
+    font-weight: 400;
+    background-color: #767676;
+  }
   .hp {
     font-family: "Poppins";
     font-style: normal;
@@ -4979,7 +5007,7 @@
     display: flex;
     width: 85%;
     max-width: 1550px;
-    flex-direction: row-reverse;
+    flex-direction: column;
     margin: 0 auto;
     justify-content: space-between;
   }
@@ -4996,14 +5024,16 @@
     padding: 20px 30px 22px 30px;
     display: flex;
     border-radius: 12px;
-    width: 48%;
+    width: 100%;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
   }
   .tcard .contain .image {
     display: flex;
     flex-direction: column;
     max-width: 610px;
+    width: 100%;
     gap: 15px;
   }
   .tcard .contain .image2 {
@@ -6670,7 +6700,14 @@
   margin: 3px;
 }
 .dayrow .time {
-  width: 50%;
+  width: 30%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: white;
+}
+.dayrow .price {
+  width: 20%;
   padding: 12px;
   font-size: 16px;
   font-weight: 400;

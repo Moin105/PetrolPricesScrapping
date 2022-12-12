@@ -335,6 +335,7 @@ line-height: 30px;
         columns: 4 auto;
         .cell{
           margin-bottom: 10px;
+          cursor: pointer;
           padding: 12px 16px;
           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
           border: 1px solid rgba(149, 157, 165, 0.2);
@@ -2113,10 +2114,11 @@ line-height: 18px;
       gap: 5px;
       flex-direction: column;
       .tableheading{
-        padding: 20px 0px 19px 18px;
+        padding: 20px 18px 19px 18px;
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
+        margin: 20px 0px;
         line-height: 16px;
         background-color: #FBBC05;
         border-radius: 6px 6px 0px 0px;
@@ -3507,6 +3509,32 @@ text-align: center;
 }
 //// 1250 media for all pages
 @media only screen and (max-width: 1250px) {
+  .dayrow{
+    display: flex;
+    align-items: center;
+    .days{
+      width: 50%;
+      font-size: 12px !important;
+      padding: 10px !important;
+      background-color: #FBBC05;
+      font-weight: 500;
+      margin: 3px;
+    }
+    .time{
+      width: 30%;
+      padding: 10px !important;
+      font-size: 12px!important;
+      font-weight: 400;
+      background-color: white;
+    }
+    .price{
+      width: 20%;
+      padding: 10px !important;
+      font-size: 12px!important;
+      font-weight: 400;
+      background-color: #767676;
+    }
+  }
   /// start 1250
   .hp{
     font-family: 'Poppins';
@@ -5115,7 +5143,7 @@ text-align: center;
     display: flex;
     width: 85%;
     max-width: 1550px;
-    flex-direction: row-reverse;
+    flex-direction: column;
     margin: 0 auto;
     justify-content: space-between;
     .h4{
@@ -5131,13 +5159,15 @@ text-align: center;
       padding: 20px 30px 22px 30px;
       display: flex;
       border-radius: 12px;
-      width: 48%;
+      width: 100%;
       flex-direction: column;
+      align-items: center;
       gap: 20px;
       .image{
         display: flex;
         flex-direction: column;
         max-width: 610px;
+        width: 100%;
         gap: 15px;
       }
       .image2{
@@ -6875,7 +6905,14 @@ font-size: 10px !important;
     margin: 3px;
   }
   .time{
-    width: 50%;
+    width: 30%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: white;
+  }
+  .price{
+    width: 20%;
     padding: 12px;
     font-size: 16px;
     font-weight: 400;

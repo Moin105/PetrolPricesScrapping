@@ -124,7 +124,7 @@ if(point.car_parking_days_prices.length != 0){
 
          {
             point?.car_parking_days_prices?.map(days =>{
-               return <div className={styles.dayrow}><h2 className={styles.days}>{days.days}</h2><h3  className={styles.time}>{days.timing}</h3>
+               return <div className={styles.dayrow}><h2 className={styles.days}>{days.days}</h2><h3 className={styles.time}>{days.timing}</h3><h3 className={styles.price}>{days.price}</h3>
                </div>
             })
          }
