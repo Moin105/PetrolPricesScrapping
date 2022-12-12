@@ -87,7 +87,7 @@ const [state ,setState] = useState(0)
 
                  <div className={styles.pcontainer}>
                    <div className={styles.pboxs}>
-                   {data.map((dat,index) =>{if(dat.motorist_fuel_prices[state]?.change_in_price == 0 ){
+                   {data.length == 0 ?<h2>NO DATA FOUND</h2>: data.map((dat,index) =>{if(dat.motorist_fuel_prices[state]?.change_in_price == 0 ){
                     return  < div  key={index}className={styles.nochange}>
                     <h3 className={styles.h3}>{dat.grade}</h3>
                     <figure className={styles.figure}>

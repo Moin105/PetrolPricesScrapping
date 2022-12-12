@@ -58,36 +58,7 @@ console.log("base url",BASE_URL)
         <td className={styles.td}>{  dat.motorist_fuel_prices[2].price.toFixed(2) == 0 ?  "NaN": dat.motorist_fuel_prices[0].currency + dat.motorist_fuel_prices[2].price.toFixed(2)}</td>
         <td className={styles.td}>{  dat.motorist_fuel_prices[3].price.toFixed(2) == 0 ?  "NaN": dat.motorist_fuel_prices[0].currency + dat.motorist_fuel_prices[3].price.toFixed(2)}</td>
         <td className={styles.td}>{  dat.motorist_fuel_prices[4].price.toFixed(2) == 0 ?  "NaN": dat.motorist_fuel_prices[0].currency + dat.motorist_fuel_prices[4].price.toFixed(2)}</td>
-     </tr> }))}  
-     {/* <tr>
-     <td className={styles.ts}><span style={{fontWeight:"600"}}>95</span>
-      </td> {data.map((dat =>{
-        return  <td className={styles.td}>{dat.motorist_fuel_prices[1].currency + dat.motorist_fuel_prices[1].price.toFixed(2)}
-      </td>
-      }))}  
-     </tr>
-     <tr>
-     <td className={styles.ts}><span style={{fontWeight:"600"}}>98</span>
-      </td> {data.map((dat =>{
-        return  <td className={styles.td}>{dat.motorist_fuel_prices[2].currency + dat.motorist_fuel_prices[2].price.toFixed(2)}
-      </td>
-      }))}  
-     </tr>
-     <tr>
-     <td className={styles.ts}><span style={{fontWeight:"600"}}>Diesel</span>
-      </td> {data.map((dat =>{
-        return  <td className={styles.td}>{dat.motorist_fuel_prices[3].currency + dat.motorist_fuel_prices[3].price.toFixed(2)}
-      </td>
-      }))}  
-     </tr>
-     <tr>
-     <td className={styles.ts}><span style={{fontWeight:"600"}}>Premium</span>
-      </td> {data.map((dat =>{
-        return  <td className={styles.td}>{dat.motorist_fuel_prices[4].currency + dat.motorist_fuel_prices[4].price.toFixed(2)}
-      </td>
-      }))}  
-     </tr> */}
-   
+     </tr> }))} 
   </tbody>
 </table> : <h2>NO DATA FOUND</h2>}
 

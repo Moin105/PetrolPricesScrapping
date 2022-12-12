@@ -330,7 +330,7 @@ function Cprices(base) {
                         label: 'Shell',
                         data: p2,
                         fill: false,
-                        backgroundColor: 'rgb(251,188,5,)',
+                        backgroundColor: '#fbbc05',
   
                       },
                       {
@@ -355,7 +355,7 @@ function Cprices(base) {
                       }
                 ]
                   }} options={options}/>
-                 </div> : <></> }
+                 </div> : <h2>No Data</h2> }
             </div>  
          </div>
         </div>
