@@ -49,35 +49,35 @@ function Nav(props) {
             dataHandle();
 
           }}>
-            <Link href="/">Petrol prices SG</Link>
+            <Link href="/"><p> Petrol prices SG</p></Link>
           </li>
           <li onClick={()=>{
             navHandle();
             dataHandle();
 
           }}>
-            <Link href="/PetrolPricesMalaysia">Petrol prices Malaysia</Link>
+            <Link href="/PetrolPricesMalaysia"><p> Petrol prices Malaysia</p></Link>
           </li>
           <li  onClick={()=>{
             navHandle();
             dataHandle();
 
           }}>
-            <Link href="/TrafficUpdate">Traffic Update</Link>
+            <Link href="/TrafficUpdate"><p> Traffic Update</p></Link>
           </li>
           <li  onClick={()=>{
             navHandle();
             dataHandle();
 
           }}>
-            <Link href="/COEPrices">COE Prices</Link>
+            <Link href="/COEPrices"><p> COE Prices</p></Link>
           </li>
           <li  onClick={()=>{
             navHandle();
             dataHandle();
 
           }}>
-            <Link href="/CarParkingSG">Car Parking SG</Link>
+            <Link href="/CarParkingSG"><p> Car Parking SG</p></Link>
           </li>
         </ul>
       </div>

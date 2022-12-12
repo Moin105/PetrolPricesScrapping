@@ -5282,6 +5282,9 @@
   .header .wrap .mobilenav .mobilebar .uppernav li {
     padding-bottom: 16px !important;
   }
+  .header .wrap .mobilenav .mobilebar .uppernav li a {
+    width: 100%;
+  }
   .header .wrap .ul {
     display: none;
     gap: 28px;
