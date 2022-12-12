@@ -7,7 +7,7 @@ const nextConfig = {
      unoptimized: true,
   },
   env:{
-   NEXT_PUBLIC_API_URL: 'http://3.108.80.52/api/'
+   NEXT_PUBLIC_API_URL: 'https://admin.extramiless.com/api/'
   }
 }
 module.exports = nextConfig
