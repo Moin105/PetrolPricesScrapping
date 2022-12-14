@@ -279,7 +279,7 @@ function Cprices(base) {
                         label: 'Shell',
                         data: p2,
                         fill: false,
-                        backgroundColor: 'rgb(251,188,5,)',
+                        backgroundColor: 'rgb(251,188,5)',
                         tension: 0.1
                       },
                       {
