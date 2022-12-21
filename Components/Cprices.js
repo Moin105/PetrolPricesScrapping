@@ -60,6 +60,14 @@ function Cprices(base) {
               maxRotation: 90,
               minRotation: 90
           },
+            y: {
+              min: 0.1,
+              max: 3.0,
+              ticks: {
+                min: 0.1, // minimum value
+                max: 3.0 // maximum value
+            }
+            },
             grid: {
               display: false
             }
@@ -313,11 +321,13 @@ function Cprices(base) {
   </div>
   </div>                
 </div>
-                  <Bar
+                  <Bar className={styles.canva}
                     datasetIdKey='id'
                     
                   data={{
                     labels:Array.from(labels),
+                    maintainAspectRatio: false,
+
                     datasets: [{
                       label: 'Sinopec',
                       // data:  [65, 29, 90, 31, 46, 25, 60],

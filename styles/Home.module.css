@@ -7987,7 +7987,7 @@
     flex-direction: column;
   }
   .cprises .chr {
-    padding: 38px;
+    padding: 8px;
     width: 100%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     background-color: white;
@@ -8012,9 +8012,9 @@
   }
   .cprises .wrapper .changes {
     background-color: white;
-    padding: 26px 17px;
+    padding: 0px;
     border-radius: 4px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: none;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -8033,7 +8033,8 @@
   }
   .cprises .wrapper .changes .row2 .lists {
     display: flex;
-    gap: 10px;
+    gap: 5px;
+    flex-wrap: wrap;
   }
   .cprises .wrapper .changes .row2 .lists .name {
     display: flex;
@@ -8073,7 +8074,7 @@
     margin-bottom: 10px;
   }
   .cprises .wrapper .changes .petrols .lists {
-    display: flex;
+    display: flex !important;
     gap: 10px;
   }
   .cprises .wrapper .changes .petrols .lists .name {
@@ -8114,29 +8115,28 @@
     border-radius: 222px;
   }
   .cprises .wrapper .changes .petrols .plogo {
-    width: 50px;
-    height: 35px;
+    width: 30px;
+    height: 20px;
     position: relative;
   }
   .cprises .wrapper .changes .petrols .vlogo {
-    width: 80px;
-    height: 35px;
+    width: 45px;
+    height: 23px;
     position: relative;
   }
   .cprises .wrapper .changes .petrols .clogo {
-    width: 120px;
-    height: 35px;
+    width: 70px;
+    height: 22px;
     position: relative;
   }
   .cprises .wrapper .changes .petrols .dlogo {
-    width: 40px;
-    height: 35px;
+    width: 22px;
+    height: 22px;
     position: relative;
   }
   .cprises .wrapper .changes .petrols .list {
     display: flex;
     gap: 10px;
-    display: none;
   }
   .cprises .wrapper .changes .petrols .list .name {
     display: flex;
@@ -8144,8 +8144,8 @@
     gap: 5px;
   }
   .cprises .wrapper .changes .petrols .list .name .circle {
-    width: 15px;
-    height: 15px;
+    width: 7px;
+    height: 7px;
     border-radius: 222px;
   }
   .cprises .wrapper .changes .petrols .petro {

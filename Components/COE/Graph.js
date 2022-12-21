@@ -267,6 +267,8 @@ function Cprices(base) {
                     
                   data={{
                     labels:Array.from(labels),
+                    maintainAspectRatio: false,
+
                     datasets: [{
                       label: 'Sinopec',
                       // data:  [65, 29, 90, 31, 46, 25, 60],

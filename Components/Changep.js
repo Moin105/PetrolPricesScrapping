@@ -52,12 +52,12 @@ console.log("base url",BASE_URL)
   <tbody>
    
      {data.map(((dat,index) =>{
-        return <tr key={index}>  <td className={styles.ts}><span style={{fontWeight:"600"}}>{dat.grade}</span>
-      </td> <td className={styles.td}> { dat.motorist_fuel_prices[0].price.toFixed(2) == 0 ?  "NaN": dat.motorist_fuel_prices[0].currency + dat.motorist_fuel_prices[0].price.toFixed(2)}</td>
-        <td className={styles.td}>{  dat.motorist_fuel_prices[1].price.toFixed(2) == 0 ?  "NaN": dat.motorist_fuel_prices[0].currency + dat.motorist_fuel_prices[1].price.toFixed(2)}</td>     
-        <td className={styles.td}>{  dat.motorist_fuel_prices[2].price.toFixed(2) == 0 ?  "NaN": dat.motorist_fuel_prices[0].currency + dat.motorist_fuel_prices[2].price.toFixed(2)}</td>
-        <td className={styles.td}>{  dat.motorist_fuel_prices[3].price.toFixed(2) == 0 ?  "NaN": dat.motorist_fuel_prices[0].currency + dat.motorist_fuel_prices[3].price.toFixed(2)}</td>
-        <td className={styles.td}>{  dat.motorist_fuel_prices[4].price.toFixed(2) == 0 ?  "NaN": dat.motorist_fuel_prices[0].currency + dat.motorist_fuel_prices[4].price.toFixed(2)}</td>
+        return <tr key={index}>  <td className={styles.ts}><span style={{fontWeight:"600"}}>{dat.grade}</span></td> 
+       <td className={styles.td}> { dat.motorist_fuel_prices[0]?.price == 0 ||dat.motorist_fuel_prices[0]?.price == "N/A"  ?  "-": dat.motorist_fuel_prices[0]?.currency + dat.motorist_fuel_prices[0]?.price}</td>
+        <td className={styles.td}>{  dat.motorist_fuel_prices[1]?.price == 0 ||dat.motorist_fuel_prices[1]?.price == "N/A" ?   "-": dat.motorist_fuel_prices[0]?.currency + dat.motorist_fuel_prices[1]?.price}</td>     
+        <td className={styles.td}>{  dat.motorist_fuel_prices[2]?.price == 0 ||dat.motorist_fuel_prices[2]?.price == "N/A" ?   "-": dat.motorist_fuel_prices[0]?.currency + dat.motorist_fuel_prices[2]?.price}</td>
+        <td className={styles.td}>{  dat.motorist_fuel_prices[3]?.price == 0 ||dat.motorist_fuel_prices[3]?.price == "N/A" ?   "-": dat.motorist_fuel_prices[0]?.currency + dat.motorist_fuel_prices[3]?.price}</td>
+         <td className={styles.td}>{  dat.motorist_fuel_prices[4]?.price == 0 ||dat.motorist_fuel_prices[4]?.price == "N/A" ?  "-": dat?.motorist_fuel_prices[0]?.currency + dat?.motorist_fuel_prices[4]?.price}</td>
      </tr> }))} 
   </tbody>
 </table> : <h2>NO DATA FOUND</h2>}

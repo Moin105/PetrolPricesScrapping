@@ -167,6 +167,8 @@ function Graph(base) {
                     
                   data={{
                     labels:Array.from(labels),
+                    maintainAspectRatio: false,
+
                     datasets: [{
                       label: 'Ron 95',
                       // data:  [65, 29, 90, 31, 46, 25, 60],
