@@ -196,7 +196,7 @@ function Cprices(base) {
 
 
      
-    },[inputs])
+    },[inputs.grade])
     
   
   return (
@@ -211,9 +211,10 @@ function Cprices(base) {
                  <div className={styles.lists}>
   {inputs.days == '30'?  <div className={styles.nam}onClick={()=>{                
     setInputs({
+    ...inputs, 
      days : '30'
     })
-    fetchGraph()
+    // fetchGraph()
     console.log("sal",inputs) 
     }}>
    <p className={styles.p}>1 month</p>
@@ -251,7 +252,7 @@ function Cprices(base) {
       ...inputs, 
      days : '180'
     })
-    fetchGraph()
+    // fetchGraph()
     console.log("sal",inputs) 
     }}>
    <p className={styles.p}>6 months</p>
@@ -261,7 +262,7 @@ function Cprices(base) {
       ...inputs, 
      days : '360'
     })
-    fetchGraph()
+    // fetchGraph()
     console.log("sal",inputs) 
     }}>
    <p className={styles.p}>12 months</p>
@@ -270,7 +271,7 @@ function Cprices(base) {
       ...inputs, 
      days : '360'
     })
-    fetchGraph()
+    // fetchGraph()
     console.log("sal",inputs) 
     }}>
    <p className={styles.p}>12 months</p>
@@ -291,7 +292,7 @@ function Cprices(base) {
       grade: petro.grade
     
     })
-    fetchGraph()
+    // fetchGraph()
     }}>
                   {inputs.grade == petro.grade ?  <button className={styles.btuna} key={index}><p className={styles.p}>{petro.grade}</p></button> : <button className={styles.btun} key={index}><p className={styles.p}>{petro.grade}</p></button> }
                   </div>
