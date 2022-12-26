@@ -4,6 +4,7 @@ import { Chart as ChartJS } from 'chart.js/auto'
 import { Bar, Chart }            from 'react-chartjs-2'
 import styles from '../styles/Home.module.css'
 import { Line } from 'react-chartjs-2'
+import PageLoader from 'next/dist/client/page-loader'
 
 
 function Cprices(base) {
@@ -137,7 +138,12 @@ function Cprices(base) {
       //   }
 
     }
-    useEffect(()=>{   
+    useEffect(()=>{  
+      setP1({})
+      setP2({}) 
+      setP3({})
+      setP4({})
+      setP5({})
     fetch(`${process.env.NEXT_PUBLIC_API_URL}grades`).then(res => {return res.json()}).then(
     res =>  {console.log("why are you so gay?", res.grades)
     setPetrol(res.grades)
@@ -172,7 +178,7 @@ function Cprices(base) {
         <div className={styles.wrapper} style={{flexDirection:"column",alignItems:"center"}}>
          <div className={styles.extramile}>
          <h2 className={styles.hs}>Fuel Price Trend</h2>
-            <div className={styles.change}>
+         {   <div className={styles.change}>
               <div className={styles.row2}>
                  <h2 className={styles.h}>Updated Trend</h2> 
                  <div className={styles.lists}>
@@ -289,7 +295,7 @@ function Cprices(base) {
   </div>
   </div>                
 </div>
-                  <Bar className={styles.canva}
+                {p1.length != 0 ||p2.length != 0||p3.length != 0||p4.length != 0||p5.length != 0 ?  <Bar className={styles.canva}
                     datasetIdKey='id'
                     
                   data={{
@@ -332,9 +338,9 @@ function Cprices(base) {
   
                       }
                 ]
-                  }} options={options}/>
+                  }} options={options}/>: <PageLoader/> }
                  </div> : <h2>No Data</h2> }
-            </div>  
+            </div>  }
          </div>
         </div>
      </div>
