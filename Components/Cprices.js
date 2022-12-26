@@ -159,43 +159,10 @@ function Cprices(base) {
       setP4(res?.data[3]?.prices)
       setP5(res?.data[4]?.prices)
       console.log("saas",res.data)
-      // console.log("heroo",chartData)
-      // if(chartData.length != 0) {   
-       
-      //   for (var i = 0 ; i < chartData.length ; i++){
-      //       // console.log("hero",chartData[i].prices) 
-          
-      //       for(var j = 0 ; j < chartData[i].prices.length ; j++){
-      //         var cur = chartData[i].prices[j];
-              
-             
-      //         if (max < cur  ){
-      //   max = cur;
-      //           console.log("hero max", Math.round(max))
-      //         } if (cur < min){
-      //         min = cur
-      //            console.log("hero min", Math.round(min))
-
-      //         }
-
-      //         // console.log("hero min ====>", min)
-      //         // console.log("hero max ====>", max)
-      //         console.log("hero",chartData[i].prices[j])
-      //       }
-      //     }
-        
-      //     console.log("hero min ====>", Math.ceil(min))
-      //     console.log("hero max ====>", Math.round(max))
-      //     console.log("hero max ====>", Math.round(1.2))
-
-      //   }
-
     }
 
       )
 
-
-     
     },[inputs.grade])
     
   

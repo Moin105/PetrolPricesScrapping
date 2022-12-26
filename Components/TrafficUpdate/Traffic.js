@@ -32,6 +32,7 @@ function Traffic() {
     //    }
     // }
     }, [])
+    console.log("trafficess",images )
     const  addDefaultSrc = (ev)=>{
      console.log("emd",ev.target.src)
     }
@@ -45,36 +46,36 @@ function Traffic() {
           <div className={styles.image}>
             <figure className={styles.figure}>
             <FallbackImage
-    key={images[0]}
+    key={images[0]?.image}
     layout="fill"
-    src={images[0]}
-    fallbackSrc={images[0]}
+    src={images[0]?.image}
+    fallbackSrc={images[0]?.image}
 />
             </figure>
           <div className={styles.image2}>
                       <figure className={styles.figure2}>
                       <FallbackImage
-    key={images[1]}
+    key={images[1]?.image}
     layout="fill"
-    src={images[1]}
-    fallbackSrc={images[1]}
+    src={images[1]?.image}
+    fallbackSrc={images[1]?.image}
 />
             </figure>            
             <div className={styles.image3}>
          <figure className={styles.figure3}>
          <FallbackImage
-    key={images[2]}
+    key={images[2]?.image}
     layout="fill"
-    src={images[2]}
-    fallbackSrc={images[2]}
+    src={images[2]?.image}
+    fallbackSrc={images[2]?.image}
 />
             </figure>            
             <figure className={styles.figure4}>
             <FallbackImage
-    key={images[3]}
+    key={images[3]?.image}
     layout="fill"
-    src={images[3]}
-    fallbackSrc={images[3]}
+    src={images[3]?.image}
+    fallbackSrc={images[3]?.image}
 />
             </figure>
 
@@ -89,10 +90,10 @@ function Traffic() {
           <div className={styles.image}>
             <figure className={styles.figure}>
             <FallbackImage
-    key={images[0]}
+    key={images[0]?.image}
     layout="fill"
-    src={images[0]}
-    fallbackSrc={images[0]}
+    src={images[0]?.image}
+    fallbackSrc={images[0]?.image}
 />
             {/* <Image
             onError={addDefaultSrc}
@@ -105,28 +106,28 @@ function Traffic() {
           <div className={styles.image2}>
                       <figure className={styles.figure2}>
                       <FallbackImage
-    key={images[1]}
+    key={images[1]?.image}
     layout="fill"
-    src={images[1]}
-    fallbackSrc={images[1]}
+    src={images[1]?.image}
+    fallbackSrc={images[1]?.image}
 />
 
             </figure>            
             <div className={styles.image3}>
          <figure className={styles.figure3}>
          <FallbackImage
-    key={images[2]}
+    key={images[2]?.image}
     layout="fill"
-    src={images[2]}
-    fallbackSrc={images[2]}
+    src={images[2]?.image}
+    fallbackSrc={images[2]?.image}
 />
             </figure>            
             <figure className={styles.figure4}>
             <FallbackImage
-    key={images[3]}
+    key={images[3]?.image}
     layout="fill"
-    src={images[3]}
-    fallbackSrc={images[3]}
+    src={images[3]?.image}
+    fallbackSrc={images[3]?.image}
 />
             </figure>
 
