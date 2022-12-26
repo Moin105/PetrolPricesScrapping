@@ -1620,6 +1620,13 @@
   flex-direction: column;
   gap: 20px;
 }
+.tcard .contain .h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+}
 .tcard .contain .image {
   display: flex;
   flex-direction: column;
@@ -5024,6 +5031,7 @@
   }
   .tcard {
     padding-top: 100px;
+    gap: 30px;
     display: flex;
     width: 85%;
     max-width: 1550px;

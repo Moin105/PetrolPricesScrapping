@@ -41,6 +41,7 @@ function Traffic() {
           
 
    <div  className={styles.contain}>
+        <h2 className={styles.h2}>Woodlands Causeway</h2>
           <div className={styles.image}>
             <figure className={styles.figure}>
             <FallbackImage
@@ -84,6 +85,7 @@ function Traffic() {
            </div>
           </div>
           <div  className={styles.contain}>
+          <h2 className={styles.h2}>Tuas Second Link</h2>
           <div className={styles.image}>
             <figure className={styles.figure}>
             <FallbackImage

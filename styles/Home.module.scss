@@ -1654,6 +1654,13 @@ justify-content: center;
     display: flex;
     border-radius: 12px;
     width: 48%;
+    .h2{      
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 24px;
+    }
     flex-direction: column;
     gap: 20px;
     .image{
@@ -5159,7 +5166,7 @@ text-align: center;
   } 
   .tcard{
     padding-top: 100px;
-    
+    gap: 30px;
     // columns: 2 auto;
     display: flex;
     width: 85%;
