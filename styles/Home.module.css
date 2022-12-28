@@ -1870,6 +1870,10 @@
     font-weight: 700;
     color: #28A745;
   }
+  .header .wrap .ul .lis {
+    font-weight: 700;
+    color: #28A745;
+  }
   .headers {
     display: flex;
     padding: 25px 0px 23px 0px;
@@ -1907,7 +1911,11 @@
     cursor: pointer;
   }
   .headers .wrap .ul :hover {
-    font-weight: 700;
+    font-weight: 500;
+    color: #28A745;
+  }
+  .headers .wrap .ul .lis {
+    font-weight: 500;
     color: #28A745;
   }
   .banners .figure {

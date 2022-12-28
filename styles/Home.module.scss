@@ -1902,6 +1902,9 @@ line-height: 18px;
      } & :hover{
       font-weight: 700;
        color: #28A745 ;
+     }.lis{
+      font-weight: 700;
+      color: #28A745 ;
      }
    }
  }
@@ -1939,8 +1942,11 @@ line-height: 18px;
        color: black;
        cursor: pointer;
      } & :hover{
-      font-weight: 700;
+      font-weight: 500;
        color: #28A745 ;
+     }.lis{
+      font-weight: 500;
+      color: #28A745 ;
      }
    }
  }
