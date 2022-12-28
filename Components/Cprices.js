@@ -169,7 +169,7 @@ function Cprices(base) {
 
       )
 
-    },[inputs.grade])
+    },[inputs])
     
   
   return (
@@ -187,6 +187,10 @@ function Cprices(base) {
     ...inputs, 
      days : '30'
     })
+    setInputs({
+      ...inputs, 
+       days : '30'
+      })
     // fetchGraph()
     console.log("sal",inputs) 
     }}>
@@ -196,7 +200,11 @@ function Cprices(base) {
      ...inputs, 
      days : '30'
     })
-    fetchGraph()
+     setInputs({
+      ...inputs, 
+       days : '30'
+      })
+    // fetchGraph()
     console.log("sal",inputs) 
     }}>
    <p className={styles.p}>1 month</p>
@@ -216,11 +224,19 @@ function Cprices(base) {
       ...inputs, 
      days : '180'
     })
-    fetchGraph()
+    setInputs({
+      ...inputs, 
+     days : '180'
+    })
+    // fetchGraph()
     console.log("sal",inputs) 
     }}>
    <p className={styles.p}>6 months</p>
   </div> : <div className={styles.name}onClick={()=>{                
+    setInputs({
+      ...inputs, 
+     days : '180'
+    })
     setInputs({
       ...inputs, 
      days : '180'
@@ -235,11 +251,19 @@ function Cprices(base) {
       ...inputs, 
      days : '360'
     })
+    setInputs({
+      ...inputs, 
+     days : '360'
+    })
     // fetchGraph()
     console.log("sal",inputs) 
     }}>
    <p className={styles.p}>12 months</p>
   </div> : <div className={styles.name}onClick={()=>{                
+    setInputs({
+      ...inputs, 
+     days : '360'
+    })
     setInputs({
       ...inputs, 
      days : '360'
@@ -318,23 +342,23 @@ function Cprices(base) {
   
                       },
                       {
-                        label: 'esso',
+                        label: 'Esso',
                         data: p3,
-                        fill: false,
-                        backgroundColor: 'rgb(0,173,238)',
-  
-                      }, {
-                        label: 'spc',
-                        data: p4,
                         fill: false,
                         backgroundColor: 'rgb(29,102,255)',
   
-                      },
-                      {
-                        label: 'caltex',
-                        data: p5,
+                      }, {
+                        label: 'Spc',
+                        data: p4,
                         fill: false,
                         backgroundColor: 'rgb(231,45,69)',
+  
+                      },
+                      {
+                        label: 'Caltex',
+                        data: p5,
+                        fill: false,
+                        backgroundColor: 'rgb(0,173,238)',
   
                       }
                 ]

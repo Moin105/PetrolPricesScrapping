@@ -120,10 +120,16 @@ function Cprices(base) {
 
     }
     useEffect(()=>{   
+      setP1({})
+      setP2({}) 
+      setP3({})
+      setP4({})
+      setP5({})
     fetch(`${process.env.NEXT_PUBLIC_API_URL}grades`).then(res => {return res.json()}).then(
     res =>  {console.log("sab bhula kayy", res.grades)
     setPetrol(res.grades)
     console.log("cpmsad", inputs.grade_id)
+    
   }
     )
      
@@ -147,7 +153,7 @@ function Cprices(base) {
 
 
      
-    },[])
+    },[inputs])
   
   return (
     <>
@@ -172,16 +178,15 @@ function Cprices(base) {
     setInputs({
      days : '30'
     })
-    fetchGraph()
+    // fetchGraph()
     console.log("sal",inputs) 
     }}>
    <p className={styles.p}>1 month</p>
   </div> : <div className={styles.name}onClick={()=>{                
     setInputs({
- 
      days : '30'
     })
-    fetchGraph()
+    // fetchGraph()
     console.log("sal",inputs) 
     }}>
    <p className={styles.p}>1 month</p>
@@ -200,7 +205,7 @@ function Cprices(base) {
     setInputs({
      days : '180'
     })
-    fetchGraph()
+    // fetchGraph()
     console.log("sal",inputs) 
     }}>
    <p className={styles.p}>6 months</p>
@@ -208,7 +213,7 @@ function Cprices(base) {
     setInputs({
      days : '180'
     })
-    fetchGraph()
+    // fetchGraph()
     console.log("sal",inputs) 
     }}>
    <p className={styles.p}>6 months</p>
@@ -217,7 +222,7 @@ function Cprices(base) {
     setInputs({
      days : '360'
     })
-    fetchGraph()
+    // fetchGraph()
     console.log("sal",inputs) 
     }}>
    <p className={styles.p}>12 months</p>
@@ -225,8 +230,8 @@ function Cprices(base) {
     setInputs({
      days : '360'
     })
-    fetchGraph()
-    console.log("sal",inputs) 
+    // fetchGraph()
+    console.log("salour",inputs) 
     }}>
    <p className={styles.p}>12 months</p>
   </div> }
@@ -270,7 +275,7 @@ function Cprices(base) {
                     maintainAspectRatio: false,
 
                     datasets: [{
-                      label: 'Sinopec',
+                      label: 'Category A',
                       // data:  [65, 29, 90, 31, 46, 25, 60],
                       data:p1,
                       fill: false,
@@ -278,27 +283,27 @@ function Cprices(base) {
                       tension: 0.1
                     },
                     {
-                        label: 'Shell',
+                        label: 'Category B',
                         data: p2,
                         fill: false,
                         backgroundColor: 'rgb(251,188,5)',
                         tension: 0.1
                       },
                       {
-                        label: 'esso',
+                        label: 'Category C',
                         data: p3,
                         fill: false,
                         backgroundColor: 'rgb(0,173,238)',
                         tension: 0.1
                       }, {
-                        label: 'spc',
+                        label: 'Category D',
                         data: p4,
                         fill: false,
                         backgroundColor: 'rgb(29,102,255)',
                         tension: 0.1
                       },
                       {
-                        label: 'caltex',
+                        label: 'Category E',
                         data: p5,
                         fill: false,
                         backgroundColor: 'rgb(231,45,69)',
