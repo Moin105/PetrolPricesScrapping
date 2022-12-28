@@ -1,12 +1,58 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import flogo from '../public/flogo.png';
 import arrow from '../public/arrow.png';
 import Link from 'next/link'
+import Modal from './Modal';
 
 
 function Footer() {
+    const [show, setShow] = useState(false);
+    const [response, setResponse] = useState("");
+      const [inputs, setInputs] = useState({
+  
+          email: "",
+  
+        });
+        const handleChange = (e) => {
+          setInputs({
+            ...inputs,
+            [e.target.name]: e.target.value,
+          });
+        };
+        const handleSubmit = (e) => {
+          e.preventDefault();
+      
+          if ( inputs.email == "") {
+              console.log("gee")
+            setShow(true);
+            setResponse("Enter Required Details");
+            setTimeout(function () {
+              setShow(false);
+            }, 5000);
+            return;
+          } else {
+            const requestOptions = {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(inputs),
+            };
+      
+            fetch("https://admin.extramiless.com/api/subscribe", requestOptions)
+              .then((response) => response.json())
+              .then((res) => {
+                console.log(res);
+                setResponse(res.message);
+                console.log(res.message);
+          
+              });
+            setShow(true);
+            setTimeout(function () {
+              setShow(false);
+            }, 3000);
+          }
+        };
   return (
     <>
        <div className={styles.footer}>
@@ -17,8 +63,14 @@ function Footer() {
                 <Image priority src={flogo} alt="banner" layout="fill" width={100} objectFit="contain"/>
                 </figure>
                 <div className={styles.inputbox}>
-                      <input placeholder='Your Email' className={styles.input}/>
-                   <figure className={styles.arrow}>
+                      <input   type='text'
+                name='email'
+                id='email'
+                className={styles.input}
+                placeholder='Email here'
+                value={inputs.email}
+                onChange={handleChange}/>
+                   <figure className={styles.arrow}  onClick={handleSubmit}>
                    <Image priority src={arrow} alt="banner" layout="fill" width={100} objectFit="contain"/>
                    </figure>
                 </div>
@@ -54,6 +106,8 @@ function Footer() {
  </div>
         </div>
        </div>
+       {show == true && <Modal message={response} />}
+
     </>
   )
 }
