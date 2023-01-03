@@ -12,7 +12,7 @@
 .hp{
   font-family: 'Poppins';
 font-style: normal;
-font-weight: 400;
+// font-weight: 400;
 font-size: 16px;
 line-height: 24px;
 }
@@ -83,8 +83,12 @@ line-height: 30px;
       cursor: pointer;
     } & :hover{
       color: #28A745 ;
-      font-weight: 700;
+      font-weight: 600 !important;
     }
+    .lis{
+      font-weight: 600 !important;
+      color: #28A745 ;
+     }
   }
 }
 }
@@ -121,8 +125,11 @@ line-height: 30px;
        color: black;
        cursor: pointer;
      } & :hover{
-      font-weight: 700;
+      font-weight: 600 !important;
        color: #28A745 ;
+     }.lis{
+      font-weight: 600 !important;
+      color: #28A745 ;
      }
    }
  }
@@ -1831,7 +1838,7 @@ padding:19px 16px;
 .hp{
   font-family: 'Poppins';
 font-style: normal;
-font-weight: 400;
+// font-weight: 400;
 font-size: 14px;
 line-height: 18x;
 }
@@ -1903,7 +1910,7 @@ line-height: 18px;
       font-weight: 700;
        color: #28A745 ;
      }.lis{
-      font-weight: 700;
+      font-weight: 600 !important;
       color: #28A745 ;
      }
    }
@@ -1945,7 +1952,7 @@ line-height: 18px;
       font-weight: 500;
        color: #28A745 ;
      }.lis{
-      font-weight: 500;
+      font-weight: 600 !important;
       color: #28A745 ;
      }
    }

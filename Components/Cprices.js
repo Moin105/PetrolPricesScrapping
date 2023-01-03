@@ -298,25 +298,27 @@ function Cprices(base) {
 
 <div className={styles.list}>
   <div className={styles.name}>
-    <div className={styles.circle} style={{backgroundColor:"rgb(40,167,69)"}}></div>
-    <p className={styles.p}>Sinopec</p>
+    <div className={styles.circle} style={{backgroundColor:"rgb(29,102,255)"}}></div>
+    <p className={styles.p}>Esso </p>
   </div>
   <div className={styles.name}>
     <div className={styles.circle} style={{backgroundColor:"rgb(251,188,5)"}}></div>
     <p className={styles.p}>Shell</p>
   </div>
   <div className={styles.name}>
+    <div className={styles.circle} style={{backgroundColor:"rgb(231,45,69)"}}></div>
+    <p className={styles.p}>Spc</p>
+  </div>
+  <div className={styles.name}>
     <div className={styles.circle} style={{backgroundColor:"rgb(0,173,238)"}}></div>
     <p className={styles.p}>Caltex</p>
   </div>
   <div className={styles.name}>
-    <div className={styles.circle} style={{backgroundColor:"rgb(29,102,255)"}}></div>
-    <p className={styles.p}>Esso</p>
-  </div>
-  <div className={styles.name}>
-    <div className={styles.circle} style={{backgroundColor:"rgb(231,45,69)"}}></div>
-    <p className={styles.p}>Spc</p>
-  </div>
+    <div className={styles.circle} style={{backgroundColor:" rgb(40,167,69)"}}></div>
+    <p className={styles.p}>Sinopec</p>
+  </div> 
+ 
+  
   </div>                
 </div>
                 {p1.length != 0 ||p2.length != 0||p3.length != 0||p4.length != 0||p5.length != 0 ?  <Bar className={styles.canva}
@@ -327,12 +329,12 @@ function Cprices(base) {
                     maintainAspectRatio: false,
 
                     datasets: [{
-                      label: 'Sinopec',
+                      label: 'Esso',
                       // data:  [65, 29, 90, 31, 46, 25, 60],
                       data:p1,
                       fill: false,
                       
-                      backgroundColor: 'rgb(40,167,69)',
+                      backgroundColor: 'rgb(29,102,255)',
                     },
                     {
                         label: 'Shell',
@@ -342,23 +344,23 @@ function Cprices(base) {
   
                       },
                       {
-                        label: 'Esso',
-                        data: p3,
-                        fill: false,
-                        backgroundColor: 'rgb(29,102,255)',
-  
-                      }, {
                         label: 'Spc',
-                        data: p4,
+                        data: p3,
                         fill: false,
                         backgroundColor: 'rgb(231,45,69)',
   
-                      },
-                      {
+                      }, {
                         label: 'Caltex',
-                        data: p5,
+                        data: p4,
                         fill: false,
                         backgroundColor: 'rgb(0,173,238)',
+  
+                      },
+                      {
+                        label: 'Sinopec',
+                        data: p5,
+                        fill: false,
+                        backgroundColor: 'rgb(40,167,69)',
   
                       }
                 ]

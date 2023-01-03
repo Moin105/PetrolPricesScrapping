@@ -10,6 +10,8 @@ import Modal from './Modal';
 function Footer() {
     const [show, setShow] = useState(false);
     const [response, setResponse] = useState("");
+    var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
       const [inputs, setInputs] = useState({
   
           email: "",
@@ -22,9 +24,9 @@ function Footer() {
           });
         };
         const handleSubmit = (e) => {
+          console.log("suck",inputs.email.match(validRegex))
           e.preventDefault();
-      
-          if ( inputs.email == "") {
+          if ( inputs.email == "" ) {
               console.log("gee")
             setShow(true);
             setResponse("Enter Required Details");
@@ -32,7 +34,8 @@ function Footer() {
               setShow(false);
             }, 5000);
             return;
-          } else {
+          }
+          if( inputs.email.match(validRegex)){
             const requestOptions = {
               method: "POST",
               headers: { "Content-Type": "application/json" },
@@ -51,6 +54,15 @@ function Footer() {
             setTimeout(function () {
               setShow(false);
             }, 3000);
+          }
+           else {   console.log("gee")
+            setShow(true);
+            setResponse("Enter Valid Email");
+            setTimeout(function () {
+              setShow(false);
+            }, 5000);
+            return;
+    
           }
         };
   return (
@@ -87,10 +99,10 @@ function Footer() {
                     <ul className={styles.ul}>
                         <li className={styles.li}><h3 className={styles.h3}>Company</h3>            </li>
                  <Link href="/"><li className={styles.li}><p className={styles.p}>Petrol prices SG</p>      </li></Link>
-                 <Link href="/"><li className={styles.li}><p className={styles.p}>Petrol prices Malaysia</p></li></Link>
-                 <Link href="/"><li className={styles.li}><p className={styles.p}>Traffic Update</p>        </li></Link>
-                 <Link href="/"><li className={styles.li}><p className={styles.p}>COE Prices</p>            </li></Link>
-                 <Link href="/"><li className={styles.li}><p className={styles.p}>Car Parking SG</p>        </li></Link>
+                 <Link href="/PetrolPricesMalaysia"><li className={styles.li}><p className={styles.p}>Petrol prices Malaysia</p></li></Link>
+                 <Link href="/TrafficUpdate"><li className={styles.li}><p className={styles.p}>Traffic Update</p>        </li></Link>
+                 <Link href="/COEPrices"><li className={styles.li}><p className={styles.p}>COE Prices</p>            </li></Link>
+                 <Link href="/CarParkingSG"><li className={styles.li}><p className={styles.p}>Car Parking SG</p>        </li></Link>
                     </ul>
                 </div>
                 <div className={styles.foot2}>

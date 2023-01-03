@@ -13,7 +13,6 @@
 .hp {
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
 }
@@ -92,7 +91,11 @@
 }
 .header .wrap .ul :hover {
   color: #28A745;
-  font-weight: 700;
+  font-weight: 600 !important;
+}
+.header .wrap .ul .lis {
+  font-weight: 600 !important;
+  color: #28A745;
 }
 
 .headers {
@@ -131,7 +134,11 @@
   cursor: pointer;
 }
 .headers .wrap .ul :hover {
-  font-weight: 700;
+  font-weight: 600 !important;
+  color: #28A745;
+}
+.headers .wrap .ul .lis {
+  font-weight: 600 !important;
   color: #28A745;
 }
 
@@ -1795,7 +1802,6 @@
   .hp {
     font-family: "Poppins";
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 18x;
   }
@@ -1871,7 +1877,7 @@
     color: #28A745;
   }
   .header .wrap .ul .lis {
-    font-weight: 700;
+    font-weight: 600 !important;
     color: #28A745;
   }
   .headers {
@@ -1915,7 +1921,7 @@
     color: #28A745;
   }
   .headers .wrap .ul .lis {
-    font-weight: 500;
+    font-weight: 600 !important;
     color: #28A745;
   }
   .banners .figure {

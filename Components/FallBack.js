@@ -16,7 +16,7 @@ export const FallbackImage = ({ src, ...rest }) => {
       onError={() => {
         setImgSrc(logo)
       }}
-      objectFit="contain"
+      objectFit="cover"
     />
   )
 }
