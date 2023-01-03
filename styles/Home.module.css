@@ -1533,9 +1533,21 @@
 .footer .wrapper .foot1 .inputbox .arrow {
   width: 16px;
   height: 8px;
+  cursor: pointer;
+  position: absolute;
+  color: #767676;
+  right: 22px;
+  top: 12px;
+}
+.footer .wrapper .foot1 .inputbox .arrws {
+  width: 16px;
+  height: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #000;
   position: absolute;
   right: 22px;
-  top: 16px;
+  top: 12px;
 }
 .footer .wrapper .foot1 .input {
   width: 225px;

@@ -4,7 +4,10 @@ import styles from '../styles/Home.module.css';
 import flogo from '../public/flogo.png';
 import arrow from '../public/arrow.png';
 import Link from 'next/link'
+import {HiOutlineArrowNarrowRight} from 'react-icons/hi'
 import Modal from './Modal';
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
+
 
 
 function Footer() {
@@ -22,17 +25,14 @@ function Footer() {
             ...inputs,
             [e.target.name]: e.target.value,
           });
+
         };
         const handleSubmit = (e) => {
           console.log("suck",inputs.email.match(validRegex))
           e.preventDefault();
           if ( inputs.email == "" ) {
               console.log("gee")
-            setShow(true);
-            setResponse("Enter Required Details");
-            setTimeout(function () {
-              setShow(false);
-            }, 5000);
+              Notify.warning('Please Enter Email');
             return;
           }
           if( inputs.email.match(validRegex)){
@@ -50,17 +50,20 @@ function Footer() {
                 console.log(res.message);
           
               });
-            setShow(true);
-            setTimeout(function () {
-              setShow(false);
-            }, 3000);
+            // setShow(true);
+            Notify.success(response);
+            // setTimeout(function () {
+            //   setShow(false);
+            // }, 3000);
           }
            else {   console.log("gee")
-            setShow(true);
-            setResponse("Enter Valid Email");
-            setTimeout(function () {
-              setShow(false);
-            }, 5000);
+            // setShow(true);
+            // setResponse("");
+           Notify.failure('Enter Valid Email');
+
+            // setTimeout(function () {
+            //   setShow(false);
+            // }, 5000);
             return;
     
           }
@@ -82,9 +85,15 @@ function Footer() {
                 placeholder='Email here'
                 value={inputs.email}
                 onChange={handleChange}/>
-                   <figure className={styles.arrow}  onClick={handleSubmit}>
-                   <Image priority src={arrow} alt="banner" layout="fill" width={100} objectFit="contain"/>
-                   </figure>
+                 {inputs.email.length != 0 ?  <figure className={styles.arrws}  onClick={handleSubmit} >
+                   <HiOutlineArrowNarrowRight/>
+                   {/* <Image priority src={arrow} alt="banner" layout="fill" width={100} objectFit="contain"/> */}
+                   </figure> :   <figure className={styles.arrow}  onClick={handleSubmit} >
+                   <HiOutlineArrowNarrowRight/>
+                   
+
+                   {/* <Image priority src={arrow} alt="banner" layout="fill" width={100} objectFit="contain"/> */}
+                   </figure>}
                 </div>
               
                 <p className={styles.p}>

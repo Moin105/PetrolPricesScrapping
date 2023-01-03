@@ -1561,9 +1561,23 @@ justify-content: center;
         .arrow{
           width: 16px;
           height: 8px;
+          cursor: pointer;
           position: absolute;
+          color: #767676;
           right: 22px;
-          top: 16px;
+          top: 12px;
+        }
+        .arrws{
+          width: 16px;
+          height: 8px;
+          cursor: pointer;
+          font-size: 18px;
+          color: #000;
+          // box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+                    position: absolute;
+          // color: #767676;
+          right: 22px;
+          top: 12px;
         }
        }
        .input{
