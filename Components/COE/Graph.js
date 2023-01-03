@@ -10,6 +10,8 @@ import G2 from '../../public/G2.png'
 import G3 from '../../public/G3.png'
 import G4 from '../../public/G4.png'
 import G5 from '../../public/G5.png'
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
+
 export const options = {
   responsive: true,
   
@@ -155,10 +157,7 @@ function Cprices(base) {
     }
       if(res.message){
         setMessage(res.message)
-        setShow(true);
-        setTimeout(function () {
-          setShow(false);
-        }, 3000);
+        Notify.warning(message);
         console.log("saas",res.message)
       }
       // console.log("heroo",chartData)
