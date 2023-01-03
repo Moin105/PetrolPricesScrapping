@@ -108,12 +108,12 @@ const [state ,setState] = useState(0)
                        }
                        else{   
                         return       <div key={index} className={styles.decrease}>
-                            <h3 className={styles.h3}>{dat.grade}</h3>
+                                                       <h3 className={styles.h3}>{dat.motorist_fuel_prices[state]?.currency + dat.motorist_fuel_prices[state]?.price}</h3>
                             <figure className={styles.figure}>
                             <Image src={decrease} alt="logo" layout="fill" objectFit="contain" priority={true} quality={100}/>
                             <div className={styles.asb}><p className={styles.ps}>{ dat.motorist_fuel_prices[state]?.change_in_price.toFixed(2)}</p><p className={styles.ps}>decreased</p></div>
-                            </figure>
-                            <h3 className={styles.h3}>{dat.motorist_fuel_prices[state]?.currency + dat.motorist_fuel_prices[state]?.price}</h3>
+                            </figure> 
+                            <h3 className={styles.h3}>{dat.grade}</h3>
                            </div>
                            }
                    })  }

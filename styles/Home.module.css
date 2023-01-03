@@ -2335,7 +2335,7 @@
   }
   .fuel .wrapper .pbox .increase {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     gap: 10px;
   }
@@ -2617,7 +2617,7 @@
   }
   .fuel .wrapper .pboxs .increase {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     gap: 10px;
   }
@@ -4018,7 +4018,7 @@
   }
   .fuel .wrapper .pbox .increase {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     gap: 10px;
   }
@@ -4300,7 +4300,7 @@
   }
   .fuel .wrapper .pboxs .increase {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     gap: 10px;
   }
@@ -5838,7 +5838,7 @@
   }
   .fuel .wrapper .pbox .increase {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     gap: 10px;
   }
@@ -6121,7 +6121,7 @@
   }
   .fuel .wrapper .pboxs .increase {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     gap: 10px;
   }
