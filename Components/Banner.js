@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import banner from '../public/banner.png'
 import b1 from '../public/b1.png'
+import Link from 'next/link'
 import b2 from '../public/b2.png'
 import b3 from '../public/b3.png'
 function Banner() {
@@ -20,7 +21,7 @@ function Banner() {
                         from all the leading petrol 
                         pumps in Singapore!
                     </h1>
-                    <button className={styles.button}>Explore now</button>
+                    <Link href="/#table"><button className={styles.button}>Explore now</button></Link>
                 </div>
                 <div className={styles.right}>
                      <div className={styles.b1}>

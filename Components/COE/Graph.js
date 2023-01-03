@@ -4,6 +4,7 @@ import { Chart as ChartJS } from 'chart.js/auto'
 import { Bar, Chart }            from 'react-chartjs-2'
 import styles from '../../styles/Home.module.css'
 import { Line, } from 'react-chartjs-2'
+import Modal from '../Modal'
 import G1 from '../../public/G1.png'
 import G2 from '../../public/G2.png'
 import G3 from '../../public/G3.png'
@@ -34,8 +35,10 @@ function Cprices(base) {
     const [p3,setP3] = useState({})
     const [p4,setP4] = useState({})
     const [p5,setP5] = useState({})
-  const [active , setActive] = useState(false)
-    const [labels , setLabels] = useState({})
+  const [message , setMessage] = useState("")
+  const [show , setShow] = useState(false)
+
+  const [labels , setLabels] = useState({})
     const [petrol ,setPetrol] = useState("")
     const [chartData , setChartData] = useState({
         labels:['monday','tuesday','wednesday','thursday','friday'],
@@ -77,6 +80,7 @@ function Cprices(base) {
       .then(res => {return res.json();} )
       .then(res=>{
       // console.log("saas",res)
+
       setChartData(res?.data)
       setLabels(res?.data[0]?.dates)
       setP1(res?.data[0]?.prices)
@@ -139,7 +143,8 @@ function Cprices(base) {
       .then(res => {return res.json();} )
       .then(res=>{
       // console.log("saas",res)
-      setChartData(res?.data)
+      if(res.data)
+    {  setChartData(res?.data)
       setLabels(res?.data[0]?.dates)
       setP1(res?.data[0]?.prices)
       setP2(res?.data[1]?.prices)
@@ -147,6 +152,15 @@ function Cprices(base) {
       setP4(res?.data[3]?.prices)
       setP5(res?.data[4]?.prices)
       console.log("saas",res.data)
+    }
+      if(res.message){
+        setMessage(res.message)
+        setShow(true);
+        setTimeout(function () {
+          setShow(false);
+        }, 3000);
+        console.log("saas",res.message)
+      }
       // console.log("heroo",chartData)
     }
       )
@@ -317,6 +331,8 @@ function Cprices(base) {
        </div>
         </div>
      </div>
+     {show == true && <Modal message={message} />}
+
     </>
   )
 }

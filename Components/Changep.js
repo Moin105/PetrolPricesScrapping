@@ -32,7 +32,7 @@ console.log("base url",BASE_URL)
     
   return (
     <>
-    <div className={styles.controlp}>
+    <div className={styles.controlp} id="table">
         <div className={styles.wrapper}>
             <div className={styles.tables}>
                  <h2 className={styles.h2}>Compare Petrol Prices</h2>     

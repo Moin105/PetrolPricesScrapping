@@ -96,6 +96,7 @@
 .header .wrap .ul .lis {
   font-weight: 600 !important;
   color: #28A745;
+  cursor: pointer;
 }
 
 .headers {
@@ -140,6 +141,7 @@
 .headers .wrap .ul .lis {
   font-weight: 600 !important;
   color: #28A745;
+  cursor: pointer;
 }
 
 .banners .figure {
