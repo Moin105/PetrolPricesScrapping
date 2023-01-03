@@ -28,7 +28,7 @@ const [state ,setState] = useState(0)
       }
     )
     }, [])
-    
+    console.log("dasta",data)
   return (
     <>
     <div className={styles.fuel}>
@@ -94,7 +94,7 @@ const [state ,setState] = useState(0)
                     <Image priority={true} quality={100} src={nochange} alt="logo" layout="fill" objectFit="contain" />
                     <div key={index} className={styles.asb}><p className={styles.ps}>unchanged</p></div>
                     </figure>
-                    <h3 className={styles.h3}>{ dat.motorist_fuel_prices[state]?.currency + dat.motorist_fuel_prices[state]?.price}</h3>
+                    <h3 className={styles.h3}>{dat.motorist_fuel_prices[state]?.price== 0 ?"-" :dat.motorist_fuel_prices[state]?.currency + dat.motorist_fuel_prices[state]?.price } </h3>
                    </div>
                    }else if(dat.motorist_fuel_prices[state]?.change_in_price > 0){   
                     return       <div key={index} className={styles.increase}>
