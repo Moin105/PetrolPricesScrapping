@@ -150,20 +150,50 @@ function Cprices(base) {
     console.log("cpmsad", inputs.grade_id)
   }
     )
-     
-     
-    
-      fetch(`${process.env.NEXT_PUBLIC_API_URL}motorist_price_graph`,requestOptions)
+     fetch(`${process.env.NEXT_PUBLIC_API_URL}motorist_price_graph`,requestOptions)
       .then(res => {return res.json();} )
       .then(res=>{
       // console.log("saas",res)
       setChartData(res?.data)
       setLabels(res?.data[0]?.dates)
-      setP1(res?.data[0]?.prices)
-      setP2(res?.data[1]?.prices)
-      setP3(res?.data[2]?.prices)
-      setP4(res?.data[3]?.prices)
-      setP5(res?.data[4]?.prices)
+      for(var i = 0 ;i < res.data.length; i++  ){
+        if(res?.data[i]?.pump.match("esso")){
+          setP1(res?.data[i]?.prices)
+        }
+        if(res?.data[i]?.pump.match("shell")){
+          setP2(res?.data[i]?.prices)
+        }
+        if(res?.data[i]?.pump.match("spc")){
+          setP3(res?.data[i]?.prices)
+        }
+        if(res?.data[i]?.pump.match("caltex")){
+          setP4(res?.data[i]?.prices)
+        }
+        if(res?.data[i]?.pump.match("sinopec")){
+          setP5(res?.data[i]?.prices)
+        }
+
+      }
+      // ///////
+      // if(res?.data[0]?.pump.match("esso")){
+      //   setP1(res?.data[0]?.prices)
+      // }
+      // if(res?.data[1]?.pump.match("shell")){
+      //   setP2(res?.data[1]?.prices)
+      // }
+      // if(res?.data[2]?.pump.match("spc")){
+      //   setP3(res?.data[2]?.prices)
+      // }
+      // if(res?.data[3]?.pump.match("caltex")){
+      //   setP4(res?.data[3]?.prices)
+      // }
+      // if(res?.data[4]?.pump.match("sinopec")){
+      //   setP5(res?.data[4]?.prices)
+      // }
+      // setP2(res?.data[1]?.prices)
+      // setP3(res?.data[2]?.prices)
+      // setP4(res?.data[3]?.prices)
+      // setP5(res?.data[4]?.prices)
       console.log("saas",res.data)
     }
 
