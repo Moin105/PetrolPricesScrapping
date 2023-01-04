@@ -30,6 +30,8 @@ function Graph(base) {
     const [p3,setP3] = useState({})
     const [p4,setP4] = useState({})
     const [p5,setP5] = useState({})
+    const [show ,setShow] = useState(false)
+
   const [active , setActive] = useState(false)
     const [labels , setLabels] = useState({})
     const [petrol ,setPetrol] = useState("")
@@ -115,7 +117,23 @@ function Graph(base) {
         //     console.log("saas",res.data)
         //   }
         //     )
-      
+        if (typeof window !== 'undefined') {
+          console.log('You are on the browser');
+        if(window.innerWidth < "580" ){
+          // ✅ Can use window here
+          console.log("mouse",window.innerWidth);
+          setShow(true)
+        }
+        else if(window.innerWidth > "580"){
+          setShow(false)
+        }
+          window.addEventListener('mousemove', () => {
+            console.log('Mouse moved',window.innerWidth);
+          });
+        } else {
+          console.log('You are on the server');
+          // ⛔️ Don't use window here
+        }
 
     },[])
   
@@ -126,7 +144,7 @@ function Graph(base) {
      }}>
          <div className={styles.wrapper} styles={{alignItem:"flex-start"}}>
      <div className={styles.mfp}>
-     <h2 className={styles.hs}>Petrol Prices in Malaysia</h2> 
+     {show?  <h2 className={styles.hs}>Average Fuel Prices in Malaysia</h2>:<h2 className={styles.hs}>Petrol Prices in Malaysia</h2>} 
             <div className={styles.change}>
             
               <div className={styles.row2}>

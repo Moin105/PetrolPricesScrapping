@@ -1,17 +1,45 @@
-import React from 'react'
+import React,{useEffect,useState} from 'react'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import baner from '../public/back1.jpg'
 import banner from '../public/banner.png'
 import b1 from '../public/b1.png'
 import Link from 'next/link'
 import b2 from '../public/b2.png'
 import b3 from '../public/b3.png'
+// import useWindowDimensions from '../Hooks/hooks'
 function Banner() {
+   // const { height, width } = useWindowDimensions();
+  
+  const [show ,setShow] = useState(false)
+  
+   useEffect(() => {
+      if (typeof window !== 'undefined') {
+         console.log('You are on the browser');
+       if(window.innerWidth < "580" ){
+         // ✅ Can use window here
+         console.log("mouse",window.innerWidth);
+         setShow(true)
+       }
+       else if(window.innerWidth > "580"){
+         setShow(false)
+       }
+         window.addEventListener('mousemove', () => {
+           console.log('Mouse moved',window.innerWidth);
+         });
+       } else {
+         console.log('You are on the server');
+         // ⛔️ Don't use window here
+       }
+   
+   }, [show])
+ 
   return (
     <>
     <div className={styles.banner}>
        <figure className={styles.figure}>
-        <Image  src={banner} alt="banner" layout="fill"  objectFit="cover" quality={100}/>
+        {show ?  <Image  src={baner} alt="banner" layout="fill"  objectFit="cover" quality={100}/>:
+        <Image  src={banner} alt="banner" layout="fill"  objectFit="cover" quality={100}/>}
        </figure>
        <div className={styles.wrapper}>
             <div className={styles.content}>

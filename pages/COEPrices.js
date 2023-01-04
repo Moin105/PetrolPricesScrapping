@@ -5,6 +5,7 @@ import Banners from '../Components/Banners'
 import Footer from '../Components/Footer'
 import Footie from '../Components/Footie'
 import ban5 from '../public/ban5.jpg'
+import ban from '../public/back3.jpg'
 import Header from '../Components/Header'
 import styles from '../styles/Home.module.css'
 import Graph from '../Components/COE/Graph'
@@ -32,7 +33,7 @@ export default function COEPrices() {
 
   <Header setShow={setShow}/>
  {  show && <>
- <Banners img={ban5}/>
+ <Banners img={ban5} img2={ban}/>
   {data.length  > 0 ?<Table data={data} month={month} year={year} bidding={bidding} base={base}/> : null}
   <Graph  base={base}/>
   <Footer/>

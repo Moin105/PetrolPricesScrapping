@@ -60,6 +60,7 @@ function Cprices(base) {
               autoSkip: false,
               maxRotation: 90,
               minRotation: 90
+              
           },
             y: {
               min: 0.1,
@@ -138,6 +139,9 @@ function Cprices(base) {
       //   }
 
     }
+    const dt = new Date()
+
+    var dates  = []
     useEffect(()=>{  
       setP1({})
       setP2({}) 
@@ -156,6 +160,8 @@ function Cprices(base) {
       // console.log("saas",res)
       setChartData(res?.data)
       setLabels(res?.data[0]?.dates)
+      // if(labels.length > 0) {dates =   labels.forEach(x => console.log("bsdk",x.toDateString()));}     
+       console.log("burn",dates)
       for(var i = 0 ;i < res.data.length; i++  ){
         if(res?.data[i]?.pump.match("esso")){
           setP1(res?.data[i]?.prices)
@@ -211,8 +217,11 @@ function Cprices(base) {
          {   <div className={styles.change}>
               <div className={styles.row2}>
                  <h2 className={styles.h}>Updated Trend</h2> 
-                 <div className={styles.lists}>
-  {inputs.days == '30'?  <div className={styles.nam}onClick={()=>{                
+                 <div className={styles.lists}>  
+                 <h6>Date range</h6>
+  {inputs.days == '30'? 
+
+  <div className={styles.nam}onClick={()=>{                
     setInputs({
     ...inputs, 
      days : '30'
@@ -239,16 +248,7 @@ function Cprices(base) {
     }}>
    <p className={styles.p}>1 month</p>
   </div> }
-  {/* <div className={styles.name}onClick={()=>{  
-                
-    setInputs({
-      days : '180'
-    })
-    fetchGraph()
-   console.log("sal",inputs) 
-    }}>
-    <p className={styles.p}>6 months</p>
-  </div> */}
+
   {inputs.days == '180'?  <div className={styles.nam}onClick={()=>{                
     setInputs({
       ...inputs, 
@@ -309,8 +309,10 @@ function Cprices(base) {
 
                {labels.length != 0 ?  <div>
 <div className={styles.petrols}>
+
             {petrol.length != 0 ?    
                 <div className={styles.petro}>
+                  <h6>Fuel Type</h6>
                   {petrol?.map((petro,index) =>{
                   return <>
                   <div className={styles.petro} onClick={()=>{                 

@@ -7516,7 +7516,7 @@
     justify-content: space-between;
     align-items: center;
     width: 75%;
-    margin: 0px 0px 40px 0px;
+    margin: 0px 0px 20px 0px;
   }
   .fuel .wrapper .tables .lists {
     display: none;
@@ -7772,6 +7772,7 @@
   }
   .fuel .wrapper .pboxs .nochange {
     gap: 5px;
+    margin-top: 20px;
     align-self: flex-end;
   }
   .fuel .wrapper .pboxs .nochange .figures {
@@ -7803,6 +7804,7 @@
   }
   .fuel .wrapper .pboxs .increase {
     gap: 5px;
+    margin-top: 20px;
   }
   .fuel .wrapper .pboxs .increase .figures {
     width: 248px;
@@ -7832,7 +7834,7 @@
     display: none;
   }
   .fuel .wrapper .pboxs .decrease {
-    margin: 13px 0px 0px 0px;
+    margin: 33px 0px 0px 0px;
     gap: 10px;
   }
   .fuel .wrapper .pboxs .decrease .figures {

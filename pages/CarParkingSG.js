@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 
 import Head from 'next/head'
 import Image from 'next/image'
-
+import baner2 from '../public/back5.jpg'
 import SBanner from '../Components/SBanner'
 import Footer from '../Components/Footer'
 import Footie from '../Components/Footie'
@@ -13,13 +13,13 @@ import CarParking from '../Components/CarParkingSingapore/CarParking'
 const base='https://admin.extramiless.com/'
 export default function CarParkingSG() {
   const [show , setShow] = useState(true)
-
+  
   return (
   <>
 
   <Header setShow={setShow}/>
   {show && <>
-  <SBanner img={ban4} text="Find parking prices and locations from all the major car parks in Singapore! "/>
+  <SBanner img={ban4} img2={baner2} text="Find parking prices and locations from all the major car parks in Singapore! "/>
   <CarParking base={base}/>
   <Footer/>
   <Footie/></>}

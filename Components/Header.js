@@ -11,7 +11,6 @@ function Header(props) {
   const { pathname } = router;
   const [show ,setShow] = useState(true)
   const navHandle = () => {
-    console.log("$$$$$", locale);
     setNav(!nav);
   };
   const dataHandle = () => {

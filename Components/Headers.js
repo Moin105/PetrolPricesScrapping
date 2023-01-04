@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/router';
 import styles from '../styles/Home.module.css'
+
 import logo from '../public/logo.png'
 import Link from 'next/link'
 import Nav from './Nav'

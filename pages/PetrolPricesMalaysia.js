@@ -5,7 +5,7 @@ import Footer from '../Components/Footer'
 import Footie from '../Components/Footie'
 import ban2 from '../public/ban2.png'
 import Header from '../Components/Header'
-
+import baner from '../public/back2.jpg'
 import styles from '../styles/Home.module.css'
 import ChangePetrol from '../Components/PPM/ChangePetrol'
 import Graph from '../Components/PPM/Graph'
@@ -19,7 +19,7 @@ export default function PetrolPricesMalaysia() {
   {show && <>
 
 
-  <SBanner img={ban2} text="Compare petrol prices from all the leading petrol pumps in Malaysia. "/>
+<SBanner img={ban2} img2={baner} text="Compare petrol prices from all the leading petrol pumps in Malaysia. "/>
 
   <ChangePetrol base={base}/>
   <Graph base={base}/>
