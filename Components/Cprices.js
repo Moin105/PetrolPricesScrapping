@@ -44,6 +44,22 @@ function Cprices(base) {
           }
     ]
       })
+  
+  
+      const [show ,setShow] = useState(false)
+
+      // labels manipulation 
+      var newLabels  = []
+      if(labels.length != 0){
+           for(var i = 0 ;i < labels.length; i++){
+            // d  = new Date("Jun 9 2007")
+          var temp = new Date(labels[i]).toDateString().slice(4)
+          newLabels.push(temp)
+      }
+      }
+   
+  console.log("dikhaway",newLabels)
+
       // var min = chartData[0]?.prices[0]; 
       // var max = 0 ;
       const options = {
@@ -57,10 +73,10 @@ function Cprices(base) {
         scales: {
           x: {
             ticks: {
-              autoSkip: false,
+              autoSkip: true,
               maxRotation: 90,
-              minRotation: 90
-              
+              minRotation: 90,
+              fontSize: 3,
           },
             y: {
               min: 0.1,
@@ -108,38 +124,8 @@ function Cprices(base) {
 
     }
       )
-      // if(chartData.length != 0) {   
-       
-      //   for (var i = 0 ; i < chartData.length ; i++){
-      //       // console.log("hero",chartData[i].prices) 
-          
-      //       for(var j = 0 ; j < chartData[i].prices.length ; j++){
-      //         var cur = chartData[i].prices[j];
-              
-             
-      //         if (max < cur  ){
-      //   max = cur;
-      //           console.log("hero max", Math.round(max))
-      //         } if (cur < min){
-      //         min = cur
-      //            console.log("hero min", Math.round(min))
-
-      //         }
-
-      //         // console.log("hero min ====>", min)
-      //         // console.log("hero max ====>", max)
-      //         console.log("hero",chartData[i].prices[j])
-      //       }
-      //     }
-        
-      //     console.log("hero min ====>", Math.ceil(min))
-      //     console.log("hero max ====>", Math.round(max))
-      //     console.log("hero max ====>", Math.round(1.2))
-
-      //   }
 
     }
-    const dt = new Date()
 
     var dates  = []
     useEffect(()=>{  
@@ -180,32 +166,34 @@ function Cprices(base) {
         }
 
       }
-      // ///////
-      // if(res?.data[0]?.pump.match("esso")){
-      //   setP1(res?.data[0]?.prices)
-      // }
-      // if(res?.data[1]?.pump.match("shell")){
-      //   setP2(res?.data[1]?.prices)
-      // }
-      // if(res?.data[2]?.pump.match("spc")){
-      //   setP3(res?.data[2]?.prices)
-      // }
-      // if(res?.data[3]?.pump.match("caltex")){
-      //   setP4(res?.data[3]?.prices)
-      // }
-      // if(res?.data[4]?.pump.match("sinopec")){
-      //   setP5(res?.data[4]?.prices)
-      // }
-      // setP2(res?.data[1]?.prices)
-      // setP3(res?.data[2]?.prices)
-      // setP4(res?.data[3]?.prices)
-      // setP5(res?.data[4]?.prices)
+
       console.log("saas",res.data)
     }
 
       )
-
-    },[inputs])
+      if (typeof window !== 'undefined') {
+        console.log('You are on the browser');
+      if(window.innerWidth < "880" ){
+        // ✅ Can use window here
+        for(var i = 0 ;i < labels.length; i++){
+          // d  = new Date("Jun 9 2007")
+        var temp = new Date(labels[i]).toDateString().slice(4)
+        newLabels.push(temp)
+    }
+        setShow(true)
+      }
+      else if(window.innerWidth > "880"){
+        setShow(false)
+      }
+        window.addEventListener('mousemove', () => {
+          console.log('Mouse moved',window.innerWidth);
+        });
+      } else {
+        console.log('You are on the server');
+        // ⛔️ Don't use window here
+      }
+      
+    },[inputs,show])
     
   
   return (
@@ -357,7 +345,7 @@ function Cprices(base) {
                     datasetIdKey='id'
                     
                   data={{
-                    labels:Array.from(labels),
+                    labels:Array.from(show ? newLabels:labels),
                     maintainAspectRatio: false,
 
                     datasets: [{
